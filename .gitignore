@@ -31,7 +31,7 @@ node_modules/
 dist/
 build/
 .vite-temp/
-package-lock.json
+
 .cache/
 *.tsbuildinfo
 .cache/
