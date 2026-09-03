@@ -1274,6 +1274,12 @@ class Handler(BaseHTTPRequestHandler):
                 if isinstance(res, tuple):
                     return self._json(res[0], res[1] if len(res) > 1 else 200)
                 return self._json(res, 200)
+            if path == "/api/transfer":
+                res, code = _write_transfer(body)
+                return self._json(res, code)
+            if path.startswith("/api/transfer/"):
+                url = self._decode_url(path[len("/api/transfer/"):])
+                return self._json(api_transfer_status(url))
             return self._json({"error": "not found", "path": path}, 404)
         except Exception as e:  # noqa: BLE001
             return self._json({"error": str(e), "path": path}, 500)
@@ -1320,6 +1326,33 @@ def _write_approve(body):
     from modules import sender
     ok = sender.approve_and_send(url)
     return {"url": url, "approved": ok}, (200 if ok else 500)
+
+
+def _write_transfer(body):
+    """Agent transfer handoff endpoint (POST /api/transfer)."""
+    url = (body or {}).get("url")
+    target_agent = (body or {}).get("target_agent")
+    reason = (body or {}).get("reason", "")
+    if not url or not target_agent:
+        return {"error": "url and target_agent required"}, 400
+    from modules import conversation, kill_switch
+    try:
+        link_id = conversation.link_message(url, target_agent, reason)
+        kill_switch.write_event({
+            "event": "transfer_request",
+            "url": url,
+            "agent": target_agent,
+            "reason": reason
+        })
+        return {"url": url, "target_agent": target_agent, "link_id": link_id, "status": "ok"}, 200
+    except Exception as e:
+        return {"error": str(e)}, 500
+
+
+def api_transfer_status(url: str):
+    """GET /api/transfer/<url> — list links."""
+    from modules import conversation
+    return {"url": url, "links": conversation.list_links(url)}
 
 
 def main():

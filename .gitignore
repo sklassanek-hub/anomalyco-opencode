@@ -74,17 +74,23 @@ opencode-src/opencode.exe
 opencode-src/opencode
 
 # Workspace temp
-zarabotok/pipeline_v3/workspace/sbtest_*/
-zarabotok/pipeline_v3/d/
-zarabotok/pipeline_v3/workspace/
-
-# Backups
-*.bak
-*.backup
-*.old
-state/backup/pipeline_state_*.db
-state/archive/
-state/rotate.log
+zarabotok/pipeline_v3/deliverables/voice/*.wav
+zarabotok/pipeline_v3/state/*.session
+zarabotok/pipeline_v3/state/*.pid
+zarabotok/pipeline_v3/state/fl_*.json
+zarabotok/pipeline_v3/state/freelancer_*.json
+zarabotok/pipeline_v3/state/tg_*.json
+zarabotok/pipeline_v3/state/last_scan.json
+zarabotok/pipeline_v3/state/seen_jobs.json
+zarabotok/pipeline_v3/state/threads.json
+zarabotok/pipeline_v3/state/jobs.json
+zarabotok/pipeline_v3/state/outbox.json
+zarabotok/pipeline_v3/state/metrics.json
+zarabotok/pipeline_v3/state/exec_tasks.json
+zarabotok/pipeline_v3/state/embeddings_cache.json
+zarabotok/pipeline_v3/state/activity.json
+zarabotok/pipeline_v3/fl_cookies.json
+zarabotok/.opencode/skills/*/package-lock.json
 
 # Test data
 zarabotok/pipeline_v3/__pycache__/
