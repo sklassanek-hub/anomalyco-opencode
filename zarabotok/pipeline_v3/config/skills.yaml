@@ -1,0 +1,431 @@
+# skills.yaml — реестр навыков по ТЗ §5.1 / §7.1
+# Обязательные поля ТЗ: id, title, keywords, negative, embedding_anchors (5-10),
+# budget (min/max/currency), eta_days (min/max), capability_confidence,
+# executor, deliverables, requires_human_review
+# Уровни автономности (ТЗ §5.2): L0 (не умеет) ... L4 (полный автопилот)
+# Для автоотклика: L3/L4 (с reviewer-агентом)
+# L2 — только после mode=pre_review (ТЗ §5.2)
+
+skills:
+  - id: python_script
+    title: "Python-скрипт"
+    description: "Одноразовые скрипты, утилиты, обработка данных, конвертация форматов, парсинг CSV/JSON/YAML"
+    keywords:
+      - "python script"
+      - "python утилита"
+      - "напиши скрипт"
+      - "обработка данных"
+      - "конвертация"
+      - "csv в json"
+      - "парсер"
+    negative:
+      - "веб-приложение"
+      - "django"
+      - "fastapi"
+      - "ml модель"
+      - "обучение"
+    embedding_anchors:
+      - "Нужен python-скрипт для конвертации CSV в JSON с валидацией"
+      - "Напишите утилиту для пакетной обработки изображений"
+      - "Скрипт для выгрузки данных из API в Excel"
+      - "Python-парсер HTML таблиц в CSV"
+      - "Требуется CLI-инструмент для очистки логов"
+    budget:
+      min: 2000
+      max: 25000
+      currency: RUB
+    eta_days:
+      min: 1
+      max: 3
+    capability_confidence: 0.92
+    autonomy: L4
+    executor: pipeline_python_script
+    deliverables:
+      - "исходник .py"
+      - "README.md"
+      - "requirements.txt"
+      - "пример запуска"
+    requires_human_review: false
+    validators:
+      - ruff
+      - mypy
+      - pytest
+
+  - id: python_fastapi
+    title: "FastAPI REST API"
+    description: "Backend на FastAPI с PostgreSQL/SQLAlchemy, эндпоинты, авторизация, OpenAPI"
+    keywords:
+      - "fastapi"
+      - "rest api"
+      - "backend"
+      - "api на python"
+      - "веб-сервис"
+      - "endpoint"
+    negative:
+      - "ml"
+      - "обучение модели"
+      - "django"
+      - "flask"
+    embedding_anchors:
+      - "REST API на FastAPI с авторизацией по JWT и PostgreSQL"
+      - "Требуется backend для мобильного приложения с 10 эндпоинтами"
+      - "FastAPI + SQLAlchemy + Alembic миграции + Docker"
+      - "Нужен микросервис для обработки платежей через ЮKassa"
+      - "Backend на Python: REST + WebSocket для чата"
+    budget:
+      min: 15000
+      max: 150000
+      currency: RUB
+    eta_days:
+      min: 3
+      max: 14
+    capability_confidence: 0.88
+    autonomy: L3
+    executor: pipeline_python_project
+    deliverables:
+      - "исходники проекта"
+      - "Dockerfile + docker-compose.yml"
+      - "README.md с инструкцией запуска"
+      - "OpenAPI schema"
+      - "pytest тесты"
+    requires_human_review: false
+    validators:
+      - ruff
+      - mypy
+      - pytest
+      - openapi_validate
+
+  - id: tg_bot_aiogram
+    title: "Telegram-бот на aiogram 3"
+    description: "Бот на aiogram 3 (Python 3.12) с FSM, инлайн-кнопками, интеграциями"
+    keywords:
+      - "телеграм бот"
+      - "telegram bot"
+      - "tg бот"
+      - "aiogram"
+      - "бот для канала"
+    negative:
+      - "накрутка"
+      - "спам-рассылка"
+      - "парсер личных данных"
+      - "казино"
+      - "ставки"
+    embedding_anchors:
+      - "Нужен бот для приёма заявок с кнопками и выгрузкой в Google Sheets"
+      - "Требуется telegram-бот с оплатой и админкой"
+      - "Бот для записи на услуги с напоминаниями"
+      - "ТГ-бот с интеграцией CRM Bitrix24"
+      - "Бот для автоматизации заказов в мини-пекарне"
+    budget:
+      min: 3000
+      max: 80000
+      currency: RUB
+    eta_days:
+      min: 1
+      max: 7
+    capability_confidence: 0.9
+    autonomy: L4
+    executor: pipeline_python_project
+    deliverables:
+      - "исходники"
+      - "README.md"
+      - "инструкция по деплою"
+      - "docker-compose.yml"
+    requires_human_review: false
+    validators:
+      - ruff
+      - pytest
+      - docker_build
+
+  - id: parser_website
+    title: "Парсер сайта"
+    description: "Scraping сайтов (requests, BeautifulSoup, selectolax, Playwright)"
+    keywords:
+      - "парсер сайта"
+      - "scraping"
+      - "спарсить"
+      - "собрать данные"
+      - "выгрузить"
+    negative:
+      - "капча"
+      - "обход защиты"
+      - "взлом"
+      - "личные данные"
+    embedding_anchors:
+      - "Парсер каталога товаров с сайта поставщика в Excel"
+      - "Спарсить объявления с Avito по фильтру города"
+      - "Сбор данных с маркетплейса с обходом пагинации"
+      - "Парсер новостей с 5 сайтов в единый JSON"
+    budget:
+      min: 3000
+      max: 40000
+      currency: RUB
+    eta_days:
+      min: 2
+      max: 5
+    capability_confidence: 0.85
+    autonomy: L3
+    executor: pipeline_python_project
+    deliverables:
+      - "исходник парсера"
+      - "requirements.txt"
+      - "README + инструкция"
+      - "пример выходного файла"
+    requires_human_review: false
+    validators:
+      - ruff
+      - smoke_run
+      - sample_validate
+
+  - id: js_ts_project
+    title: "JavaScript/TypeScript проект"
+    description: "Frontend на React/Next.js, Node.js бэкенд, TypeScript проекты"
+    keywords:
+      - "react"
+      - "next.js"
+      - "typescript"
+      - "node.js"
+      - "javascript"
+      - "frontend"
+      - "vue"
+    negative:
+      - "php"
+      - "java"
+      - "1с"
+    embedding_anchors:
+      - "React-приложение с TypeScript и Redux Toolkit"
+      - "Next.js сайт с SSR и админкой"
+      - "Node.js API с Express и TypeScript"
+      - "Vue 3 SPA с Composition API"
+    budget:
+      min: 8000
+      max: 120000
+      currency: RUB
+    eta_days:
+      min: 2
+      max: 10
+    capability_confidence: 0.82
+    autonomy: L3
+    executor: pipeline_js_project
+    deliverables:
+      - "исходники"
+      - "package.json + lock"
+      - "README.md"
+      - "build инструкция"
+      - "unit тесты"
+    requires_human_review: false
+    validators:
+      - eslint
+      - tsc
+      - vitest
+      - build
+
+  - id: json_yaml_transform
+    title: "JSON/YAML/XML преобразование"
+    description: "Конвертация между форматами, валидация по схеме, очистка данных"
+    keywords:
+      - "json"
+      - "yaml"
+      - "xml"
+      - "конвертация"
+      - "трансформация"
+      - "валидация схемы"
+    negative:
+      - "парсинг сайта"
+      - "ml"
+    embedding_anchors:
+      - "Конвертация большого XML в JSON с фильтрацией полей"
+      - "Валидация JSON по JSON Schema с отчётом об ошибках"
+      - "Парсинг YAML конфига и подстановка переменных"
+      - "Слияние нескольких JSON в один по схеме"
+    budget:
+      min: 1000
+      max: 15000
+      currency: RUB
+    eta_days:
+      min: 0.5
+      max: 2
+    capability_confidence: 0.95
+    autonomy: L4
+    executor: pipeline_data_transform
+    deliverables:
+      - "скрипт/код"
+      - "JSON Schema (если применимо)"
+      - "README"
+    requires_human_review: false
+    validators:
+      - schema_validate
+      - encoding_check
+
+  - id: text_seo
+    title: "SEO-текст / статья / описание"
+    description: "Тексты: статьи, SEO-описания товаров, посты, переводы"
+    keywords:
+      - "статья"
+      - "seo текст"
+      - "описание товара"
+      - "копирайтинг"
+      - "рерайт"
+      - "пост для блога"
+    negative:
+      - "академическая"
+      - "диссертация"
+      - "курсовая за студента"
+    embedding_anchors:
+      - "Написать SEO-описание для 50 карточек товаров"
+      - "Статья для блога по IT-тематике 5000 знаков"
+      - "Рерайт 20 текстов с сохранением смысла"
+      - "Пост для Telegram-канала на тему криптовалют"
+    budget:
+      min: 500
+      max: 5000
+      currency: RUB
+    eta_days:
+      min: 0.5
+      max: 3
+    capability_confidence: 0.78
+    autonomy: L3
+    executor: pipeline_text
+    deliverables:
+      - "текст в Markdown/DOCX"
+      - "мета-описание (SEO)"
+      - "список ключевых слов"
+    requires_human_review: true
+    validators:
+      - spellcheck
+      - uniqueness_check
+      - keyword_density
+
+  - id: docker_devops
+    title: "Docker/DevOps настройка"
+    description: "Dockerfile, docker-compose, GitHub Actions, деплой на VPS"
+    keywords:
+      - "docker"
+      - "dockerfile"
+      - "docker-compose"
+      - "github actions"
+      - "деплой"
+      - "ci/cd"
+    negative:
+      - "kubernetes production"
+      - "облако"
+    embedding_anchors:
+      - "Написать Dockerfile и docker-compose.yml для Python-приложения"
+      - "Настроить GitHub Actions для автодеплоя на VPS"
+      - "Docker multi-stage build для Node.js проекта"
+      - "Деплой Django на VPS с Nginx и gunicorn"
+    budget:
+      min: 3000
+      max: 30000
+      currency: RUB
+    eta_days:
+      min: 1
+      max: 5
+    capability_confidence: 0.85
+    autonomy: L4
+    executor: pipeline_devops
+    deliverables:
+      - "Dockerfile"
+      - "docker-compose.yml"
+      - ".github/workflows/*.yml"
+      - "README.md"
+    requires_human_review: false
+    validators:
+      - docker_build
+      - docker_compose_validate
+
+# Глобальные настройки scoring (ТЗ §7.2)
+scoring:
+  weights:
+    sim: 0.40
+    budget: 0.20
+    freshness: 0.15
+    channel: 0.15
+    source: 0.10
+  thresholds:
+    matched: 65      # S >= 65 → matched
+    manual_review: 45  # 45 <= S < 65 → manual_review
+    # S < 45 → rejected
+  freshness_tau_hours: 3   # exp(-delta_t/3h)
+  laplace_alpha: 1   # Laplace((replied+1)/(sent+5))
+  risk_penalties:
+    scam: 100
+    prepayment_request: 30
+    adult: 100
+    gambling: 100
+    diploma: 100
+    bypass_protection: 100
+    nda_required: 50
+    paid_test: 50
+    no_contact: 40
+    below_min_budget: 50
+
+# Stop-words и фильтры (ТЗ §7.3 hard filters)
+filters:
+  stop_themes:
+    - "только для совершеннолетних"
+    - "18+"
+    - "казино"
+    - "ставки на спорт"
+    - "обход блокировки"
+    - "взлом"
+    - "курсовая за студента"
+    - "диссертация"
+  stop_paid_test:
+    - "оплатите тестовое"
+    - "тестовое задание платное"
+  prepayment_indicators:
+    - "100% предоплата от исполнителя"
+    - "залог"
+    - "переведите на карту"
+
+# Скоринговые настройки привязки каналов (ТЗ §9.1)
+delivery:
+  channel_priority:
+    - platform_form
+    - tg_comment
+    - tg_dm
+    - email
+    - manual_required
+  limits:
+    global:
+      max_per_hour: 8
+      max_per_day: 40
+      quiet_hours: ["23:00", "08:00"]
+    telegram:
+      dm_max_per_day: 12
+      dm_max_per_hour: 5
+      min_delay_s: 45
+      max_delay_s: 210
+      warmup_days: 7
+      warmup_curve: [3, 4, 5, 6, 8, 10, 12]
+      on_flood_wait: "pause_channel + honor retry_after * 1.5"
+      on_peer_flood: "stop_dm_24h + alert_operator"
+      on_spam_block: "STOP ALL + critical alert"
+      unique_text_required: true
+    email:
+      smtp_domain_must_have: [SPF, DKIM, DMARC]
+      max_per_day: 25
+      require_explicit_contact_in_order: true
+  novelty_threshold: 0.25
+  autopay_enabled_skills: []  # L4 skills eligible for autopay
+
+# Автопилот (ТЗ §9.3)
+autopilot:
+  enabled: false
+  enabled_skills: []  # skill IDs eligible for autopilot
+  require_score_min: 80
+  require_qa_passed: true
+  require_novelty_min: 0.35
+  allowed_channels: [tg_comment, platform_form]
+  max_per_day: 5
+
+# Kill switch (ТЗ §17.4)
+kill_switch:
+  flag_file: "var/run/freeagent.stop"
+  resume_confirm_required: true
+  pause_queues:
+    - delivery
+    - outbound
+    - execution
+  keep_data_on_stop: true

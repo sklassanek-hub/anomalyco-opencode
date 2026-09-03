@@ -1,0 +1,392 @@
+# sources.yaml — per-source configuration per ТЗ §4.2 / §6.1
+# Обязательные поля: name, chat_id, link, language, theme, trust, allowed_categories,
+# contact_extraction, can_dm_author, min_budget, stop_words, poll_interval,
+# last_processed_message_date, modes (posts/comments/chat_messages),
+# can_read_auto, can_submit_auto, submit_channel, parser_profile (selectors/regex),
+# filters (require_any/exclude_any), capabilities
+
+global:
+  default_poll_interval_s: 300
+  default_lang: ru
+  raw_items_retention_days: 90
+  embedding_dim: 1024
+  dedup:
+    fingerprint_algo: sha256
+    cosine_threshold: 0.93
+    merge_field: also_seen_in
+  drift_detection:
+    enabled: true
+    alert_on_zero: true
+  rate_limit:
+    global_per_min: 30
+    per_source_per_min: 5
+    circuit_breaker:
+      max_consecutive_errors: 5
+      pause_duration_s: 1800
+  retry:
+    max_attempts: 3
+    backoff_base_s: 2
+    backoff_jitter_s: 1
+    honor_retry_after: true
+
+# Tier 1: основные, авто-чтение
+sources:
+
+  # ---- Telegram каналы (49 каналов, разбиты по тематике) ----
+  - kind: telegram
+    name: "Freelance: общая работа"
+    uri: "@frilans"
+    chat_id: null
+    link: "https://t.me/frilans"
+    language: ru
+    theme: freelance_general
+    trust: 0.7
+    allowed_categories: [dev, design, text, marketing, automation]
+    contact_extraction: "regex_telegram"
+    can_dm_author: true
+    can_read_auto: true
+    can_submit_auto: false  # комментарии открыты
+    submit_channel: tg_comment
+    min_budget: 1500
+    currency: RUB
+    stop_words: ["ищу работу", "резюме", "портфолио исполнителя", "накрутка", "спам"]
+    poll_interval_s: 60
+    last_processed_message_date: null
+    modes: [posts, comments]
+    parser_profile:
+      strip_footer_regex: "(?s)Реклама.*$|Наш чат:.*$"
+      min_len: 80
+      contact_hints: ["@", "t.me/", "писать в лс"]
+    filters:
+      require_any: ["нужен", "ищу", "требуется", "разработать", "сделать", "бюджет", "оплата", "ТЗ"]
+      exclude_any: ["ищу работу", "резюме", "вакансия", "на постоянку"]
+    capabilities:
+      can_read_auto: true
+      can_submit_auto: false
+      read_status: official_api
+      submit_status: permitted_html
+
+  - kind: telegram
+    name: "AI/LLM задачи"
+    uri: "@llm_jobs"
+    language: ru
+    theme: ai_ml
+    trust: 0.85
+    allowed_categories: [ai, ml, llm, automation]
+    contact_extraction: regex_telegram
+    can_dm_author: true
+    can_read_auto: true
+    can_submit_auto: true
+    submit_channel: tg_comment
+    min_budget: 3000
+    currency: RUB
+    stop_words: ["ищу работу", "спам", "накрутка"]
+    poll_interval_s: 45
+    last_processed_message_date: null
+    modes: [posts, comments]
+    parser_profile:
+      min_len: 80
+    capabilities:
+      can_read_auto: true
+      can_submit_auto: true
+      read_status: official_api
+      submit_status: official_api
+
+  - kind: telegram
+    name: "Web/Frontend заказы"
+    uri: "@webfrl"
+    language: ru
+    theme: web_frontend
+    trust: 0.7
+    allowed_categories: [dev, frontend, design]
+    contact_extraction: regex_telegram
+    can_dm_author: true
+    can_read_auto: true
+    can_submit_auto: false
+    submit_channel: tg_comment
+    min_budget: 2000
+    currency: RUB
+    stop_words: ["ищу работу", "резюме"]
+    poll_interval_s: 90
+    last_processed_message_date: null
+    modes: [posts, comments]
+    parser_profile:
+      min_len: 80
+    capabilities:
+      can_read_auto: true
+      can_submit_auto: false
+      read_status: official_api
+      submit_status: permitted_html
+
+  - kind: telegram
+    name: "Дизайн/UI заказы"
+    uri: "@designers_freelance"
+    language: ru
+    theme: design
+    trust: 0.7
+    allowed_categories: [design, ui, ux]
+    contact_extraction: regex_telegram
+    can_dm_author: true
+    can_read_auto: true
+    can_submit_auto: false
+    submit_channel: tg_comment
+    min_budget: 2000
+    currency: RUB
+    stop_words: ["ищу работу", "резюме", "накрутка"]
+    poll_interval_s: 90
+    last_processed_message_date: null
+    modes: [posts, comments]
+    parser_profile:
+      min_len: 80
+    capabilities:
+      can_read_auto: true
+      can_submit_auto: false
+      read_status: official_api
+      submit_status: permitted_html
+
+  - kind: telegram
+    name: "Боты разработка"
+    uri: "@theyseeku_it"
+    language: ru
+    theme: bots
+    trust: 0.75
+    allowed_categories: [dev, bots, ai]
+    contact_extraction: regex_telegram
+    can_dm_author: true
+    can_read_auto: true
+    can_submit_auto: true
+    submit_channel: tg_comment
+    min_budget: 3000
+    currency: RUB
+    stop_words: ["ищу работу", "спам"]
+    poll_interval_s: 90
+    last_processed_message_date: null
+    modes: [posts, comments]
+    parser_profile:
+      min_len: 80
+    capabilities:
+      can_read_auto: true
+      can_submit_auto: true
+      read_status: official_api
+      submit_status: official_api
+
+  # ---- RSS-фиды (ТЗ §4.1) ----
+  - kind: rss
+    name: "fl.ru — Разработка"
+    uri: "https://www.fl.ru/rss/all.xml?category=2"
+    language: ru
+    theme: freelance_dev
+    trust: 0.85
+    allowed_categories: [dev, design, text, marketing]
+    contact_extraction: regex_email
+    can_dm_author: false
+    can_read_auto: true
+    can_submit_auto: false  # PRO-only
+    submit_channel: manual_required
+    min_budget: 1500
+    currency: RUB
+    stop_words: ["ищу работу", "на постоянку", "вакансия"]
+    poll_interval_s: 180
+    last_processed_message_date: null
+    modes: [posts]
+    parser_profile:
+      min_len: 80
+    capabilities:
+      can_read_auto: true
+      can_submit_auto: false
+      read_status: public_feed
+      submit_status: operator_only
+
+  - kind: rss
+    name: "weblancer.net — Проекты"
+    uri: "https://www.weblancer.net/rss/projects.xml"
+    language: ru
+    theme: freelance_dev
+    trust: 0.8
+    allowed_categories: [dev, design, text, marketing]
+    contact_extraction: regex_email
+    can_dm_author: false
+    can_read_auto: true
+    can_submit_auto: false
+    submit_channel: manual_required
+    min_budget: 1500
+    currency: RUB
+    stop_words: ["ищу работу", "на постоянку", "вакансия"]
+    poll_interval_s: 180
+    last_processed_message_date: null
+    modes: [posts]
+    parser_profile:
+      min_len: 80
+    capabilities:
+      can_read_auto: true
+      can_submit_auto: false
+      read_status: public_feed
+      submit_status: operator_only
+
+  - kind: rss
+    name: "Хабр Фриланс — freelance"
+    uri: "https://freelansim.ru/tasks/rss"
+    language: ru
+    theme: freelance_dev
+    trust: 0.85
+    allowed_categories: [dev, design, text, marketing]
+    contact_extraction: regex_email
+    can_dm_author: false
+    can_read_auto: true
+    can_submit_auto: false
+    submit_channel: manual_required
+    min_budget: 2000
+    currency: RUB
+    stop_words: ["ищу работу", "на постоянку", "вакансия"]
+    poll_interval_s: 180
+    last_processed_message_date: null
+    modes: [posts]
+    parser_profile:
+      min_len: 80
+    capabilities:
+      can_read_auto: true
+      can_submit_auto: false
+      read_status: public_feed
+      submit_status: operator_only
+
+  # ---- JSON API (ТЗ §4.5) ----
+  - kind: json_api
+    name: "remoteok.com"
+    uri: "https://remoteok.com/api"
+    language: en
+    theme: remote_jobs
+    trust: 0.9
+    allowed_categories: [dev, ml, design, marketing]
+    contact_extraction: regex_email
+    can_dm_author: false
+    can_read_auto: true
+    can_submit_auto: false
+    submit_channel: email
+    min_budget: 0
+    currency: USD
+    stop_words: ["senior", "principal", "must be located in"]
+    poll_interval_s: 300
+    last_processed_message_date: null
+    modes: [posts]
+    parser_profile:
+      min_len: 80
+    capabilities:
+      can_read_auto: true
+      can_submit_auto: false
+      read_status: official_api
+      submit_status: email
+
+  - kind: json_api
+    name: "GitHub Issues — bounty/paid"
+    uri: "https://api.github.com/search/issues?q=label:bounty+OR+label:paid+is:open"
+    language: en
+    theme: bug_bounty
+    trust: 0.85
+    allowed_categories: [dev, ml]
+    contact_extraction: github_issue_url
+    can_dm_author: false
+    can_read_auto: true
+    can_submit_auto: false
+    submit_channel: comment
+    min_budget: 50
+    currency: USD
+    stop_words: ["student", "academic", "coursework"]
+    poll_interval_s: 600
+    last_processed_message_date: null
+    modes: [posts]
+    parser_profile:
+      min_len: 80
+    capabilities:
+      can_read_auto: true
+      can_submit_auto: false
+      read_status: official_api
+      submit_status: comment
+
+  # ---- Email IMAP (ТЗ §4.3) ----
+  - kind: email_imap
+    name: "Входящая почта: orders@..."
+    uri: "imap://imap.gmail.com:993/INBOX"
+    language: ru
+    theme: email_inquiries
+    trust: 0.95
+    allowed_categories: [dev, design, text, marketing, automation]
+    contact_extraction: from_address
+    can_dm_author: false
+    can_read_auto: true
+    can_submit_auto: true
+    submit_channel: email
+    min_budget: 0
+    currency: RUB
+    stop_words: []
+    poll_interval_s: 60
+    last_processed_message_date: null
+    modes: [messages]
+    parser_profile:
+      thread_headers: ["In-Reply-To", "References"]
+      min_len: 80
+    capabilities:
+      can_read_auto: true
+      can_submit_auto: true
+      read_status: oauth
+      submit_status: smtp
+
+# Tier 2: опционально (требуют одобрения/ключей)
+sources_optional:
+  - kind: freelancer_api
+    name: "Freelancer.com"
+    uri: "https://www.freelancer.com/api"
+    language: en
+    theme: freelance_global
+    trust: 0.9
+    can_read_auto: true
+    can_submit_auto: true  # реальный авто-отклик
+    submit_channel: platform_form
+    min_budget: 30
+    currency: USD
+    poll_interval_s: 300
+    requires_oauth: true
+    capabilities:
+      can_read_auto: true
+      can_submit_auto: true
+      read_status: official_api
+      submit_status: official_api
+
+  - kind: upwork_api
+    name: "Upwork GraphQL"
+    uri: "https://api.upwork.com/graphql"
+    language: en
+    theme: freelance_global
+    trust: 0.9
+    can_read_auto: true
+    can_submit_auto: true
+    submit_channel: platform_form
+    min_budget: 50
+    currency: USD
+    poll_interval_s: 300
+    requires_application_approval: true
+    requires_connects_budget: true
+    capabilities:
+      can_read_auto: true
+      can_submit_auto: true
+      read_status: official_api
+      submit_status: official_api
+
+# Исключены (ТЗ §4.1)
+sources_excluded:
+  - {kind: html, name: profi.ru, reason: "paid access + manual verification + offline calls"}
+  - {kind: html, name: youdo.ru, reason: "paid access + manual moderation"}
+  - {kind: html, name: avito_uslugi, reason: "paid + offline"}
+  - {kind: html, name: workzilla, reason: "antibot + paid responses + microbudgets"}
+  - {kind: html, name: fiverr, reason: "buyer searches gigs, no project responses"}
+  - {kind: html, name: toptal, reason: "manual screening"}
+  - {kind: html, name: vk_groups, reason: "unstable parsing + low quality"}
+  - {kind: html, name: instagram_groups, reason: "unstable + low quality"}
+
+# Глобальные стоп-листы (ТЗ §7.3)
+global_filters:
+  stop_themes: [adult, gambling, bypass_protection, hack, diploma_work, financial_schemes]
+  prepayment_only_threshold_rub: 50000
+  paid_test_patterns:
+    - "оплатите тестовое"
+    - "тестовое задание за \\d+ руб"
+  scam_markers: [western_union, moneygram, onlyfans, casino, betting, nude, 18+]
