@@ -1,0 +1,33 @@
+[
+  {
+    "ts": 1788131560.3594427,
+    "event": "kill_switch_set",
+    "source": "modules/kill_switch.py",
+    "detail": {
+      "active": true,
+      "kill_path": "C:\\Users\\klass\\OneDrive\\Desktop\\work\\zarabotok\\pipeline_v3\\state\\KILL_SWITCH",
+      "state_path": "C:\\Users\\klass\\OneDrive\\Desktop\\work\\zarabotok\\pipeline_v3\\state\\kill_switch_active.json"
+    }
+  },
+  {
+    "ts": 1788131560.3701167,
+    "event": "kill_switch_set",
+    "source": "modules/kill_switch.py",
+    "detail": {
+      "active": false,
+      "kill_path": "C:\\Users\\klass\\OneDrive\\Desktop\\work\\zarabotok\\pipeline_v3\\state\\KILL_SWITCH",
+      "state_path": "C:\\Users\\klass\\OneDrive\\Desktop\\work\\zarabotok\\pipeline_v3\\state\\kill_switch_active.json"
+    }
+  },
+  {
+    "ts": 1788131560.3848104,
+    "event": "delivery_audit",
+    "source": "modules/kill_switch.py",
+    "detail": {
+      "url": "test-url",
+      "status": "test",
+      "kill_active": false,
+      "message": "test audit"
+    }
+  }
+]

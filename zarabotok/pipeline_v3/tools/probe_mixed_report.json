@@ -1,0 +1,536 @@
+{
+ "total": 53,
+ "alive": 11,
+ "results": [
+  {
+   "i": 0,
+   "proto": "vless",
+   "server": "77.95.203.224",
+   "port": 443,
+   "t.me": "000 0.035708",
+   "api": "000 0.027941",
+   "gstatic": "000 0.034292",
+   "tg_ok": false
+  },
+  {
+   "i": 1,
+   "proto": "hysteria2",
+   "server": "althys.superbuba.top",
+   "port": 443,
+   "t.me": "302 0.752815",
+   "api": "302 3.403840",
+   "gstatic": "204 0.679653",
+   "tg_ok": true
+  },
+  {
+   "i": 2,
+   "proto": "hysteria2",
+   "server": "althys2.superbuba.top",
+   "port": 443,
+   "t.me": "302 1.005935",
+   "api": "302 0.303040",
+   "gstatic": "204 0.290200",
+   "tg_ok": true
+  },
+  {
+   "i": 3,
+   "proto": "hysteria2",
+   "server": "46.243.235.23",
+   "port": 8443,
+   "t.me": "000 0.271078",
+   "api": "000 0.215293",
+   "gstatic": "000 0.326848",
+   "tg_ok": false
+  },
+  {
+   "i": 4,
+   "proto": "vless",
+   "server": "185.141.227.153",
+   "port": 9002,
+   "t.me": "000 5.003503",
+   "api": "000 5.017405",
+   "gstatic": "000 5.011640",
+   "tg_ok": false
+  },
+  {
+   "i": 5,
+   "proto": "vless",
+   "server": "185.141.227.153",
+   "port": 9001,
+   "t.me": "000 5.014697",
+   "api": "000 5.002580",
+   "gstatic": "204 1.310321",
+   "tg_ok": false
+  },
+  {
+   "i": 6,
+   "proto": "hysteria2",
+   "server": "13.125.214.225",
+   "port": 443,
+   "t.me": "000 5.002694",
+   "api": "000 5.001843",
+   "gstatic": "000 5.001681",
+   "tg_ok": false
+  },
+  {
+   "i": 7,
+   "proto": "hysteria2",
+   "server": "nl.prisma-access.club",
+   "port": 8445,
+   "t.me": "000 5.007570",
+   "api": "000 0.006880",
+   "gstatic": "000 5.002003",
+   "tg_ok": false
+  },
+  {
+   "i": 8,
+   "proto": "hysteria2",
+   "server": "177.3.212.103",
+   "port": 443,
+   "t.me": "000 5.002523",
+   "api": "000 5.002176",
+   "gstatic": "000 5.002338",
+   "tg_ok": false
+  },
+  {
+   "i": 9,
+   "proto": "hysteria2",
+   "server": "nl1.noesissite.ru",
+   "port": 443,
+   "t.me": "000 5.011388",
+   "api": "000 0.019702",
+   "gstatic": "000 5.001782",
+   "tg_ok": false
+  },
+  {
+   "i": 10,
+   "proto": "hysteria2",
+   "server": "vpn-ca-001.fastervpn.world",
+   "port": 443,
+   "t.me": "302 1.867522",
+   "api": "302 0.638474",
+   "gstatic": "204 0.612878",
+   "tg_ok": true
+  },
+  {
+   "i": 11,
+   "proto": "hysteria2",
+   "server": "138.124.0.168",
+   "port": 8443,
+   "t.me": "000 5.002544",
+   "api": "000 5.001282",
+   "gstatic": "000 5.001740",
+   "tg_ok": false
+  },
+  {
+   "i": 12,
+   "proto": "hysteria2",
+   "server": "85.204.107.168",
+   "port": 8443,
+   "t.me": "000 5.001820",
+   "api": "000 5.001689",
+   "gstatic": "000 5.001639",
+   "tg_ok": false
+  },
+  {
+   "i": 13,
+   "proto": "hysteria2",
+   "server": "frn.skysafe.online",
+   "port": 443,
+   "t.me": "302 2.140528",
+   "api": "302 1.554690",
+   "gstatic": "204 0.909470",
+   "tg_ok": true
+  },
+  {
+   "i": 14,
+   "proto": "hysteria2",
+   "server": "pixelcast.wwwinternetvideo.click",
+   "port": 443,
+   "t.me": "000 5.008764",
+   "api": "000 5.001558",
+   "gstatic": "000 5.002165",
+   "tg_ok": false
+  },
+  {
+   "i": 15,
+   "proto": "hysteria2",
+   "server": "194.180.188.97",
+   "port": 8443,
+   "t.me": "000 5.002516",
+   "api": "000 5.001700",
+   "gstatic": "000 5.001374",
+   "tg_ok": false
+  },
+  {
+   "i": 16,
+   "proto": "hysteria2",
+   "server": "dereserv.just-cloud.org",
+   "port": 443,
+   "t.me": "000 5.011691",
+   "api": "000 5.001671",
+   "gstatic": "000 5.001649",
+   "tg_ok": false
+  },
+  {
+   "i": 17,
+   "proto": "hysteria2",
+   "server": "player.wwwinternetvideo.click",
+   "port": 443,
+   "t.me": "000 5.002992",
+   "api": "000 0.001185",
+   "gstatic": "000 5.002137",
+   "tg_ok": false
+  },
+  {
+   "i": 18,
+   "proto": "hysteria2",
+   "server": "hk2.xiaoliyu.cyou",
+   "port": 4433,
+   "t.me": "000 5.003122",
+   "api": "000 5.012305",
+   "gstatic": "000 5.011071",
+   "tg_ok": false
+  },
+  {
+   "i": 19,
+   "proto": "hysteria2",
+   "server": "hy2-latvia1.unlimited-access.ru",
+   "port": 443,
+   "t.me": "000 5.012120",
+   "api": "000 0.015891",
+   "gstatic": "000 5.001290",
+   "tg_ok": false
+  },
+  {
+   "i": 20,
+   "proto": "hysteria2",
+   "server": "hy2-latvia2.unlimited-access.ru",
+   "port": 443,
+   "t.me": "000 5.010123",
+   "api": "000 0.023558",
+   "gstatic": "000 5.001760",
+   "tg_ok": false
+  },
+  {
+   "i": 21,
+   "proto": "hysteria2",
+   "server": "82.39.213.226",
+   "port": 8080,
+   "t.me": "000 5.003340",
+   "api": "000 5.001986",
+   "gstatic": "000 5.001226",
+   "tg_ok": false
+  },
+  {
+   "i": 22,
+   "proto": "hysteria2",
+   "server": "streambox.wwwinternetvideo.click",
+   "port": 443,
+   "t.me": "000 5.015144",
+   "api": "000 5.001663",
+   "gstatic": "000 5.001833",
+   "tg_ok": false
+  },
+  {
+   "i": 23,
+   "proto": "hysteria2",
+   "server": "185.156.44.99",
+   "port": 443,
+   "t.me": "302 1.911522",
+   "api": "302 0.340032",
+   "gstatic": "204 0.727731",
+   "tg_ok": true
+  },
+  {
+   "i": 24,
+   "proto": "hysteria2",
+   "server": "46.229.243.136",
+   "port": 8080,
+   "t.me": "000 5.002348",
+   "api": "000 5.001877",
+   "gstatic": "000 5.001223",
+   "tg_ok": false
+  },
+  {
+   "i": 25,
+   "proto": "hysteria2",
+   "server": "43.156.90.144",
+   "port": 34567,
+   "t.me": "302 3.379848",
+   "api": "302 1.109534",
+   "gstatic": "204 0.620672",
+   "tg_ok": true
+  },
+  {
+   "i": 26,
+   "proto": "hysteria2",
+   "server": "sg2.xiaoliyu.cyou",
+   "port": 1935,
+   "t.me": "302 1.398457",
+   "api": "302 0.928439",
+   "gstatic": "204 0.458109",
+   "tg_ok": true
+  },
+  {
+   "i": 27,
+   "proto": "hysteria2",
+   "server": "43.201.1.129",
+   "port": 443,
+   "t.me": "000 5.001782",
+   "api": "000 5.001306",
+   "gstatic": "000 5.001645",
+   "tg_ok": false
+  },
+  {
+   "i": 28,
+   "proto": "hysteria2",
+   "server": "43.201.58.201",
+   "port": 443,
+   "t.me": "000 5.003647",
+   "api": "000 5.001988",
+   "gstatic": "000 5.002305",
+   "tg_ok": false
+  },
+  {
+   "i": 29,
+   "proto": "hysteria2",
+   "server": "13.124.150.77",
+   "port": 443,
+   "t.me": "000 5.002343",
+   "api": "000 5.002240",
+   "gstatic": "000 5.001829",
+   "tg_ok": false
+  },
+  {
+   "i": 30,
+   "proto": "hysteria2",
+   "server": "160.187.100.109",
+   "port": 443,
+   "t.me": "302 3.738047",
+   "api": "302 3.309472",
+   "gstatic": "204 1.359840",
+   "tg_ok": true
+  },
+  {
+   "i": 31,
+   "proto": "hysteria2",
+   "server": "vpn-tw-002.fastervpn.world",
+   "port": 443,
+   "t.me": "000 5.006746",
+   "api": "302 2.361107",
+   "gstatic": "204 1.254582",
+   "tg_ok": true
+  },
+  {
+   "i": 32,
+   "proto": "hysteria2",
+   "server": "nl.vpn.legendaah.xyz",
+   "port": 36723,
+   "t.me": "302 2.355573",
+   "api": "302 0.975880",
+   "gstatic": "204 0.609778",
+   "tg_ok": true
+  },
+  {
+   "i": 33,
+   "proto": "hysteria2",
+   "server": "86.107.178.74",
+   "port": 8443,
+   "t.me": "000 5.001774",
+   "api": "000 5.001147",
+   "gstatic": "000 5.000885",
+   "tg_ok": false
+  },
+  {
+   "i": 34,
+   "proto": "hysteria2",
+   "server": "46.229.243.136",
+   "port": 8443,
+   "t.me": "000 5.002316",
+   "api": "000 5.002048",
+   "gstatic": "000 5.002619",
+   "tg_ok": false
+  },
+  {
+   "i": 35,
+   "proto": "hysteria2",
+   "server": "hys9.wba-pn.ru",
+   "port": 443,
+   "t.me": "000 5.008302",
+   "api": "000 5.002062",
+   "gstatic": "000 5.001834",
+   "tg_ok": false
+  },
+  {
+   "i": 36,
+   "proto": "hysteria2",
+   "server": "162.249.124.105",
+   "port": 8080,
+   "t.me": "000 5.002416",
+   "api": "000 5.001903",
+   "gstatic": "000 5.002044",
+   "tg_ok": false
+  },
+  {
+   "i": 37,
+   "proto": "hysteria2",
+   "server": "85.204.107.168",
+   "port": 8080,
+   "t.me": "000 5.002007",
+   "api": "000 5.001669",
+   "gstatic": "000 5.001815",
+   "tg_ok": false
+  },
+  {
+   "i": 38,
+   "proto": "hysteria2",
+   "server": "162.249.124.105",
+   "port": 8443,
+   "t.me": "000 5.002015",
+   "api": "000 5.001824",
+   "gstatic": "000 5.001847",
+   "tg_ok": false
+  },
+  {
+   "i": 39,
+   "proto": "hysteria2",
+   "server": "138.124.0.168",
+   "port": 8080,
+   "t.me": "000 5.001713",
+   "api": "000 5.001370",
+   "gstatic": "000 5.001233",
+   "tg_ok": false
+  },
+  {
+   "i": 40,
+   "proto": "hysteria2",
+   "server": "66.94.121.46",
+   "port": 443,
+   "t.me": "302 1.771812",
+   "api": "302 2.979633",
+   "gstatic": "204 2.268175",
+   "tg_ok": true
+  },
+  {
+   "i": 41,
+   "proto": "hysteria2",
+   "server": "uswx3.wxgqlfx.vip",
+   "port": 35193,
+   "t.me": "000 5.006501",
+   "api": "000 0.049367",
+   "gstatic": "000 5.002447",
+   "tg_ok": false
+  },
+  {
+   "i": 42,
+   "proto": "hysteria2",
+   "server": "iq5ny.pleiades.codes",
+   "port": 8443,
+   "t.me": "000 5.010252",
+   "api": "000 5.001890",
+   "gstatic": "000 5.001601",
+   "tg_ok": false
+  },
+  {
+   "i": 43,
+   "proto": "hysteria2",
+   "server": "143.246.208.86",
+   "port": 8443,
+   "t.me": "000 5.002141",
+   "api": "000 5.002130",
+   "gstatic": "000 5.001992",
+   "tg_ok": false
+  },
+  {
+   "i": 44,
+   "proto": "hysteria2",
+   "server": "82.39.213.226",
+   "port": 8443,
+   "t.me": "000 5.002577",
+   "api": "000 5.001980",
+   "gstatic": "000 5.001994",
+   "tg_ok": false
+  },
+  {
+   "i": 45,
+   "proto": "hysteria2",
+   "server": "5.83.129.11",
+   "port": 443,
+   "t.me": "000 5.001880",
+   "api": "000 5.001757",
+   "gstatic": "000 5.001461",
+   "tg_ok": false
+  },
+  {
+   "i": 46,
+   "proto": "hysteria2",
+   "server": "de.1.22.washing.help",
+   "port": 443,
+   "t.me": "000 5.010168",
+   "api": "000 0.001179",
+   "gstatic": "000 5.001628",
+   "tg_ok": false
+  },
+  {
+   "i": 47,
+   "proto": "hysteria2",
+   "server": "freedom.chenlan.top",
+   "port": 12765,
+   "t.me": "000 5.015772",
+   "api": "000 5.002073",
+   "gstatic": "000 5.001698",
+   "tg_ok": false
+  },
+  {
+   "i": 48,
+   "proto": "vmess",
+   "server": "eyjhzgqioijumtc0nzyyndi3nc40dtltys5py3uilcjhawqioiiwiiwiywxwbii6iiisimzwijoiiiwiag9zdci6iiisimlkijoizdhkywy1mdctytrhyy00zwvhltgzotktogywy2qwnzflyjuyiiwibmv0ijoid3milcjwyxroijoiiiwicg9ydci6ijq0myisinbzijoi8j+hrfcfh7agsg9uzyblb25nlcbib25nietvbmcgfcbbqkxdiiwic2n5ijoiyxv0byisinnly3vyaxr5ijoiyxv0byisinnuasi6iiisinrscyi6inrscyisinr5cguioijub25liiwidii6ijiifq==",
+   "port": 443,
+   "t.me": "000 5.012464",
+   "api": "000 5.002757",
+   "gstatic": "000 5.011244",
+   "tg_ok": false
+  },
+  {
+   "i": 49,
+   "proto": "trojan",
+   "server": "by.techdatacloud.org",
+   "port": 8443,
+   "t.me": "000 2.327004",
+   "api": "000 2.694106",
+   "gstatic": "000 2.241730",
+   "tg_ok": false
+  },
+  {
+   "i": 50,
+   "proto": "trojan",
+   "server": "dggg.wsone.icu",
+   "port": 443,
+   "t.me": "000 5.001626",
+   "api": "000 5.001453",
+   "gstatic": "000 5.001249",
+   "tg_ok": false
+  },
+  {
+   "i": 51,
+   "proto": "trojan",
+   "server": "qfdfsg.wsone.icu",
+   "port": 443,
+   "t.me": "000 5.008117",
+   "api": "000 5.001577",
+   "gstatic": "000 5.012520",
+   "tg_ok": false
+  },
+  {
+   "i": 52,
+   "proto": "trojan",
+   "server": "rvg-production-c349.up.railway.app",
+   "port": 443,
+   "t.me": "000 0.293842",
+   "api": "000 0.237900",
+   "gstatic": "000 1.236481",
+   "tg_ok": false
+  }
+ ]
+}

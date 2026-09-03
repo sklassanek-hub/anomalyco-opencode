@@ -1,0 +1,360 @@
+{
+  "invoices": [
+    {
+      "job_id": null,
+      "amount": 1500,
+      "description": "Тестовый счёт: парсер Wildberries",
+      "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100XXXXXXXXXXXX&quickpay-form=shop&paymentType=AC&sum=1500&targets=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%81%D1%87%D1%91%D1%82%3A%20%D0%BF%D0%B0%D1%80%D1%81%D0%B5%D1%80%20Wildberries",
+      "created_at": "2026-07-31T06:08:33.177571",
+      "status": "pending"
+    },
+    {
+      "job_id": "test",
+      "amount": 7000,
+      "description": "Telegram-бот для клиники эстетической медицины",
+      "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100XXXXXXXXXXXX&quickpay-form=shop&paymentType=AC&sum=7000&targets=Telegram-%D0%B1%D0%BE%D1%82%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BB%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8%20%D1%8D%D1%81%D1%82%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%8B",
+      "created_at": "2026-07-31T06:08:33.195012",
+      "status": "pending"
+    },
+    {
+      "job_id": null,
+      "amount": 1500,
+      "description": "Тестовый счёт: парсер Wildberries",
+      "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100119458306656&quickpay-form=shop&paymentType=AC&sum=1500&targets=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%81%D1%87%D1%91%D1%82%3A%20%D0%BF%D0%B0%D1%80%D1%81%D0%B5%D1%80%20Wildberries",
+      "created_at": "2026-07-31T06:09:54.818941",
+      "status": "pending"
+    },
+    {
+      "job_id": "test",
+      "amount": 7000,
+      "description": "Telegram-бот для клиники эстетической медицины",
+      "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100119458306656&quickpay-form=shop&paymentType=AC&sum=7000&targets=Telegram-%D0%B1%D0%BE%D1%82%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BB%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8%20%D1%8D%D1%81%D1%82%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%8B",
+      "created_at": "2026-07-31T06:09:54.850047",
+      "status": "pending"
+    },
+    {
+      "id": "inv_1785469656_x",
+      "job_id": null,
+      "amount": 1500,
+      "description": "Тестовый счёт: парсер Wildberries",
+      "created_at": "2026-07-31T06:47:36.943495",
+      "status": "pending",
+      "methods": [
+        {
+          "type": "yoomoney",
+          "name": "ЮMoney (карта/СБП)",
+          "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100119458306656&quickpay-form=shop&paymentType=AC&sum=1500&targets=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%81%D1%87%D1%91%D1%82%3A%20%D0%BF%D0%B0%D1%80%D1%81%D0%B5%D1%80%20Wildberries"
+        }
+      ]
+    },
+    {
+      "id": "inv_1785470008_x",
+      "job_id": null,
+      "amount": 1500,
+      "description": "Тестовый счёт: парсер Wildberries",
+      "created_at": "2026-07-31T06:53:28.277396",
+      "status": "pending",
+      "methods": [
+        {
+          "type": "yoomoney",
+          "name": "ЮMoney (карта/СБП)",
+          "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100119458306656&quickpay-form=shop&paymentType=AC&sum=1500&targets=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%81%D1%87%D1%91%D1%82%3A%20%D0%BF%D0%B0%D1%80%D1%81%D0%B5%D1%80%20Wildberries"
+        },
+        {
+          "type": "card",
+          "name": "Перевод на карту (СБП)",
+          "number": "2204 1201 3690 6878",
+          "holder": "Александр Владимирович К."
+        }
+      ]
+    },
+    {
+      "id": "inv_1785470021_x",
+      "job_id": null,
+      "amount": 1500,
+      "description": "Тестовый счёт: парсер Wildberries",
+      "created_at": "2026-07-31T06:53:41.919955",
+      "status": "pending",
+      "methods": [
+        {
+          "type": "yoomoney",
+          "name": "ЮMoney (карта/СБП)",
+          "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100119458306656&quickpay-form=shop&paymentType=AC&sum=1500&targets=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%81%D1%87%D1%91%D1%82%3A%20%D0%BF%D0%B0%D1%80%D1%81%D0%B5%D1%80%20Wildberries"
+        },
+        {
+          "type": "card",
+          "name": "Перевод на карту (СБП)",
+          "number": "2204 1201 3690 6878",
+          "holder": "Александр Владимирович К.",
+          "phone": "+79786510019"
+        }
+      ]
+    },
+    {
+      "id": "inv_1785470460_x",
+      "job_id": null,
+      "amount": 1500,
+      "description": "Тестовый счёт: парсер Wildberries",
+      "created_at": "2026-07-31T07:01:00.905754",
+      "status": "pending",
+      "methods": [
+        {
+          "type": "yoomoney",
+          "name": "ЮMoney (карта/СБП)",
+          "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100119458306656&quickpay-form=shop&paymentType=AC&sum=1500&targets=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%81%D1%87%D1%91%D1%82%3A%20%D0%BF%D0%B0%D1%80%D1%81%D0%B5%D1%80%20Wildberries"
+        },
+        {
+          "type": "card",
+          "name": "Перевод на карту (СБП)",
+          "number": "2204 1201 3690 6878",
+          "holder": "Александр Владимирович К.",
+          "phone": "+79786510019"
+        },
+        {
+          "type": "usdt",
+          "name": "Крипта (USDT и др.)",
+          "address": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+          "networks": {
+            "TRC20 (Tron)": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+            "TON": "UQD0Xm5st3fiAqc-GjDWjQMkgAxWNOY9AXxg0TSG2UCuvjD6",
+            "SOL": "Ton4u12JGL9bFrZ7aDS75UE6XHgd4brfXiQ8FefAQux82Cb",
+            "ERC20 (ETH)": "0x078d6D8cC769a95412DbB382f2085118398688D6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inv_1785470540_x",
+      "job_id": null,
+      "amount": 1500,
+      "description": "Тестовый счёт: парсер Wildberries",
+      "created_at": "2026-07-31T07:02:20.113637",
+      "status": "pending",
+      "methods": [
+        {
+          "type": "yoomoney",
+          "name": "ЮMoney (карта/СБП)",
+          "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100119458306656&quickpay-form=shop&paymentType=AC&sum=1500&targets=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%81%D1%87%D1%91%D1%82%3A%20%D0%BF%D0%B0%D1%80%D1%81%D0%B5%D1%80%20Wildberries"
+        },
+        {
+          "type": "card",
+          "name": "Перевод на карту (СБП)",
+          "number": "2204 1201 3690 6878",
+          "holder": "Александр Владимирович К.",
+          "phone": "+79786510019"
+        },
+        {
+          "type": "usdt",
+          "name": "Крипта (USDT и др.)",
+          "address": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+          "networks": {
+            "TRC20 (Tron)": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+            "TON": "UQD0Xm5st3fiAqc-GjDWjQMkgAxWNOY9AXxg0TSG2UCuvjD6",
+            "SOL": "4u12JGL9bFrZ7aDS75UE6XHgd4brfXiQ8FefAQux82Cb",
+            "ERC20 (ETH)": "0x078d6D8cC769a95412DbB382f2085118398688D6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inv_1785470845_x",
+      "job_id": null,
+      "amount": 1500,
+      "description": "Тест CryptoBot: бот для клиники",
+      "created_at": "2026-07-31T07:07:25.401813",
+      "status": "pending",
+      "methods": [
+        {
+          "type": "yoomoney",
+          "name": "ЮMoney (карта/СБП)",
+          "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100119458306656&quickpay-form=shop&paymentType=AC&sum=1500&targets=%D0%A2%D0%B5%D1%81%D1%82%20CryptoBot%3A%20%D0%B1%D0%BE%D1%82%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BB%D0%B8%D0%BD%D0%B8%D0%BA%D0%B8"
+        },
+        {
+          "type": "card",
+          "name": "Перевод на карту (СБП)",
+          "number": "2204 1201 3690 6878",
+          "holder": "Александр Владимирович К.",
+          "phone": "+79786510019"
+        },
+        {
+          "type": "usdt",
+          "name": "Крипта (USDT и др.)",
+          "address": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+          "networks": {
+            "TRC20 (Tron)": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+            "TON": "UQD0Xm5st3fiAqc-GjDWjQMkgAxWNOY9AXxg0TSG2UCuvjD6",
+            "SOL": "4u12JGL9bFrZ7aDS75UE6XHgd4brfXiQ8FefAQux82Cb",
+            "ERC20 (ETH)": "0x078d6D8cC769a95412DbB382f2085118398688D6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inv_1785470938_x",
+      "job_id": null,
+      "amount": 1500,
+      "description": "Тестовый счёт: парсер Wildberries",
+      "created_at": "2026-07-31T07:08:58.508140",
+      "status": "pending",
+      "methods": [
+        {
+          "type": "yoomoney",
+          "name": "ЮMoney (карта/СБП)",
+          "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100119458306656&quickpay-form=shop&paymentType=AC&sum=1500&targets=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%81%D1%87%D1%91%D1%82%3A%20%D0%BF%D0%B0%D1%80%D1%81%D0%B5%D1%80%20Wildberries"
+        },
+        {
+          "type": "card",
+          "name": "Перевод на карту (СБП)",
+          "number": "2204 1201 3690 6878",
+          "holder": "Александр Владимирович К.",
+          "phone": "+79786510019"
+        },
+        {
+          "type": "usdt",
+          "name": "Крипта (USDT и др.)",
+          "address": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+          "networks": {
+            "TRC20 (Tron)": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+            "TON": "UQD0Xm5st3fiAqc-GjDWjQMkgAxWNOY9AXxg0TSG2UCuvjD6",
+            "SOL": "4u12JGL9bFrZ7aDS75UE6XHgd4brfXiQ8FefAQux82Cb",
+            "ERC20 (ETH)": "0x078d6D8cC769a95412DbB382f2085118398688D6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inv_1785479206_fr_6499",
+      "job_id": "fr_6499",
+      "amount": 5000,
+      "description": "Нужен помощник для написания отзывов на определённую продукцию ",
+      "created_at": "2026-07-31T09:26:46.390024",
+      "status": "pending",
+      "methods": [
+        {
+          "type": "yoomoney",
+          "name": "ЮMoney (карта/СБП)",
+          "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100119458306656&quickpay-form=shop&paymentType=AC&sum=5000&targets=%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D0%BD%D0%B8%D0%BA%20%D0%B4%D0%BB%D1%8F%20%D0%BD%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%BE%D1%82%D0%B7%D1%8B%D0%B2%D0%BE%D0%B2%20%D0%BD%D0%B0%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%83%D1%8E%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D1%8E%20"
+        },
+        {
+          "type": "card",
+          "name": "Перевод на карту (СБП)",
+          "number": "2204 1201 3690 6878",
+          "holder": "Александр Владимирович К.",
+          "phone": "+79786510019"
+        },
+        {
+          "type": "usdt",
+          "name": "Крипта (USDT и др.)",
+          "address": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+          "networks": {
+            "TRC20 (Tron)": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+            "TON": "UQD0Xm5st3fiAqc-GjDWjQMkgAxWNOY9AXxg0TSG2UCuvjD6",
+            "SOL": "4u12JGL9bFrZ7aDS75UE6XHgd4brfXiQ8FefAQux82Cb",
+            "ERC20 (ETH)": "0x078d6D8cC769a95412DbB382f2085118398688D6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inv_1785486075_fr_6472",
+      "job_id": "fr_6472",
+      "amount": 5000,
+      "description": "Написание отзывов",
+      "created_at": "2026-07-31T11:21:15.768623",
+      "status": "pending",
+      "methods": [
+        {
+          "type": "yoomoney",
+          "name": "ЮMoney (карта/СБП)",
+          "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100119458306656&quickpay-form=shop&paymentType=AC&sum=5000&targets=%D0%9D%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BE%D1%82%D0%B7%D1%8B%D0%B2%D0%BE%D0%B2"
+        },
+        {
+          "type": "card",
+          "name": "Перевод на карту (СБП)",
+          "number": "2204 1201 3690 6878",
+          "holder": "Александр Владимирович К.",
+          "phone": "+79786510019"
+        },
+        {
+          "type": "usdt",
+          "name": "Крипта (USDT и др.)",
+          "address": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+          "networks": {
+            "TRC20 (Tron)": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+            "TON": "UQD0Xm5st3fiAqc-GjDWjQMkgAxWNOY9AXxg0TSG2UCuvjD6",
+            "SOL": "4u12JGL9bFrZ7aDS75UE6XHgd4brfXiQ8FefAQux82Cb",
+            "ERC20 (ETH)": "0x078d6D8cC769a95412DbB382f2085118398688D6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inv_1785489046_tg_workayte_4234",
+      "job_id": "tg_workayte_4234",
+      "amount": 5000,
+      "description": "#вакансия #vacancy #go #golang #lead #telecom #телеком #москва #мо #гибрид \n\n\n**",
+      "created_at": "2026-07-31T12:10:46.825085",
+      "status": "pending",
+      "methods": [
+        {
+          "type": "yoomoney",
+          "name": "ЮMoney (карта/СБП)",
+          "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100119458306656&quickpay-form=shop&paymentType=AC&sum=5000&targets=%23%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D1%8F%20%23vacancy%20%23go%20%23golang%20%23lead%20%23telecom%20%23%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%BE%D0%BC%20%23%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%23%D0%BC%D0%BE%20%23%D0%B3%D0%B8%D0%B1%D1%80%D0%B8%D0%B4%20%0A%0A%0A%2A%2A"
+        },
+        {
+          "type": "card",
+          "name": "Перевод на карту (СБП)",
+          "number": "2204 1201 3690 6878",
+          "holder": "Александр Владимирович К.",
+          "phone": "+79786510019"
+        },
+        {
+          "type": "usdt",
+          "name": "Крипта (USDT и др.)",
+          "address": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+          "networks": {
+            "TRC20 (Tron)": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+            "TON": "UQD0Xm5st3fiAqc-GjDWjQMkgAxWNOY9AXxg0TSG2UCuvjD6",
+            "SOL": "4u12JGL9bFrZ7aDS75UE6XHgd4brfXiQ8FefAQux82Cb",
+            "ERC20 (ETH)": "0x078d6D8cC769a95412DbB382f2085118398688D6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inv_1785504110_tg_frilans_1065_2",
+      "job_id": "tg_frilans_1065_2",
+      "amount": 5000,
+      "description": "монтажер",
+      "created_at": "2026-07-31T16:21:50.222941",
+      "status": "pending",
+      "foreign": false,
+      "currency": "RUB",
+      "methods": [
+        {
+          "type": "yoomoney",
+          "name": "ЮMoney (карта/СБП)",
+          "link": "https://yoomoney.ru/quickpay/confirm.xml?receiver=4100119458306656&quickpay-form=shop&paymentType=AC&sum=5000&targets=%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D1%80"
+        },
+        {
+          "type": "card",
+          "name": "Перевод на карту (СБП)",
+          "number": "2204 1201 3690 6878",
+          "holder": "Александр Владимирович К.",
+          "phone": "+79786510019"
+        },
+        {
+          "type": "usdt",
+          "name": "Крипта (USDT и др.)",
+          "address": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+          "networks": {
+            "TRC20 (Tron)": "TLSbCHWUS32o3c9ZrBb7LA34ARjXeMEtRn",
+            "TON": "UQD0Xm5st3fiAqc-GjDWjQMkgAxWNOY9AXxg0TSG2UCuvjD6",
+            "SOL": "4u12JGL9bFrZ7aDS75UE6XHgd4brfXiQ8FefAQux82Cb",
+            "ERC20 (ETH)": "0x078d6D8cC769a95412DbB382f2085118398688D6"
+          }
+        }
+      ]
+    }
+  ]
+}

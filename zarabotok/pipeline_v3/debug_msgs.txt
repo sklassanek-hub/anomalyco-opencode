@@ -1,0 +1,95 @@
+ts: 2026-08-25T08:43:45+0300
+  direction: out
+  channel: tg
+  order: https://t.me/freelance_chat_ru/20812344
+  sender: @paradooxx_bot
+  text: По задаче «🧧 PARADOX TEAM 🧧 💎 ИЩЕМ НОВЫХ ВОРКЕРОВ ПО КАРДИНГУ💎 Профиты от 300-1000$ Хочешь работать 
+  replied: False
+
+ts: 2026-08-25T10:15:19+0300
+  direction: out
+  channel: tg
+  order: https://t.me/freelance_chat_ru/20812873
+  sender: @gen1stra
+  text: По задаче «🟢Скупаю 🟩🟢🟢🟢➗ 📣Билайн 📣Добросвязь 📣МТС 📣Мегафон 📣Теле2 Сделанные в салоне связи через ID,
+  replied: False
+
+ts: 2026-08-25T10:19:33+0300
+  direction: in
+  channel: tg
+  order: https://t.me/freelance_chat_ru/20812873
+  sender: @gen1stra
+  text: Есть есим?
+  replied: True
+
+ts: 2026-08-25T10:20:50+0300
+  direction: out
+  channel: tg
+  order: https://t.me/freelance_chat_ru/20812873
+  sender: @gen1stra
+  text: Да, есть возможность работы с eSIM. Подскажите — нужен ли он для длительных командировок или вы план
+  replied: False
+
+ts: 2026-08-25T20:36:14+0300
+  direction: in
+  channel: email
+  order: None
+  sender: googledev-noreply@google.com
+  text: Header: Gear  
+Newsletter1<https://c.gle/ACT4xYzqfXIJlUIkImoEWhlBTPb57s18CQSOkcBRdE9L9LALaaKO8oSqbH
+  replied: False
+
+ts: 2026-08-27T04:04:40+0300
+  direction: in
+  channel: email
+  order: None
+  sender: noreply@invite.freelancer.com
+  text: 
+Hello, Aleksandr Kiselev has nominated you as reference. Please submit your reference by September
+  replied: False
+
+ts: 2026-08-27T10:53:56+0300
+  direction: in
+  channel: email
+  order: None
+  sender: accounts@unity3d.com
+  text: Hi Апрен,
+
+Your subscription to Unity AI Subscription for Mystical Expedition has been canceled. W
+  replied: False
+
+ts: 2026-08-27T10:53:57+0300
+  direction: in
+  channel: email
+  order: None
+  sender: wabaray045@gmail.com
+  text: Ваш статус разрешает войти сейчас и оставаться сколько потребуется.
+
+Перейти к простому шагу <http
+  replied: False
+
+ts: 2026-08-27T11:42:07+0300
+  direction: out
+  channel: tg
+  order: https://t.me/freelance_chat_ru/20826867
+  sender: @sputnik_101
+  text: По задаче «⚡️ Ищем покупателей верификаций Starlink (UA) Срок активации: обычно 7–18 дней; Цены: роз
+  replied: False
+
+ts: 2026-08-27T11:42:12+0300
+  direction: out
+  channel: tg
+  order: https://t.me/freelance_chat_ru/20844382
+  sender: @maxaikeys
+  text: По задаче «✅ УДАЛЕННАЯ РАБОТА ⚠️ ⚡️ 0ткpыл naб0p na yдaлeннyю paб0тy ! 🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺 CEЙЧAC HYЖНЫ ПEP
+  replied: False
+
+ts: 2026-08-27T14:14:35+0300
+  direction: in
+  channel: email
+  order: None
+  sender: googledev-noreply@google.com
+  text: The GEAR, Get Certified Banner  
+Image<https://c.gle/ACT4xYwFcUua4GWasYDrD4QtACGko5lrWLvQksTC-5BMif
+  replied: False
+

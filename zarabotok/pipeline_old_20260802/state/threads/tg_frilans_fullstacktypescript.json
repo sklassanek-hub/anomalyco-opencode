@@ -1,0 +1,15 @@
+{
+  "job_id": "tg_frilans_fullstacktypescript",
+  "events": [
+    {
+      "ts": "2026-07-31T14:57:26.757241",
+      "actor": "sender",
+      "kind": "message_out",
+      "text": "client_reply отправлен @karijun (аккаунт: aleksandr_kisilev_1999): Здравствуйте! Спасибо за ответ. Отправлю краткое резюме: Python, TypeScript, React/Next.js, Node.js, Telegram-боты, парсеры, интеграции API, AI/LLM. Есть опыт fullstack-разработки от идеи до продакшен",
+      "meta": {
+        "contact": "@karijun",
+        "kind": "client_reply"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "job_id": "tg_workayte_4223",
+  "events": [
+    {
+      "ts": "2026-07-31T16:13:24.699791",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (379 симв.): Обеспечу надежность и стабильность Platform V GraDeLy, разработав планы нагрузки в JMeter и настроив мониторинг метрик через Grafana/Prometheus. Есть опыт оптимизации запросов к PostgreSQL под нагрузк",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T16:14:11.093495",
+      "actor": "sender",
+      "kind": "message_out",
+      "text": "proposal отправлен @AndreyBeker (аккаунт: aleksandr_kisilev_1999): Обеспечу надежность и стабильность Platform V GraDeLy, разработав планы нагрузки в JMeter и настроив мониторинг метрик через Grafana/Prometheus. Есть опыт оптимизации запросов к PostgreSQL под нагрузк",
+      "meta": {
+        "contact": "@AndreyBeker",
+        "kind": "proposal"
+      }
+    },
+    {
+      "ts": "2026-08-01T00:21:46.336592",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (407 симв.): Обеспечу надежность Platform V GraDeLy, разработав и реализовав нагрузочное тестирование логической репликации данных с захватом изменений на уровне базы. Есть опыт проектирования схем PostgreSQL под ",
+      "meta": {}
+    }
+  ]
+}

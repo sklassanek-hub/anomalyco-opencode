@@ -1,0 +1,16 @@
+{
+  "name": "https_test.example.com_auto-delivery",
+  "version": "v1",
+  "files": [
+    {
+      "name": "manifest.json",
+      "sha256": "1162a51b489f74a660dd3482af90e17c2f0abaf19505ba778d71657cbc600245",
+      "size": 412
+    },
+    {
+      "name": "README.md",
+      "sha256": "b230be9ada5787437d2b546b411d0ca4e778e019a97fd15433a6f4103bdc35f2",
+      "size": 509
+    }
+  ]
+}

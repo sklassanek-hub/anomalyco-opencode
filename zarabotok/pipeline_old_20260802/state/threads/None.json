@@ -1,0 +1,65 @@
+{
+  "job_id": null,
+  "events": [
+    {
+      "ts": "2026-07-31T06:53:28.279226",
+      "actor": "payments",
+      "kind": "invoice_created",
+      "text": "Счёт 1500 ₽ создан: Тестовый счёт: парсер Wildberries. Способы: yoomoney, card",
+      "meta": {
+        "invoice_id": "inv_1785470008_x",
+        "amount": 1500
+      }
+    },
+    {
+      "ts": "2026-07-31T06:53:41.955750",
+      "actor": "payments",
+      "kind": "invoice_created",
+      "text": "Счёт 1500 ₽ создан: Тестовый счёт: парсер Wildberries. Способы: yoomoney, card",
+      "meta": {
+        "invoice_id": "inv_1785470021_x",
+        "amount": 1500
+      }
+    },
+    {
+      "ts": "2026-07-31T07:01:00.907606",
+      "actor": "payments",
+      "kind": "invoice_created",
+      "text": "Счёт 1500 ₽ создан: Тестовый счёт: парсер Wildberries. Способы: yoomoney, card, usdt",
+      "meta": {
+        "invoice_id": "inv_1785470460_x",
+        "amount": 1500
+      }
+    },
+    {
+      "ts": "2026-07-31T07:02:20.115328",
+      "actor": "payments",
+      "kind": "invoice_created",
+      "text": "Счёт 1500 ₽ создан: Тестовый счёт: парсер Wildberries. Способы: yoomoney, card, usdt",
+      "meta": {
+        "invoice_id": "inv_1785470540_x",
+        "amount": 1500
+      }
+    },
+    {
+      "ts": "2026-07-31T07:07:25.403995",
+      "actor": "payments",
+      "kind": "invoice_created",
+      "text": "Счёт 1500 ₽ создан: Тест CryptoBot: бот для клиники. Способы: yoomoney, card, usdt",
+      "meta": {
+        "invoice_id": "inv_1785470845_x",
+        "amount": 1500
+      }
+    },
+    {
+      "ts": "2026-07-31T07:08:58.509950",
+      "actor": "payments",
+      "kind": "invoice_created",
+      "text": "Счёт 1500 ₽ создан: Тестовый счёт: парсер Wildberries. Способы: yoomoney, card, usdt",
+      "meta": {
+        "invoice_id": "inv_1785470938_x",
+        "amount": 1500
+      }
+    }
+  ]
+}

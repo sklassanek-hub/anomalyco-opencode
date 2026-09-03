@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "spec_id": "tz-001",
+  "delivery": {
+    "status": "pending",
+    "locked": false,
+    "confirmed_by": ""
+  },
+  "artifacts": [
+    "modules/executor.py",
+    "modules/spec_matrix.py"
+  ],
+  "checksum": "sha256:PLACEHOLDER",
+  "updated": "2026-08-31"
+}

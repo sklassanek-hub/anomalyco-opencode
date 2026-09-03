@@ -1,0 +1,238 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true,
+    "output": "C:\\Users\\klass\\OneDrive\\Desktop\\work\\zarabotok\\pipeline\\tools\\singbox\\singbox.log"
+  },
+  "dns": {
+    "servers": [
+      {
+        "type": "local",
+        "tag": "local"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "type": "socks",
+      "tag": "socks-in",
+      "listen": "127.0.0.1",
+      "listen_port": 4068,
+      "users": []
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "server": "glidio.shieldix.top",
+      "server_port": 443,
+      "tag": "srv_70",
+      "type": "vless",
+      "uuid": "e3c40721-22bc-4862-a358-09502fc14af6",
+      "flow": "xtls-rprx-vision",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "glidio.shieldix.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V9MHR6nhlKPenVUq1172uIHJFZYOkRVqSOUkjCS4430",
+          "short_id": "f0ba53a31b489b3e"
+        }
+      }
+    },
+    {
+      "server": "glidio.shieldix.top",
+      "server_port": 443,
+      "tag": "srv_72",
+      "type": "vless",
+      "uuid": "e3c40721-22bc-4862-a358-09502fc14af6",
+      "flow": "xtls-rprx-vision",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "glidio.shieldix.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V9MHR6nhlKPenVUq1172uIHJFZYOkRVqSOUkjCS4430",
+          "short_id": "f0ba53a31b489b3e"
+        }
+      }
+    },
+    {
+      "server": "glidio.shieldix.top",
+      "server_port": 443,
+      "tag": "srv_74",
+      "type": "vless",
+      "uuid": "e3c40721-22bc-4862-a358-09502fc14af6",
+      "flow": "xtls-rprx-vision",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "glidio.shieldix.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V9MHR6nhlKPenVUq1172uIHJFZYOkRVqSOUkjCS4430",
+          "short_id": "f0ba53a31b489b3e"
+        }
+      }
+    },
+    {
+      "server": "193.233.205.117",
+      "server_port": 443,
+      "tag": "srv_56",
+      "type": "vless",
+      "uuid": "218fd696-e3a2-4c33-b397-a5f13a82969e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "media3.abvphelp.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "iUc9JqWjFemnQo8R5fgiwssCjEdWmixB4X-mRJkx2VE",
+          "short_id": "3182f9ae"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "server": "2.26.255.36",
+      "server_port": 8443,
+      "tag": "srv_59",
+      "type": "vless",
+      "uuid": "8787dd0a-095a-414e-804f-a7d16a1ae166",
+      "flow": "xtls-rprx-vision",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "po1.hys.braidx.tech",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "server": "93.114.194.123",
+      "server_port": 8443,
+      "tag": "srv_9",
+      "type": "hysteria2",
+      "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
+      "tls": {
+        "enabled": true,
+        "server_name": "grape-zet-ro-turbo.bumbleshrimp.com"
+      }
+    },
+    {
+      "server": "45.195.228.26",
+      "server_port": 443,
+      "tag": "srv_1",
+      "type": "vless",
+      "uuid": "d2042070-c247-4226-a3ac-15337923e00d",
+      "flow": "xtls-rprx-vision",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage.yandex.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
+          "short_id": "f45c9665f3261108"
+        }
+      }
+    },
+    {
+      "server": "194.135.80.192",
+      "server_port": 443,
+      "tag": "srv_8",
+      "type": "trojan",
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": [
+            "www.calmlunch.com"
+          ]
+        }
+      }
+    },
+    {
+      "server": "182.16.61.4",
+      "server_port": 45647,
+      "tag": "srv_34",
+      "type": "vless",
+      "uuid": "431fe973-a43a-4fac-bf83-2a772e0d0625",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "selector",
+      "tag": "auto",
+      "outbounds": [
+        "srv_70",
+        "srv_72",
+        "srv_74",
+        "srv_56",
+        "srv_59",
+        "srv_9",
+        "srv_1",
+        "srv_8",
+        "srv_34"
+      ],
+      "default": "srv_34"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "domain_suffix": [
+          "getsavesafe.net"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "ip_cidr": [
+          "127.0.0.0/8",
+          "10.0.0.0/8",
+          "192.168.0.0/16"
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "final": "auto"
+  }
+}

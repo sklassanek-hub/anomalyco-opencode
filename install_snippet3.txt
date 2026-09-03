@@ -1,0 +1,120 @@
+341:     fi
+342: 
+343:     mv "$tmp_dir/opencode" "$INSTALL_DIR"
+344:     chmod 755 "${INSTALL_DIR}/opencode"
+345:     rm -rf "$tmp_dir"
+346: }
+347: 
+348: install_from_binary() {
+349:     print_message info "\n${MUTED}Installing ${NC}opencode ${MUTED}from: ${NC}$binary_path"
+350:     cp "$binary_path" "${INSTALL_DIR}/opencode"
+351:     chmod 755 "${INSTALL_DIR}/opencode"
+352: }
+353: 
+354: if [ -n "$binary_path" ]; then
+355:     install_from_binary
+356: else
+357:     check_version
+358:     download_and_install
+359: fi
+360: 
+361: 
+362: add_to_path() {
+363:     local config_file=$1
+364:     local command=$2
+365: 
+366:     if grep -Fxq "$command" "$config_file"; then
+367:         print_message info "Command already exists in $config_file, skipping write."
+368:     elif [[ -w $config_file ]]; then
+369:         echo -e "\n# opencode" >> "$config_file"
+370:         echo "$command" >> "$config_file"
+371:         print_message info "${MUTED}Successfully added ${NC}opencode ${MUTED}to \$PATH in ${NC}$config_file"
+372:     else
+373:         print_message warning "Manually add the directory to $config_file (or similar):"
+374:         print_message info "  $command"
+375:     fi
+376: }
+377: 
+378: XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
+379: 
+380: current_shell=$(basename "$SHELL")
+381: case $current_shell in
+382:     fish)
+383:         config_files="$HOME/.config/fish/config.fish"
+384:     ;;
+385:     zsh)
+386:         config_files="${ZDOTDIR:-$HOME}/.zshrc ${ZDOTDIR:-$HOME}/.zshenv $XDG_CONFIG_HOME/zsh/.zshrc $XDG_CONFIG_HOME/zsh/.zshenv"
+387:     ;;
+388:     bash)
+389:         config_files="$HOME/.bashrc $HOME/.bash_profile $HOME/.profile $XDG_CONFIG_HOME/bash/.bashrc $XDG_CONFIG_HOME/bash/.bash_profile"
+390:     ;;
+391:     ash)
+392:         config_files="$HOME/.ashrc $HOME/.profile /etc/profile"
+393:     ;;
+394:     sh)
+395:         config_files="$HOME/.ashrc $HOME/.profile /etc/profile"
+396:     ;;
+397:     *)
+398:         # Default case if none of the above matches
+399:         config_files="$HOME/.bashrc $HOME/.bash_profile $XDG_CONFIG_HOME/bash/.bashrc $XDG_CONFIG_HOME/bash/.bash_profile"
+400:     ;;
+401: esac
+402: 
+403: if [[ "$no_modify_path" != "true" ]]; then
+404:     config_file=""
+405:     for file in $config_files; do
+406:         if [[ -f $file ]]; then
+407:             config_file=$file
+408:             break
+409:         fi
+410:     done
+411: 
+412:     if [[ -z $config_file ]]; then
+413:         print_message warning "No config file found for $current_shell. You may need to manually add to PATH:"
+414:         print_message info "  export PATH=$INSTALL_DIR:\$PATH"
+415:     elif [[ ":$PATH:" != *":$INSTALL_DIR:"* ]]; then
+416:         case $current_shell in
+417:             fish)
+418:                 add_to_path "$config_file" "fish_add_path $INSTALL_DIR"
+419:             ;;
+420:             zsh)
+421:                 add_to_path "$config_file" "export PATH=$INSTALL_DIR:\$PATH"
+422:             ;;
+423:             bash)
+424:                 add_to_path "$config_file" "export PATH=$INSTALL_DIR:\$PATH"
+425:             ;;
+426:             ash)
+427:                 add_to_path "$config_file" "export PATH=$INSTALL_DIR:\$PATH"
+428:             ;;
+429:             sh)
+430:                 add_to_path "$config_file" "export PATH=$INSTALL_DIR:\$PATH"
+431:             ;;
+432:             *)
+433:                 export PATH=$INSTALL_DIR:$PATH
+434:                 print_message warning "Manually add the directory to $config_file (or similar):"
+435:                 print_message info "  export PATH=$INSTALL_DIR:\$PATH"
+436:             ;;
+437:         esac
+438:     fi
+439: fi
+440: 
+441: if [ -n "${GITHUB_ACTIONS-}" ] && [ "${GITHUB_ACTIONS}" == "true" ]; then
+442:     echo "$INSTALL_DIR" >> $GITHUB_PATH
+443:     print_message info "Added $INSTALL_DIR to \$GITHUB_PATH"
+444: fi
+445: 
+446: echo -e ""
+447: echo -e "${MUTED}                    ${NC}             ▄     "
+448: echo -e "${MUTED}█▀▀█ █▀▀█ █▀▀█ █▀▀▄ ${NC}█▀▀▀ █▀▀█ █▀▀█ █▀▀█"
+449: echo -e "${MUTED}█░░█ █░░█ █▀▀▀ █░░█ ${NC}█░░░ █░░█ █░░█ █▀▀▀"
+450: echo -e "${MUTED}▀▀▀▀ █▀▀▀ ▀▀▀▀ ▀  ▀ ${NC}▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀"
+451: echo -e ""
+452: echo -e ""
+453: echo -e "${MUTED}OpenCode includes free models, to start:${NC}"
+454: echo -e ""
+455: echo -e "cd <project>  ${MUTED}# Open directory${NC}"
+456: echo -e "opencode      ${MUTED}# Run command${NC}"
+457: echo -e ""
+458: echo -e "${MUTED}For more information visit ${NC}https://opencode.ai/docs"
+459: echo -e ""
+460: echo -e ""

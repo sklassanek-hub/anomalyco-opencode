@@ -1,0 +1,9 @@
+33: ### C. Релизы и сборка (Release / Build)
+35: - [ ] **R2** `.github/workflows/` — создать pipeline: test (`pytest`) → vuln-scan (`trivy`/`semgrep`) → SBOM → sign (`goreleaser`/`sigstore`) → release (`releases/`).
+36: - [ ] **R3** `opencode.exe` — подписать (`.goreleaser.yml` + `signs`); убрать из репо или добавить `.gitignore`; проверять происхождение.
+37: - [ ] **R4** `release.json` — генерировать автоматически; включать `checksums.txt`, `sbom.spdx.json`.
+38: - [ ] **R5** `install.sh` — проверять SHA256/HMAC `release.json` / binary перед установкой.
+40: ### D. Код и безопасность (Code / Security) — `opencode-src/`
+73: ### C. Релизы / Build — продолжение
+95: ### C. Code / Security
+100: ### D. Memory / Strategy

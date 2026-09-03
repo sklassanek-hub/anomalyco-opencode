@@ -1,0 +1,19 @@
+{
+  "job_id": "tg_vorkzavr_381",
+  "events": [
+    {
+      "ts": "2026-07-31T17:18:04.527324",
+      "actor": "qa",
+      "kind": "proposal_qa_reject",
+      "text": "Попытка 1 отклонена QA: запрещённая фраза: имею опыт по",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T17:18:17.837700",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (400 симв.): Обеспечу ведение end-to-end delivery roadmap для Swisstronik Money и координацию интеграций с внешними партнерами, включая Fireblocks и Gnosis Pay. Мой опыт разработки backend на Python/Node.js и рабо",
+      "meta": {}
+    }
+  ]
+}

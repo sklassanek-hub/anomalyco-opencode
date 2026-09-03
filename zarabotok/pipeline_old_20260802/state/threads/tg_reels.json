@@ -1,0 +1,21 @@
+{
+  "job_id": "tg_reels",
+  "events": [
+    {
+      "ts": "2026-07-31T07:47:46.819763",
+      "actor": "sender",
+      "kind": "message_out",
+      "text": "Отклик отправлен @ku34568 (аккаунт: aleksandr_kisilev_1999): Реализую задачу: ​ #монтажер Ищут монтажёра Reels с уверенным владением After Effects и Premiere Pro. Важны пунктуальность, коммуникабель. Full-stack разработчик (Python/Node.js/Go, Telegram-боты, пар",
+      "meta": {
+        "contact": "@ku34568"
+      }
+    },
+    {
+      "ts": "2026-08-01T07:49:06.905615",
+      "actor": "orchestrator",
+      "kind": "followup",
+      "text": "Напоминание заказчику (прошло 24 ч)",
+      "meta": {}
+    }
+  ]
+}

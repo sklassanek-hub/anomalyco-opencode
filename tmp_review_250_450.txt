@@ -1,0 +1,174 @@
+251: - **Technology:** Redis Streams (simple, existing infrastructure) or RabbitMQ (durability, retry, dead-letter).
+252: - **Topology:** `scanner` → `queue:pipeline.scan` → `store-consumer` → `queue:pipeline.store` → `ranker-consumer` → `queue:pipeline.rank` → `executor-consumer` → `queue:pipeline.done` → `dashboard-aggregator`.
+253: - **Properties:** Persistent messages; consumer groups (load balance across 2+ workers); acknowledgment after DB write; dead-letter after 3 retries; message TTL for stale jobs.
+254: 
+255: ### 9.2 Separate DB for Metrics (P1)
+256: 
+257: - **Pipeline DB (PostgreSQL):** `exec_tasks`, `threads`, `orders`, `payments`, `invoices`, `delivery_audit`, `users`.
+258: - **Metrics DB (PostgreSQL read replica or ClickHouse):** `metrics_funnel`, `conversion`, `revenue`, `expenses`, `avg_order`; optimized for analytical queries (indexed, columnar if ClickHouse); refreshed by ETL job every 5 min.
+259: - **Cache (Redis):** Dashboard reads from cache (30s TTL); invalidation on new order/payment.
+260: 
+261: ### 9.3 Auth Gateway (P0)
+262: 
+263: - **Pattern:** Reverse proxy (`nginx` or `traefik`) with JWT / OAuth 2.0 / API key validation before reaching `api.py`, `dashboard.py`, `billing.py` webhook endpoint.
+264: - **Layers:**
+265:   1. TLS termination (`certbot` / Let's Encrypt).
+266:   2. Rate limit (`nginx limit_req_zone` or `traefik` rate limits).
+267:   3. Auth (`jwt` validation, `OAuth` introspection, `API key` header).
+268:   4. IP allowlist (internal services, webhook source IPs).
+269:   5. Audit log (request method, path, user, outcome, latency).
+270: - **File references:** Add `nginx/auth_gateway.conf`, `middleware/auth.py` (Python) / `internal/auth/` (Go).
+271: 
+272: ### 9.4 Webhook Retry with Exponential Backoff (P1)
+273: 
+274: - **Pattern:** Webhook delivery to client endpoint (`webhook_url`) with retry policy:
+275:   - Attempt 1: immediate
+276:   - Attempt 2: 1s delay
+277:   - Attempt 3: 2s delay
+278:   - Attempt 4: 4s delay (max 4)
+279: - **Storage:** Queue webhook events; process with worker; log result to `events.json`; alert if final failure.
+280: - **Idempotency:** Client must provide `idempotency_key`; server verifies against `operations` table.
+281: - **File references:** `billing_service.py` (add `retry_webhook()`); `sender.py` (add queue); `state/events.json` (add webhook_delivery events).
+282: 
+283: ### 9.5 Observability & Tracing (P2)
+284: 
+285: - **Metrics:** Prometheus / Grafana for pipeline stage latency, error rate, queue depth, DB connection pool.
+286: - **Tracing:** OpenTelemetry (Go `otel`, Python `opentelemetry`) with spans: `scanner.poll`, `store.write`, `ranker.score`, `executor.run_agent`, `dashboard.read`.
+287: - **Logging:** Structured JSON (not plain text) to stdout; collect with fluent-bit / Filebeat; ship to ELK / Loki.
+288: - **File references:** Add `observability/` directory; update `logger.py`; add `metrics.py`.
+289: 
+290: ---
+291: 
+292: ## 10. File References (Evidence Base)
+293: 
+294: All references verified in workspace (`C:\Users\klass\OneDrive\Desktop\work\`):
+295: 
+296: ### Pipeline / Workflow
+297: - `memory/workflow_completion.md` — P1 execution (W5, W7, W9, W13, W14, W15, W19 partial)
+298: - `memory/full_audit_master.md` — master audit (P0/P1/P2 priorities; 5 subagent reports; accessibility, workflow, release, code, memory)
+299: - `zarabotok/pipeline_v3/modules/scanners.py` — scanner stage
+300: - `zarabotok/pipeline_v3/modules/store.py` — store/dedup; PostgreSQL mode reference
+301: - `zarabotok/pipeline_v3/modules/ranker.py` — score formula gap (W2)
+302: - `zarabotok/pipeline_v3/modules/executor.py` — execution (777 lines); `DOCKER_ENABLED`; `TASK_TIMEOUT_MULT`; `pick_agents()`; `run_agent()`; `deliverables_dir()`
+303: - `zarabotok/pipeline_v3/modules/dashboard.py` — dashboard errors (`dashboard_new.err.log`); PID file
+304: - `zarabotok/pipeline_v3/modules/filter.py` — W13 `is_scam()` with SHA-256 + embedding
+305: - `zarabotok/pipeline_v3/modules/chat.py`, `conversation.py`, `listener_bridge.py` — conversation threading
+306: - `zarabotok/pipeline_v3/modules/billing_service.py` — webhook HMAC (234 lines); replay protection; `verify_hmac()`
+307: - `zarabotok/pipeline_v3/modules/billing.py` — Invoice stub + webhook wire (W5, W15)
+308: - `zarabotok/pipeline_v3/modules/kill_switch.py` — kill switch + events.json audit (118 lines)
+309: - `zarabotok/pipeline_v3/modules/sandbox.py` — isolation (330 lines); Job Object; `DOCKER_ENABLED=True`; AV stub
+310: - `zarabotok/pipeline_v3/modules/spec_matrix.py` — live link to `executor.finish()` (W9)
+311: - `zarabotok/pipeline_v3/modules/agents.py` — agent index; `agent_index()`
+312: 
+313: ### State / Data
+314: - `zarabotok/pipeline_v3/state/metrics_funnel.json` — funnel source links (orders, payments); aria-label
+315: - `zarabotok/pipeline_v3/state/exec_tasks.json` — execution tasks; `items`; `status`; `attempts`
+316: - `zarabotok/pipeline_v3/state/payments.json` — billing records; replay protection
+317: - `zarabotok/pipeline_v3/state/events.json` — audit events; trimmed to 500
+318: - `zarabotok/pipeline_v3/state/KILL_SWITCH`, `kill_switch_active.json` — kill state
+319: - `zarabotok/pipeline_v3/state/threads.json`, `messages.json`, `messages_fixed.json` — conversation storage
+320: - `zarabotok/pipeline_v3/state/activity.json` (978KB) — unbounded growth evidence
+321: 
+322: ### UI / Accessibility
+323: - `zarabotok/pipeline_v3/ui/src/pages/FunnelMetrics.tsx` — W14 aria-label + source links
+324: - `memory/accessibility_audit_summary.md` — 8 critical, 9 important accessibility gaps
+325: 
+326: ### Container / Deploy
+327: - `zarabotok/pipeline_v3/Dockerfile.sandbox` — sandbox Dockerfile (29 lines)
+328: - `zarabotok/pipeline_v3/.docker/docker-compose.yml` — executor isolation (45 lines)
+329: - `zarabotok/pipeline_v3/.docker/Dockerfile` — pipeline base (not fully read)
+330: - `zarabotok/pipeline_v3/compose_simple.py` — compose script
+331: 
+332: ### Config / Index
+333: - `.opencode/agents_index.json` — W7 / W19 updates (autonomy, validators, max_size, L0–L4)
+334: - `zarabotok/pipeline_v3/.opencode/agents_index.json` — same
+335: - `memory/workflow_agents_index.md` — documentation
+336: - `zarabotok/pipeline_v3/config.json` — config; sandbox settings; LLM endpoint; secret paths
+337: 
+338: ### Security / Code (opencode-src)
+339: - `opencode-src/internal/llm/provider/openai.go` — `baseURL` unverified (line 22, 50–51, 416–418)
+340: - `opencode-src/opencode.exe` — unsigned binary (audit: release)
+341: - `.goreleaser.yml` — missing sbom/signs/windows artifacts
+342: - `check_releases.py` — broken (audit: release)
+343: 
+344: ---
+345: 
+346: ## 11. Priority Fixes (P0 / P1 / P2)
+347: 
+348: ### P0 — Block Production / Security / Reliability (Fix Immediately)
+349: 
+350: | # | Fix | Evidence / File | Recommended Implementation | Verification |
+351: |---|---|---|---|---|
+352: | 1 | **Auth middleware + rate limit** | `full_audit_master.md` D; `opencode-src/` no auth | Add `auth.middleware` (JWT/OAuth/API key); rate limit per IP/user (100/15min, webhook 10/min); validate `baseURL` with `url.Parse()` + whitelist | Test: `curl -H "Authorization: Bearer bad"` → 401; `curl` 101st req → 429; `baseURL=http://evil.com` → rejected |
+353: | 2 | **Audit log + events governance** | `kill_switch.py` (events.json only 500 events, no auth) | Extend `events.json` schema with `user_id`, `ip`, `action`; ship to ELK/fluent-bit; do NOT rely solely on file-trim | Test: audit event written with full schema; log forwarded to ELK; 500-trim not data loss at scale |
+354: | 3 | **Sandbox build + validation** | `Dockerfile.sandbox` unbuilt; `sandbox.py` AV stub passes | Build image; validate `sitecustomize` blocks network; verify `clamscan` or replace with `clamav`; run smoke test | `docker build -f Dockerfile.sandbox -t pipeline-v3-sandbox .`; `docker run --rm --network none ... python -c 'import socket'` raises `_Blocked` |
+355: | 4 | **LLM endpoint verification** | `executor.py` hardcoded `127.0.0.1:1234`; `opencode-src/openai.go` baseURL unverified | Whitelist endpoints in `config.json`; verify with `/v1/models`; enforce TLS; circuit breaker after 5 failures; fallback endpoint | Health-check passes; malicious `baseURL` rejected; fallback triggers on failure |
+356: | 5 | **Kill switch global coverage** | `kill_switch.py` covers execution only | Extend to scanner/store/ranker/dashboard; add `kill_switch.check()` at pipeline stage entry | Test: `KILL_SWITCH` file stops all stages |
+357: 
+358: ### P1 — Quality / Scale / Integration (Fix Before Scale)
+359: 
+360: | # | Fix | Evidence / File | Recommended Implementation | Verification |
+361: |---|---|---|---|---|
+362: | 6 | **Message queue for pipeline** | No queue; synchronous file-based stages | Redis Streams / RabbitMQ between scanner→store→rank→executor→dashboard; consumer groups; dead-letter; ACK after DB write | Test: scanner publishes; consumer processes; crash + restart = resume from last ACK |
+363: | 7 | **Separate DB for metrics + pipeline** | `store.py` JSON-only; `metrics_funnel.json` file-based; `activity.json` 978KB | PostgreSQL for pipeline; Postgres read replica / ClickHouse for metrics; Redis cache (30s TTL); ETL job | DB migration runs; metrics query <100ms; dashboard reads from cache |
+364: | 8 | **Webhook retry + backoff + idempotency** | `billing_service.py` no retry; `payments.json` replay only | Queue webhook events; retry 3× (1s, 2s, 4s); idempotency key; transaction with `invoices` | Test: webhook fails → retry succeeds; duplicate `operation_id` blocked; final failure alerts |
+365: | 9 | **DB migration + connection pool** | `store.py` JSON mutations; no migrations | `alembic` migrations; `sqlalchemy` pool; backup (`pg_basebackup`); replication | Migration runs; concurrent writes safe; backup restores |
+366: | 10 | **Conversation persistence + auth** | `conversation.py` in-memory/file; `listener_bridge.py` email placeholder | DB `threads` table; `message_id` unique; auth on conversation endpoints; email threading implemented | Conversation persists across restarts; email threading works; unauthorized access blocked |
+367: | 11 | **Dashboard multi-worker + health** | `dashboard.py` single process; `dashboard_new.err.log` errors | Containerized with 2+ replicas; Gunicorn/Uvicorn 4+ workers; `/health` endpoint; nginx load balance | Health check passes; load test 100 req/s passes |
+368: 
+369: ### P2 — Observability / Tracing / Scale (Fix for Growth)
+370: 
+371: | # | Fix | Evidence / File | Recommended Implementation | Verification |
+372: |---|---|---|---|---|
+373: | 12 | **Observability + tracing** | No metrics/tracing files; `logger.py` basic | Prometheus metrics; OpenTelemetry spans; structured JSON logging; Grafana dashboard | Metrics visible; trace spans show pipeline latency |
+374: | 13 | **Agent index full + levels** | W19 partial (184/400+); `.opencode/agents_index.json` has L0–L4 + autonomy/validators/max_size | Complete 400+ agents; validate levels; document autonomy rules | Index loads 400+ agents; all fields present |
+375: | 14 | **Accessibility CI** | 8 critical gaps (`accessibility_audit_summary.md`) | axe-core in CI; focus-trap for Modal/Drawer; `aria-live` for Toast; keyboard navigation for Table/Kanban; `skip-link`; `focus-visible`; `prefers-reduced-motion` | axe-core passes; manual NVDA/keyboard test passes |
+376: | 15 | **Release CI + SBOM + signing** | `check_releases.py` broken; `opencode.exe` unsigned; `.goreleaser.yml` missing | Fix `check_releases.py`; CI (test + vuln-scan + SBOM + sign); sign binary; add releases with digests | Release passes CI; binary signed; SBOM generated |
+377: | 16 | **Memory registries** | `memory/` 4-day gap; no `decision/`, `risks/`, `experiments/`, `feedback/` | Create registries; daily notes template; backlink to `state/`/`deliverables/`; experiment register | Registries created; daily notes updated |
+378: 
+379: ---
+380: 
+381: ## 12. Action Plan — Execution Order
+382: 
+383: ### Immediate (Today / This Session)
+384: 
+385: 1. **Read this review** with team; confirm P0 list; assign owners.
+386: 2. **Build `Dockerfile.sandbox`**; run smoke; verify isolation.
+387: 3. **Add auth middleware** (start with `nginx/auth_gateway.conf` + `middleware/auth.py`); block unauthorized access to `api.py`, `dashboard.py`, webhook endpoint.
+388: 4. **Add rate limiting** to webhook endpoint and API; configure `nginx` limits.
+389: 5. **Fix `baseURL` validation** in `opencode-src/internal/llm/provider/openai.go` and `executor.py`; add whitelist.
+390: 6. **Extend `kill_switch.py`** to cover scanner/store/ranker/dashboard; verify global block.
+391: 7. **Write extended `events.json`** event for auth/rate-limit/audit; ship to ELK.
+392: 
+393: ### Short Term (Next Sprint — 1–2 Weeks)
+394: 
+395: 8. **Migrate `store.py`** to PostgreSQL fully; add `alembic` migrations; create DB schema; migrate `exec_tasks.json`, `threads.json`, `payments.json`.
+396: 9. **Insert message queue** (Redis Streams); update pipeline stages to publish/consume.
+397: 10. **Implement webhook retry** with backoff in `billing_service.py`; add queue worker.
+398: 11. **Create metrics DB**; implement ETL; update `metrics_funnel.json` generation.
+399: 12. **Build production `docker-compose.prod.yml`**; add `nginx`, `postgres`, `redis`, `dashboard` replicas.
+400: 
+401: ### Medium Term (Next Month)
+402: 
+403: 13. **Add observability** (Prometheus + Grafana; OpenTelemetry tracing); update `logger.py`.
+404: 14. **Complete agent index** (400+); validate autonomy/validators/levels.
+405: 15. **Fix accessibility** (axe-core CI; focus-trap; keyboard nav; `aria-label` completeness).
+406: 16. **Fix release pipeline** (`check_releases.py`; CI gates; sign binary; SBOM).
+407: 17. **Write daily memory notes**; create `memory/decisions/`, `risks/`, `experiments/`, `feedback/`; backlink.
+408: 
+409: ---
+410: 
+411: ## 13. Strategic Notes (Architect Mind)
+412: 
+413: - **Security is not a feature — it is the foundation.** Every module reading `config.json` must validate secrets; every endpoint must authenticate; every sandbox must build and prove isolation.
+414: - **Scalability is not an afterthought — it is a design constraint.** The pipeline must handle 10× peak load (audit: 10× traffic success). That requires queue-based backpressure, DB split, cache, and horizontal container scaling from day one.
+415: - **Reliability requires redundancy.** Single-worker dashboard, single-file state, no message queue — these are single points of failure. Redundancy (DB replication, queue persistence, multi-worker, load balance) must be in the architecture, not added later.
+416: - **Audit is evidence, not decoration.** `events.json` trimmed to 500 events with no user/IP/action is insufficient for incident response. Structured, forwarded, retained audit logs are required for security and compliance.
+417: - **Accessibility is usability.** 8 critical accessibility errors (`Modal` focus-trap, `Table` keyboard nav, `Toast` aria-live) mean the pipeline is unusable for a significant user segment. Fix before scaling.
+418: - **Containerization must be validated, not declared.** `DOCKER_ENABLED=True` with unbuilt `Dockerfile.sandbox` is a false sense of security. Build, test, verify network block, and integrate into production compose.
+419: 
+420: ---
+421: 
+422: *Review compiled by BackendArchitect agent.*  
+423: *Evidence base: memory/workflow_completion.md, memory/full_audit_master.md, zarabotok/pipeline_v3/modules/ (executor.py, sandbox.py, listener_bridge.py, kill_switch.py, billing_service.py, conversation.py), .opencode/agents_index.json updates (W7/W19), Dockerfile.sandbox, state/metrics_funnel.json, opencode-src/ llm provider (baseURL verification gap). All file paths verified in workspace.*  
+424: *Next step: Confirm P0 action plan with team; execute auth + sandbox build + audit extension; schedule P1 queue + DB split; plan P2 observability + accessibility + release CI.*

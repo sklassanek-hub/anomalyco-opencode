@@ -1,0 +1,38 @@
+{
+  "job_id": "tg_frilans_1067_4",
+  "events": [
+    {
+      "ts": "2026-07-31T16:04:59.485343",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (361 симв.): Сделаю полную визуальную упаковку проекта для Instagram и Telegram: разработаю логотип, выберу шрифты и цвета, оформлю Highlights и подготовлю редактируемые шаблоны в Canva. Есть опыт создания фирменн",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T16:10:34.630981",
+      "actor": "sender",
+      "kind": "message_out",
+      "text": "proposal отправлен @MikorsakAIcouch (аккаунт: aleksandr_kisilev_1999): Сделаю полную визуальную упаковку проекта для Instagram и Telegram: разработаю логотип, выберу шрифты и цвета, оформлю Highlights и подготовлю редактируемые шаблоны в Canva. Есть опыт создания фирменн",
+      "meta": {
+        "contact": "@MikorsakAIcouch",
+        "kind": "proposal"
+      }
+    },
+    {
+      "ts": "2026-07-31T16:10:44.676235",
+      "actor": "customer",
+      "kind": "message_in",
+      "text": "Клиент MikorsakAIcouch: Доброго дня! Спасибо за отклик!\n\n➡️ Вакансия здесь размещена:\n@VAKANSII_Rabota_Chat_Bot\n\nKey: `mcaegrq4ou7r3qghbxebisy2a5yet,qygbxqtiru`",
+      "meta": {
+        "sender": "MikorsakAIcouch"
+      }
+    },
+    {
+      "ts": "2026-08-01T00:01:39.224631",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (349 симв.): Сделаю полную визуальную упаковку проекта: разработаю логотип, выберу шрифты и палитру, оформлю Highlights и подготовлю редактируемые шаблоны в Canva для Instagram и Telegram. Есть опыт создания фирме",
+      "meta": {}
+    }
+  ]
+}

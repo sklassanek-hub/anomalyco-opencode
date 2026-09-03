@@ -1,0 +1,11 @@
+{
+  "name": "https_test_exception",
+  "version": "v1",
+  "files": [
+    {
+      "name": "manifest.json",
+      "sha256": "438ba9417236cda7e3ac645c6a70a10a4634fc555d6b0330f20c9336e9ce00ca",
+      "size": 110
+    }
+  ]
+}

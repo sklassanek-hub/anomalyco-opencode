@@ -1,0 +1,45 @@
+# Базовая изоляция для pipeline_v3 (§11.3 fusion-response)
+# Запуск: docker-compose -f .docker/docker-compose.yml up --build
+version: "3.9"
+
+services:
+  executor:
+    build:
+      context: ..
+      dockerfile: .docker/Dockerfile
+    container_name: pipeline_executor
+    # Отдельный non-root пользователь (в Dockerfile: useradd executor)
+    user: "1001:1001"
+    # Read-only системный образ; запись разрешена только в workspace
+    read_only: true
+    # Монтируем workspace как tmpfs или bind (только workspace для записи)
+    volumes:
+      - type: bind
+        source: ../workspace
+        target: /workspace
+        bind:
+          propagation: rprivate
+    # Ограничение CPU и RAM
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 1G
+        reservations:
+          cpus: "0.25"
+          memory: 256M
+    # Сеть запрещена по умолчанию (§11.3); разрешается только при network_enabled: true
+    network_mode: none
+    # При явном разрешении в config.json (sandbox.network_enabled: true) можно включить
+    # через docker-compose override или через docker run с --network
+    # По умолчанию здесь используется internal/none-подобное поведение
+    # Для строгой изоляции запускайте с: docker-compose -f .docker/docker-compose.yml run --network none executor
+    environment:
+      - PYTHONPATH=/workspace
+      - PYTHONDONTWRITEBYTECODE=1
+      - TEMP=/workspace/tmp
+      - TMP=/workspace/tmp
+    # Убираем возможные секреты хоста
+    env_file: []
+    # Команда по умолчанию — выполнение файла из workspace
+    command: ["-c", "import sys; print('executor container ready')"]

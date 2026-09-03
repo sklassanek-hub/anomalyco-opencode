@@ -1,0 +1,106 @@
+# Secrets / credentials
+.env
+.env.local
+.env.example
+*.pem
+signing_key.pem
+signing_key.pub.pem
+*.key
+*.cert
+creds.json
+credentials.json
+tmp_askpass.py
+cred_helper.py
+check_tags.py
+gh_check.py
+gh_check2.py
+safe.log
+rm_cred.log
+rm_cred2.log
+git_remote.log
+c_git.log
+c_remote.log
+
+# Binaries
+*.exe
+opencode_new.exe
+opencode.exe
+
+# Node / JS
+node_modules/
+dist/
+build/
+.vite-temp/
+package-lock.json
+.cache/
+*.tsbuildinfo
+.cache/
+.oxlintrc.cache
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.db-journal
+*.db-wal
+*.db-shm
+pipeline_state_*.db
+
+# Logs / temp
+*.log
+!release.log
+!build.log
+!test.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# Go
+opencode-src/opencode.exe
+opencode-src/opencode
+
+# Workspace temp
+zarabotok/pipeline_v3/workspace/sbtest_*/
+zarabotok/pipeline_v3/d/
+zarabotok/pipeline_v3/workspace/
+
+# Backups
+*.bak
+*.backup
+*.old
+state/backup/pipeline_state_*.db
+state/archive/
+state/rotate.log
+
+# Test data
+zarabotok/pipeline_v3/__pycache__/
+zarabotok/pipeline_v3/tests/__pycache__/
+zarabotok/pipeline_v3/modules/__pycache__/
+zarabotok/pipeline_v3/workers/__pycache__/
+
+# Docker
+docker_build_v2.log
+network_test.log
+docker_run.log
+docker_version.log
+gpg_version.log
+gpg_version.txt
+docker_build_result.txt
+version.log
+opencode_version.log
+sign_result.log
+axe_result.log

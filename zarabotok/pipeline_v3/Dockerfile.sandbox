@@ -1,0 +1,34 @@
+# Dockerfile.sandbox — P0 W1 (sandbox/Docker isolation for executor)
+# Build: docker build -f Dockerfile.sandbox -t pipeline-v3-sandbox .
+# Run: docker run --rm --network none --memory="1g" --memory-swap="1g" \
+#      -v "$(pwd)/workspace:/workspace:rw" \
+#      -w /workspace pipeline-v3-sandbox python script.py
+# References: modules/sandbox.py (DOCKER_ENABLED=True), WORKFLOW.md §21
+
+FROM python:3.11-slim
+
+# Isolation: no extra packages; only stdlib + pipeline core
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+ENV WORKSPACE=/workspace
+ENV DOCKER_ENABLED=1
+ENV SANDBOX_ISOLATED=1
+
+# Network disabled at runtime (--network none); defense in depth: mask resolv.conf at startup
+# Build-time /etc/resolv.conf write skipped due to buildkit rofs; handled by runtime CMD
+
+# Memory limit enforced by docker run --memory; document in sandbox.py
+# Filesystem: read-only except /workspace mount (rw)
+RUN mkdir -p /workspace && chmod 755 /workspace
+
+# Clean environment (no host secrets)
+RUN mkdir -p /app
+COPY --chmod=755 config.json /app/config.json
+
+# Copy pipeline modules for execution
+COPY modules/ /app/modules/
+COPY *.py /app/
+WORKDIR /app
+ENV PYTHONPATH=/app
+# Smoke test: verify stdlib import; network blocked by --network none at runtime; fs isolated by read_only + /workspace mount
+CMD ["python", "-c", "print('sandbox OK: DOCKER_ENABLED=1, isolated'); import os; print('env:', {k:v for k,v in os.environ.items() if k in ('DOCKER_ENABLED','SANDBOX_ISOLATED','WORKSPACE')})"]

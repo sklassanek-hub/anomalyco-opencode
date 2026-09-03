@@ -1,0 +1,215 @@
+{
+ "log": {
+  "level": "info",
+  "timestamp": true,
+  "output": "C:\\Users\\klass\\OneDrive\\Desktop\\work\\zarabotok\\pipeline\\tools\\singbox\\config.new.json.log"
+ },
+ "inbounds": [
+  {
+   "type": "socks",
+   "tag": "socks-in",
+   "listen": "127.0.0.1",
+   "listen_port": 4067
+  }
+ ],
+ "outbounds": [
+  {
+   "type": "hysteria2",
+   "server": "althys2.superbuba.top",
+   "server_port": 443,
+   "password": "65761043-f5c1-4e7b-8c16-b72c7a3fa4b7",
+   "tls": {
+    "enabled": true,
+    "server_name": "althys2.superbuba.top"
+   },
+   "tag": "hysteria2-althys2.superbuba.top:443"
+  },
+  {
+   "type": "hysteria2",
+   "server": "66.94.121.46",
+   "server_port": 443,
+   "password": "gf1:gfhysteria2024",
+   "tls": {
+    "enabled": true,
+    "server_name": "66.94.121.46",
+    "insecure": true
+   },
+   "tag": "hysteria2-66.94.121.46:443"
+  },
+  {
+   "type": "hysteria2",
+   "server": "185.156.44.99",
+   "server_port": 443,
+   "password": "gf1:gfhysteria2024",
+   "tls": {
+    "enabled": true,
+    "server_name": "speedtest.tinkoff.ru",
+    "insecure": true
+   },
+   "tag": "hysteria2-185.156.44.99:443"
+  },
+  {
+   "type": "hysteria2",
+   "server": "sg2.xiaoliyu.cyou",
+   "server_port": 1935,
+   "password": "1427eb10-7529-4d38-a6a2-01b337868b37",
+   "tls": {
+    "enabled": true,
+    "server_name": "sg2.xiaoliyu.cyou",
+    "insecure": true
+   },
+   "tag": "hysteria2-sg2.xiaoliyu.cyou:1935"
+  },
+  {
+   "type": "hysteria2",
+   "server": "43.156.90.144",
+   "server_port": 34567,
+   "password": "P6qkAwznuC076mbIR2cGPg==",
+   "tls": {
+    "enabled": true,
+    "server_name": "bing.com",
+    "insecure": true
+   },
+   "tag": "hysteria2-43.156.90.144:34567"
+  },
+  {
+   "type": "hysteria2",
+   "server": "vpn-ca-001.fastervpn.world",
+   "server_port": 443,
+   "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+   "tls": {
+    "enabled": true,
+    "server_name": "t.me",
+    "insecure": true
+   },
+   "tag": "hysteria2-vpn-ca-001.fastervpn.world:443"
+  },
+  {
+   "type": "hysteria2",
+   "server": "frn.skysafe.online",
+   "server_port": 443,
+   "password": "579f0893-e6f9-4036-86a1-7c10aa2d24ea",
+   "tls": {
+    "enabled": true,
+    "server_name": "frn.skysafe.online"
+   },
+   "tag": "hysteria2-frn.skysafe.online:443"
+  },
+  {
+   "type": "hysteria2",
+   "server": "vpn-tw-002.fastervpn.world",
+   "server_port": 443,
+   "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+   "tls": {
+    "enabled": true,
+    "server_name": "vpn-tw-002.fastervpn.world",
+    "insecure": true
+   },
+   "tag": "hysteria2-vpn-tw-002.fastervpn.world:443"
+  },
+  {
+   "type": "hysteria2",
+   "server": "althys.superbuba.top",
+   "server_port": 443,
+   "password": "65761043-f5c1-4e7b-8c16-b72c7a3fa4b7",
+   "tls": {
+    "enabled": true,
+    "server_name": "althys.superbuba.top"
+   },
+   "tag": "hysteria2-althys.superbuba.top:443"
+  },
+  {
+   "type": "vless",
+   "server": "18.239.134.69",
+   "server_port": 80,
+   "uuid": "de27291c-15a9-4256-9ba7-ad517569877e",
+   "packet_encoding": "xudp",
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": [
+      "d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com"
+     ]
+    }
+   },
+   "tag": "vless-18.239.134.69:80"
+  },
+  {
+   "type": "hysteria2",
+   "server": "nl.vpn.legendaah.xyz",
+   "server_port": 36723,
+   "password": "Krab9Hyst2_Rk7pQ2xL",
+   "tls": {
+    "enabled": true,
+    "server_name": "nl.vpn.legendaah.xyz",
+    "insecure": true
+   },
+   "tag": "hysteria2-nl.vpn.legendaah.xyz:36723"
+  },
+  {
+   "type": "hysteria2",
+   "server": "160.187.100.109",
+   "server_port": 443,
+   "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+   "tls": {
+    "enabled": true,
+    "server_name": "160.187.100.109",
+    "insecure": true
+   },
+   "tag": "hysteria2-160.187.100.109:443"
+  },
+  {
+   "type": "urltest",
+   "tag": "auto",
+   "outbounds": [
+    "hysteria2-althys2.superbuba.top:443",
+    "hysteria2-66.94.121.46:443",
+    "hysteria2-185.156.44.99:443",
+    "hysteria2-sg2.xiaoliyu.cyou:1935",
+    "hysteria2-43.156.90.144:34567",
+    "hysteria2-vpn-ca-001.fastervpn.world:443",
+    "hysteria2-frn.skysafe.online:443",
+    "hysteria2-vpn-tw-002.fastervpn.world:443",
+    "hysteria2-althys.superbuba.top:443",
+    "vless-18.239.134.69:80",
+    "hysteria2-nl.vpn.legendaah.xyz:36723",
+    "hysteria2-160.187.100.109:443"
+   ],
+   "url": "https://www.gstatic.com/generate_204",
+   "interval": "30s",
+   "tolerance": 50
+  },
+  {
+   "type": "direct",
+   "tag": "direct"
+  }
+ ],
+ "route": {
+  "default_domain_resolver": {
+   "server": "local",
+   "strategy": "prefer_ipv4"
+  },
+  "rules": [
+   {
+    "ip_cidr": [
+     "127.0.0.0/8",
+     "10.0.0.0/8",
+     "192.168.0.0/16"
+    ],
+    "outbound": "direct"
+   }
+  ],
+  "final": "auto"
+ },
+ "dns": {
+  "servers": [
+   {
+    "type": "local",
+    "tag": "local"
+   }
+  ],
+  "final": "local",
+  "strategy": "prefer_ipv4"
+ }
+}

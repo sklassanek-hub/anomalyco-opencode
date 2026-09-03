@@ -1,0 +1,19 @@
+{
+  "job_id": "tg_llm_jobs_wearecurrentlylookingfora",
+  "events": [
+    {
+      "ts": "2026-07-31T23:54:04.306189",
+      "actor": "qa",
+      "kind": "proposal_qa_reject",
+      "text": "Попытка 1 отклонена QA: отклик не связан с заданием (нет слов из ТЗ)",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T23:54:17.352078",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (363 симв.): Разработаю и оптимизирую комплексные AI/LLM решения, включая RAG pipelines и интеграцию в production applications с использованием Python и PyTorch. Имею опыт fine-tuning LLMs, построения inference pi",
+      "meta": {}
+    }
+  ]
+}

@@ -1,0 +1,660 @@
+{
+  "version": "1.0",
+  "date": "2026-08-31",
+  "scope": "Full audit master + 5 sub-audits + P0 fixes + complete worklist + agent index",
+  "resources": [
+    {
+      "id": "full_audit_master",
+      "path": "memory/full_audit_master.md",
+      "type": "master_audit",
+      "keywords": [
+        "audit",
+        "pipeline",
+        "accessibility",
+        "workflow",
+        "release",
+        "code",
+        "memory",
+        "sandbox",
+        "kill_switch",
+        "billing",
+        "agent_index"
+      ],
+      "entities": [
+        "AccessibilityAuditor",
+        "WorkflowAudit",
+        "BuildReleaseAuditor",
+        "CodeSecurityAuditor",
+        "StrategicMemoryAuditor",
+        "ZarabotokPipelineV3"
+      ],
+      "stages": [
+        "search/scan",
+        "execution",
+        "delivery",
+        "security",
+        "release",
+        "memory"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "accessibility_audit_summary",
+      "path": "memory/accessibility_audit_summary.md",
+      "type": "summary",
+      "keywords": [
+        "accessibility",
+        "audit",
+        "a11y",
+        "wcag",
+        "modal",
+        "drawer",
+        "toast",
+        "table",
+        "pipeline",
+        "task",
+        "overview",
+        "badge",
+        "card"
+      ],
+      "entities": [
+        "AccessibilityAuditor",
+        "Modal",
+        "Drawer",
+        "Toast",
+        "Badge",
+        "Card",
+        "Pipeline",
+        "Task",
+        "Overview",
+        "Table",
+        "Layout"
+      ],
+      "risks": [
+        "focus-trap",
+        "aria-modal",
+        "aria-live",
+        "label",
+        "contrast",
+        "keyboard-access",
+        "skip-link"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "accessibility_complete",
+      "path": "memory/accessibility_complete.md",
+      "type": "full_report",
+      "keywords": [
+        "accessibility",
+        "audit",
+        "a11y",
+        "wcag",
+        "complete"
+      ],
+      "entities": [
+        "AccessibilityAuditor",
+        "WCAG2.1AA"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "workflow_completion",
+      "path": "memory/workflow_completion.md",
+      "type": "execution_log",
+      "keywords": [
+        "workflow",
+        "audit",
+        "pipeline",
+        "execution",
+        "billing",
+        "agent_index",
+        "spec_matrix",
+        "metrics_funnel",
+        "kill_switch",
+        "sandbox"
+      ],
+      "entities": [
+        "WorkflowCompletionAgent",
+        "billing_service",
+        "store",
+        "ranker",
+        "executor",
+        "spec_matrix",
+        "metrics_funnel",
+        "kill_switch",
+        "sandbox"
+      ],
+      "stages": [
+        "W5",
+        "W7",
+        "W9",
+        "W13",
+        "W14",
+        "W15",
+        "W19"
+      ],
+      "status": "executed"
+    },
+    {
+      "id": "code_audit_summary",
+      "path": "memory/code_audit_summary.md",
+      "type": "security_audit",
+      "keywords": [
+        "code",
+        "audit",
+        "security",
+        "pipeline",
+        "opencode-src",
+        "go",
+        "cli",
+        "schema",
+        "permission",
+        "sandbox",
+        "auth",
+        "rate_limit",
+        "audit_log"
+      ],
+      "entities": [
+        "CodeSecurityAuditor",
+        "opencode-src",
+        "main.go",
+        "cmd/root.go",
+        "internal/config",
+        "permission.Service",
+        "llm/provider"
+      ],
+      "risks": [
+        "missing_auth",
+        "missing_rate_limit",
+        "unverified_baseURL",
+        "no_audit_log",
+        "path_traversal",
+        "panic_recovery"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "release_completion",
+      "path": "memory/release_completion.md",
+      "type": "release_log",
+      "keywords": [
+        "release",
+        "audit",
+        "pipeline",
+        "build",
+        "sign",
+        "sbom",
+        "checksum",
+        "install",
+        "goreleaser",
+        "verify",
+        "release.json",
+        "check_releases"
+      ],
+      "entities": [
+        "ReleasePipelineAgent",
+        "release.json",
+        ".goreleaser.yml",
+        "sbom.spdx.json",
+        "scripts/verify_release.py",
+        "install.sh",
+        "opencode.exe"
+      ],
+      "stages": [
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "C1-C7"
+      ],
+      "status": "executed"
+    },
+    {
+      "id": "sd_review",
+      "path": "memory/sd_review.md",
+      "type": "review",
+      "keywords": [
+        "audit",
+        "review",
+        "senior-developer",
+        "code",
+        "accessibility",
+        "ui",
+        "modal",
+        "drawer",
+        "toast",
+        "table",
+        "pipeline",
+        "docker",
+        "kill_switch",
+        "listener"
+      ],
+      "entities": [
+        "EngineeringSeniorDeveloper",
+        "Modal",
+        "Drawer",
+        "Toast",
+        "Table",
+        "Pipeline",
+        "Layout",
+        "Dockerfile.sandbox",
+        "kill_switch.py",
+        "listener_bridge.py",
+        "check_releases.py"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "spm_review",
+      "path": "memory/spm_review.md",
+      "type": "project_review",
+      "keywords": [
+        "audit",
+        "review",
+        "spm",
+        "worklist",
+        "p0",
+        "workflow",
+        "release",
+        "memory",
+        "accessibility",
+        "code",
+        "pipeline",
+        "verification_debt"
+      ],
+      "entities": [
+        "SeniorProjectManager",
+        "WORKFLOW.md",
+        "complete_worklist.md",
+        "p0_fixes_summary.md",
+        "memory/full_audit_master.md",
+        "state/agents_activity.json"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "complete_worklist",
+      "path": "memory/complete_worklist.md",
+      "type": "worklist",
+      "keywords": [
+        "audit",
+        "worklist",
+        "p0",
+        "p1",
+        "p2",
+        "accessibility",
+        "workflow",
+        "release",
+        "memory",
+        "sandbox",
+        "kill_switch",
+        "billing",
+        "agent_index",
+        "spec_matrix"
+      ],
+      "entities": [
+        "A1-A10",
+        "W1-W9",
+        "R1-R7",
+        "C1-C7"
+      ],
+      "status": "catalogued"
+    },
+    {
+      "id": "p0_fixes_summary",
+      "path": "memory/p0_fixes_summary.md",
+      "type": "fix_summary",
+      "keywords": [
+        "p0",
+        "fix",
+        "audit",
+        "accessibility",
+        "workflow",
+        "sandbox",
+        "kill_switch",
+        "billing",
+        "memory",
+        "agent_index"
+      ],
+      "entities": [
+        "P0Access",
+        "P0Workflow",
+        "P0Memory",
+        "P0Release"
+      ],
+      "status": "catalogued"
+    },
+    {
+      "id": "p0_memory_agent",
+      "path": "memory/p0_memory_agent.md",
+      "type": "fix_log",
+      "keywords": [
+        "p0",
+        "memory",
+        "agent",
+        "audit",
+        "decision",
+        "risk",
+        "experiment",
+        "feedback",
+        "state",
+        "deliverables"
+      ],
+      "entities": [
+        "StrategicMemoryAuditor",
+        "MEMORY.md",
+        "memory/decisions",
+        "memory/risks",
+        "memory/experiments",
+        "memory/feedback"
+      ],
+      "status": "catalogued"
+    },
+    {
+      "id": "p0_workflow_agent",
+      "path": "memory/p0_workflow_agent.md",
+      "type": "fix_log",
+      "keywords": [
+        "p0",
+        "workflow",
+        "agent",
+        "audit",
+        "pipeline",
+        "scanners",
+        "store",
+        "ranker",
+        "executor",
+        "dialog",
+        "execution",
+        "packaging",
+        "delivery",
+        "finance",
+        "security",
+        "panel"
+      ],
+      "entities": [
+        "WorkflowAudit",
+        "scanners.py",
+        "store.py",
+        "ranker.py",
+        "executor.py",
+        "dialog",
+        "packaging",
+        "delivery",
+        "billing",
+        "security",
+        "panel"
+      ],
+      "status": "catalogued"
+    },
+    {
+      "id": "workflow_audit_summary",
+      "path": "memory/workflow_audit_summary.md",
+      "type": "summary",
+      "keywords": [
+        "workflow",
+        "audit",
+        "pipeline",
+        "scanners",
+        "store",
+        "ranker",
+        "audit.py",
+        "executor",
+        "dialog",
+        "execution",
+        "packaging",
+        "delivery",
+        "finance",
+        "security",
+        "panel",
+        "sandbox",
+        "kill_switch",
+        "conversation",
+        "spec_matrix",
+        "metrics_funnel"
+      ],
+      "entities": [
+        "WorkflowAudit",
+        "scanners.py",
+        "store.py",
+        "ranker.py",
+        "audit.py",
+        "executor.py",
+        "spec_matrix.py",
+        "metrics_funnel.json",
+        "kill_switch.py",
+        "conversation.py",
+        "sandbox.py"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "release_audit_summary",
+      "path": "memory/release_audit_summary.md",
+      "type": "summary",
+      "keywords": [
+        "release",
+        "audit",
+        "build",
+        "sign",
+        "sbom",
+        "checksum",
+        "install",
+        "goreleaser",
+        "verify",
+        "release.json",
+        "check_releases",
+        "opencode.exe",
+        "install.sh"
+      ],
+      "entities": [
+        "BuildReleaseAuditor",
+        "release.json",
+        ".goreleaser.yml",
+        "sbom.spdx.json",
+        "scripts/verify_release.py",
+        "install.sh",
+        "opencode.exe",
+        "check_releases.py"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "memory_audit_summary",
+      "path": "memory/memory_audit_summary.md",
+      "type": "summary",
+      "keywords": [
+        "memory",
+        "audit",
+        "strategy",
+        "decision",
+        "risk",
+        "experiment",
+        "feedback",
+        "state",
+        "deliverables",
+        "MEMORY.md"
+      ],
+      "entities": [
+        "StrategicMemoryAuditor",
+        "MEMORY.md",
+        "memory/decisions",
+        "memory/risks",
+        "memory/experiments",
+        "memory/feedback",
+        "memory/2026-08-16.md"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "worklist_agents_index",
+      "path": "memory/workflow_agents_index.md",
+      "type": "index",
+      "keywords": [
+        "agent_index",
+        "audit",
+        "workflow",
+        "agents_index.json",
+        "autonomy",
+        "validators",
+        "max_size",
+        "level",
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "entities": [
+        "agents_index.json",
+        "autonomy",
+        "validators",
+        "max_size",
+        "level"
+      ],
+      "status": "completed"
+    }
+  ],
+  "p0_fixes": [
+    {
+      "id": "A1",
+      "file": "zarabotok/pipeline_v3/ui/src/components/Modal.tsx",
+      "stage": "accessibility",
+      "label": "Modal focus-trap + role=dialog"
+    },
+    {
+      "id": "A2",
+      "file": "zarabotok/pipeline_v3/ui/src/components/Toast.tsx",
+      "stage": "accessibility",
+      "label": "Toast aria-live"
+    },
+    {
+      "id": "A3",
+      "file": "zarabotok/pipeline_v3/ui/src/components/Table.tsx",
+      "stage": "accessibility",
+      "label": "Table keyboard-access"
+    },
+    {
+      "id": "A4",
+      "file": "zarabotok/pipeline_v3/ui/src/pages/Pipeline.tsx",
+      "stage": "accessibility",
+      "label": "Pipeline arrow-key nav"
+    },
+    {
+      "id": "A5",
+      "file": "zarabotok/pipeline_v3/ui/src/components/Task.tsx",
+      "stage": "accessibility",
+      "label": "Task Input label + aria-invalid"
+    },
+    {
+      "id": "A6",
+      "file": "zarabotok/pipeline_v3/ui/src/components/Layout.tsx",
+      "stage": "accessibility",
+      "label": "Skip-link + id=main"
+    },
+    {
+      "id": "A7",
+      "file": "zarabotok/pipeline_v3/ui/src/styles.css",
+      "stage": "accessibility",
+      "label": "Focus-visible outline"
+    },
+    {
+      "id": "A8",
+      "file": "zarabotok/pipeline_v3/ui/src/components/Layout.tsx",
+      "stage": "accessibility",
+      "label": "NavLink aria-current"
+    },
+    {
+      "id": "A9",
+      "file": "zarabotok/pipeline_v3/ui/src/components/Tabs.tsx",
+      "stage": "accessibility",
+      "label": "Tabs arrow + aria-selected"
+    },
+    {
+      "id": "A10",
+      "file": "zarabotok/pipeline_v3/ui/src/components/Overview.tsx",
+      "stage": "accessibility",
+      "label": "Overview emoji aria-label"
+    },
+    {
+      "id": "W1",
+      "file": "zarabotok/pipeline_v3/modules/sandbox.py",
+      "stage": "workflow",
+      "label": "DOCKER_ENABLED + Dockerfile.sandbox"
+    },
+    {
+      "id": "W2",
+      "file": "zarabotok/pipeline_v3/modules/kill_switch.py",
+      "stage": "workflow",
+      "label": "Kill Switch + events.json"
+    },
+    {
+      "id": "W3",
+      "file": "zarabotok/pipeline_v3/modules/conversation.py",
+      "stage": "workflow",
+      "label": "listener + threading"
+    },
+    {
+      "id": "W4",
+      "file": "zarabotok/pipeline_v3/modules/scanner.py",
+      "stage": "workflow",
+      "label": "watchdog + test_ok_scanner"
+    },
+    {
+      "id": "W5",
+      "file": "zarabotok/pipeline_v3/modules/store.py",
+      "stage": "workflow",
+      "label": "store lock + embedding + is_scam"
+    },
+    {
+      "id": "W6",
+      "file": "zarabotok/pipeline_v3/modules/ranker.py",
+      "stage": "workflow",
+      "label": "Score 6.4 + audit ranking"
+    },
+    {
+      "id": "W7",
+      "file": ".opencode/agents_index.json",
+      "stage": "workflow",
+      "label": "L0-L4 + autonomy + validators + max_size"
+    },
+    {
+      "id": "W8",
+      "file": "zarabotok/pipeline_v3/modules/billing_service.py",
+      "stage": "workflow",
+      "label": "verify_hmac + Invoice + label + webhook"
+    },
+    {
+      "id": "W9",
+      "file": "zarabotok/pipeline_v3/modules/executor.py",
+      "stage": "workflow",
+      "label": "spec_matrix + package_manifest + deliver_lock"
+    }
+  ],
+  "keywords": [
+    "accessibility",
+    "audit",
+    "pipeline",
+    "workflow",
+    "release",
+    "sandbox",
+    "kill_switch",
+    "billing",
+    "memory",
+    "agent_index",
+    "security",
+    "code",
+    "build",
+    "sign",
+    "sbom",
+    "verify",
+    "p0",
+    "w0",
+    "w1",
+    "a1",
+    "release.json",
+    "opencode-src",
+    "zarabotok"
+  ]
+}

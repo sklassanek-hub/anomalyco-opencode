@@ -1,0 +1,19 @@
+{
+  "job_id": "fl_nujno-razrabotat-dizayn-tekstovoy-inform",
+  "events": [
+    {
+      "ts": "2026-07-31T12:24:04.570285",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (176 симв.): Сделаю дизайн информационной страницы «О компании». У мне есть опыт в веб-дизайне и UX/UI-дизайне. Нужна ли конкретная цветовая палитра или стиль, чтобы соответствовать бренду?",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T12:24:21.340548",
+      "actor": "listener",
+      "kind": "send_error",
+      "text": "Отправка невозможна: нельзя написать @context: You can't write in this chat (caused by SendMessageRequest)",
+      "meta": {}
+    }
+  ]
+}

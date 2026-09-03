@@ -1,0 +1,19 @@
+{
+  "job_id": "fl_nastroyka-apple-imac-2011-goda-v-kachest",
+  "events": [
+    {
+      "ts": "2026-07-31T12:26:40.540477",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (243 симв.): Сделаю настройку Apple iMac 2011 года под голосового помощника на базе ChatGPT для вашего пожилого человека. Я имею опыт в создании Telegram-ботов и интеграции с AI/LLM. Уточните, требуется ли полная ",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T12:28:23.520254",
+      "actor": "listener",
+      "kind": "send_error",
+      "text": "Отправка невозможна: нельзя написать @context: You can't write in this chat (caused by SendMessageRequest)",
+      "meta": {}
+    }
+  ]
+}

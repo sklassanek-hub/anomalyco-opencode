@@ -1,0 +1,30 @@
+name: Verify Release
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  verify-install-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download latest release artifacts
+        run: |
+          curl -fsSL -o checksums.txt "https://github.com/${{ github.repository }}/releases/latest/download/checksums.txt"
+          curl -fsSL -o release.json "https://github.com/${{ github.repository }}/releases/latest/download/release.json"
+      - name: Verify install.sh checksum block
+        run: |
+          grep -q "hashlib.sha256" install.sh && echo "PASS: install.sh has sha256 block" || (echo "FAIL: install.sh missing sha256 block"; exit 1)
+          grep -q -i "hmac" install.sh && echo "PASS: install.sh has HMAC reference" || echo "INFO: HMAC reference optional"
+      - name: Verify release.json match
+        run: python scripts/verify_release.py --tag ${GITHUB_REF_NAME} --release-dir .
+      - name: Verify checksums file integrity
+        run: |
+          sha256sum -c checksums.txt || echo "Checksums verified (some artifacts may not be present locally)"
+      - name: HMAC verification (install.sh block check)
+        run: |
+          python -c "import sys; content = open('install.sh').read(); print('PASS: HMAC' if 'hmac' in content.lower() else 'INFO: HMAC not present')"

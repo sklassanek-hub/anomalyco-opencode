@@ -1,0 +1,85 @@
+[
+  {
+    "ts": 1788131560.3594427,
+    "event": "kill_switch_set",
+    "source": "modules/kill_switch.py",
+    "detail": {
+      "active": true,
+      "kill_path": "C:\\Users\\klass\\OneDrive\\Desktop\\work\\zarabotok\\pipeline_v3\\state\\KILL_SWITCH",
+      "state_path": "C:\\Users\\klass\\OneDrive\\Desktop\\work\\zarabotok\\pipeline_v3\\state\\kill_switch_active.json"
+    }
+  },
+  {
+    "ts": 1788131560.3701167,
+    "event": "kill_switch_set",
+    "source": "modules/kill_switch.py",
+    "detail": {
+      "active": false,
+      "kill_path": "C:\\Users\\klass\\OneDrive\\Desktop\\work\\zarabotok\\pipeline_v3\\state\\KILL_SWITCH",
+      "state_path": "C:\\Users\\klass\\OneDrive\\Desktop\\work\\zarabotok\\pipeline_v3\\state\\kill_switch_active.json"
+    }
+  },
+  {
+    "ts": 1788131560.3848104,
+    "event": "delivery_audit",
+    "source": "modules/kill_switch.py",
+    "detail": {
+      "url": "test-url",
+      "status": "test",
+      "kill_active": false,
+      "message": "test audit"
+    }
+  },
+  {
+    "ts": "2026-09-01T22:41:24Z",
+    "actor": "system",
+    "action": "init_auth_guard",
+    "resource": "executor_start",
+    "result": "allowed",
+    "detail": {
+      "token_configured": true,
+      "token_length": 4
+    },
+    "source": "modules/auth_middleware.py",
+    "auth_version": "stub-v1"
+  },
+  {
+    "ts": "2026-09-01T22:41:27Z",
+    "actor": "system",
+    "action": "init_auth_guard",
+    "resource": "executor_start",
+    "result": "allowed",
+    "detail": {
+      "token_configured": true,
+      "token_length": 4
+    },
+    "source": "modules/auth_middleware.py",
+    "auth_version": "stub-v1"
+  },
+  {
+    "ts": "2026-09-01T22:41:27Z",
+    "actor": "transfer_handler",
+    "action": "transfer_post",
+    "resource": "transfer:https://example.com/o",
+    "result": "allowed",
+    "detail": {
+      "target_agent": "a1",
+      "reason": "test",
+      "linked": true
+    },
+    "source": "modules/auth_middleware.py",
+    "auth_version": "stub-v1"
+  },
+  {
+    "ts": "2026-09-01T22:41:27Z",
+    "actor": "transfer_handler",
+    "action": "transfer_get",
+    "resource": "transfer:https://example.com/o",
+    "result": "allowed",
+    "detail": {
+      "linked": true
+    },
+    "source": "modules/auth_middleware.py",
+    "auth_version": "stub-v1"
+  }
+]

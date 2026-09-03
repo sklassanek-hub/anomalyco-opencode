@@ -1,0 +1,12 @@
+{
+  "job_id": "tg_vorkzavr_bizdevbusinessdev",
+  "events": [
+    {
+      "ts": "2026-07-31T23:55:32.286646",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (323 симв.): Подготовлю материалы для BDM по Market Research & Competitive Analysis: отчёты и Proposal-документы для работы с клиентами в high-risk industries. Есть опыт написания сложных продающих текстов, статей",
+      "meta": {}
+    }
+  ]
+}

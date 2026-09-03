@@ -1,0 +1,21 @@
+{
+  "name": "https_3A_2F_2Ftest_2Fexception",
+  "version": "v1",
+  "files": [
+    {
+      "name": "bot.py",
+      "sha256": "8ce7a738dffc90046841bba99622db7726637e41f8226bb07d0c1de2c9f9a05b",
+      "size": 18005
+    },
+    {
+      "name": "manifest.json",
+      "sha256": "fdf7b532c1d7946127ff537715769026386da4e029471e37c04646331807f5b5",
+      "size": 1196
+    },
+    {
+      "name": "README.md",
+      "sha256": "92af4bf39991eab679ae1245c657fb51a6e5f542c6d9c71ceafe1e7559e86cdc",
+      "size": 1180
+    }
+  ]
+}

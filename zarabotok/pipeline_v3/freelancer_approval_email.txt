@@ -1,0 +1,33 @@
+Тема: Request to approve application: Zarabotok Bot (App ID: ecf7fe17-3c6e-4a59-aa86-10d889f4c948)
+
+Кому: api-support@freelancer.com
+
+---
+
+Уважаемая команда Freelancer API Support,
+
+Прошу одобрить приложение **"Zarabotok Bot"** для использования в производстве.
+
+**Детали приложения:**
+- App ID: `ecf7fe17-3c6e-4a59-aa86-10d889f4c948`
+- App Name: Zarabotok Bot
+- Status: Pending Approval
+- Redirect URI: `https://127.0.0.1:8765/callback`
+- Scopes: `basic, projects, bids, users, jobs`
+
+**Назначение:**
+Автоматизация поиска заказов и размещения откликов для фрилансера-разработчика (Python, Django, FastAPI, React, AI/ML). Приложение будет:
+1. Сканировать проекты через API `/projects/0.1/projects/search` с фильтрами по скиллам и бюджету
+2. Размещать отклики через API `/projects/0.1/bids/` (лимит 6 откликов в день, только релевантные проекты)
+3. Не спамить — только таргетированные отклики на подходящие проекты
+
+**Технические детали:**
+- User Limit: 100 (только мой аккаунт)
+- Owner: kisilev1999
+- OAuth2 flow настроен корректно
+
+Прошу перевести статус в **Approved**, чтобы можно было получить рабочий access_token через OAuth2.
+
+С уважением,
+Александр Киселев
+kisilev1999@freelancer.com

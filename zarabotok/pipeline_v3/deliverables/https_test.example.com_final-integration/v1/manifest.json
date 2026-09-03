@@ -1,0 +1,36 @@
+{
+  "name": "https_test.example.com_final-integration",
+  "version": "v1",
+  "files": [
+    {
+      "name": "api_client.py",
+      "sha256": "1e5e8cfd126b98db3f8b0c124a01d0778e64de60943a885ce058f1850181f9bf",
+      "size": 6307
+    },
+    {
+      "name": "config.py",
+      "sha256": "9afe330947818d9d39981f3293dc3ad3df32ea400a5329dbf00c62ef53b096bf",
+      "size": 6402
+    },
+    {
+      "name": "handlers.py",
+      "sha256": "b17ddeee0c25cff11f717d05f1e051d5c7e843e613627fb93728bcf4bc690a2f",
+      "size": 5690
+    },
+    {
+      "name": "main.py",
+      "sha256": "59bad2adfcc678c2393cfb850d5e8ce3dea6261b502bb3310fdddce098623d92",
+      "size": 6631
+    },
+    {
+      "name": "manifest.json",
+      "sha256": "76b64a801df1eb7b9fe4764698d5470357a09edc7fa1c64043ba92c64010569a",
+      "size": 440
+    },
+    {
+      "name": "README.md",
+      "sha256": "c1703297a63865fcd83da17bbd39e1ecd6e93781ee9002e13be7910b18cdea47",
+      "size": 494
+    }
+  ]
+}

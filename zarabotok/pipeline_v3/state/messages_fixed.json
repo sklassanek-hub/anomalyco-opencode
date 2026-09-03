@@ -1,0 +1,127 @@
+{
+  "items": [
+    {
+      "ts": "2026-08-25T08:43:45+0300",
+      "direction": "out",
+      "channel": "tg",
+      "sender": "@paradooxx_bot",
+      "text": "По задаче «🧧 PARADOX TEAM 🧧 💎 ИЩЕМ НОВЫХ ВОРКЕРОВ ПО КАРДИНГУ💎 Профиты от 300-1000$ Хочешь работать в» Python-разработчик (FastAPI/Django, парсинг, боты, AI-интеграции, автоматизация). Разберусь в деталях и сделаю надёжно, с тестами. Пришите подробности или ссылку на проект?\nОперативно отвечу на почте: aprenkavuj@gmail.com",
+      "order": "https://t.me/freelance_chat_ru/20812344",
+      "kind": "msg",
+      "sent": true,
+      "read": false
+    },
+    {
+      "ts": "2026-08-25T10:15:19+0300",
+      "direction": "out",
+      "channel": "tg",
+      "sender": "@gen1stra",
+      "text": "По задаче «🟢Скупаю 🟩🟢🟢🟢➗ 📣Билайн 📣Добросвязь 📣МТС 📣Мегафон 📣Теле2 Сделанные в салоне связи через ID, » Python-разработчик (FastAPI/Django, парсинг, боты, AI-интеграции, автоматизация). Разберусь в деталях и сделаю надёжно, с тестами. Пришите подробности или ссылку на проект?\nОперативно отвечу на почте: aprenkavuj@gmail.com",
+      "order": "https://t.me/freelance_chat_ru/20812873",
+      "kind": "msg",
+      "sent": true,
+      "read": false
+    },
+    {
+      "ts": "2026-08-25T10:19:33+0300",
+      "direction": "in",
+      "channel": "tg",
+      "sender": "@gen1stra",
+      "text": "Есть есим?",
+      "order": "https://t.me/freelance_chat_ru/20812873",
+      "kind": "msg",
+      "sent": true,
+      "read": false,
+      "replied": true,
+      "replied_skip": false
+    },
+    {
+      "ts": "2026-08-25T10:20:50+0300",
+      "direction": "out",
+      "channel": "tg",
+      "sender": "@gen1stra",
+      "text": "Да, есть возможность работы с eSIM. Подскажите — нужен ли он для длительных командировок или вы планируете переезд в другую страну на период проекта?",
+      "order": "https://t.me/freelance_chat_ru/20812873",
+      "kind": "msg",
+      "sent": true,
+      "read": false
+    },
+    {
+      "ts": "2026-08-25T20:36:14+0300",
+      "direction": "in",
+      "channel": "email",
+      "sender": "googledev-noreply@google.com",
+      "text": "Header: Gear  \r\nNewsletter1<https://c.gle/ACT4xYzqfXIJlUIkImoEWhlBTPb57s18CQSOkcBRdE9L9LALaaKO8oSqbH2t6LYu514mQFgMdR6w1tPiJLp9SXeTxj2sZ3KY5UX8eVuhjZPsXBsRA5WNKyH_crRqvqNjpCTL62S94WShP55rr-XbmuXAu1PaTIgMIqRkig>  \r\nGEAR Newsletter\r\n\r\nHeader: Gear  \r\nNewsletter2<https://c.gle/ACT4xYzlec3LxDoXVNhxVaUdHnpNIuHSlykQ0mXnxCBP7Ck-Zp_MzbErSCggLabsQsmAHbplHYZEH_kaRSRZ-r6eQQ0V70kg26niNwEtiRXPsh_ofUbJoO4DNxmmWfu2Dge9L05dw8T2qARCNKq-LuonwACgMaIxU9oxm1k>\r\n\r\nAgent Ready\r\n\r\n{August ‘26 Edition}\r\n\r\n{by Shubham  \r\nSaboo<https://c.gle/ACT4xYxc1gZW3T-F--kVjv070RfjXBDX9_kbGOgf9-zE5dRYQwZYKOV2Vatk1HJfG5OOGeBxIIJOGnjUp9wab2LDXjbA8PfNLhgTBopLyOjNtaJnz1xC5OL7aa_ZSSY5HxnSUw4eMXdKlTvowTNsgu084FIgBJw46Ile>}\r\n\r\nThis month, we announced the All Things Agentic  \r\nHackathon.<https://c.gle/ACT4xYx83GAsxrW_ZtBFbsKmn9DJHsw_CrbwruWTyy8YRRB0xn9w93sPmKXiludD7eZzlyPAGbK735pAvkC3OFMrzkEnoue58lSFOkQgXfJT3hZ2Dr7wZtaJ5grvbFudMB7mq4ycnAEdGeWNvZGp7dKMQgmwUEyLo7EFyutKGr10jOMGGpUhjBvUPS6nqg>  \r\nYour challenge: Build agents that run in the background and automate  \r\ncomplex workflows. Competing or not, we've packed this issue with resources  \r\nand hands-on labs so you can learn to build agent fleets at your own pace.\r\n\r\n// > In this month’s newsletter < //\r\n\r\n- Get inspired: See how others build agents and register for workshops to  \r\nbuild your own.\r\n- Prep for the hackathon: There's a $180,000 prize pool up for grabs.  \r\nSubmit your  \r\nproject<https://c.gle/ACT4xYwjVBWeVuw9wLwoL33QLMerEKHeW1964Qjrbm9xn_VQvMayOo7PftXlrm4WNFkBgZ4sj8uW0D2vxWoJPs7xUNl86W9AsBho-_iT0gn_55V4_0o-s-kiAyLkxgy2N7DGabezK2_e9Kn-2S86En051hg9RZmSu4t9UkElIoh2tnaqDkE>  \r\nby August 31.\r\n- Look inside Google: Tips on taking prototypes to production and lessons  \r\nfrom an internal hackathon.\r\n\r\nTop picks\r\n\r\nPrepare for the hackathon with these agent resources.\r\n\r\n{Workshop}\r\n\r\nJoin an All Things Agentic Hackathon  \r\nworkshop<https://c.gle/ACT4xYzBcBZMWwhzNo1FFwfbJ3Fh3r05x_tbnUBrbjZq2MHBSZGZ9lVehOHzmJROuWudb3eN2FalKFxofV0aAoZfq4Eusn8_V2whIO_t_S6yKBDrfpv-Bz8XgB8a0PwLCaCfik_WDW6boiQUGJHt6qXcyfEGDnxumcH__OiE2Fvr0KSn2-VCra1LJBS-tkTFXiI>\r\n\r\nWe’re tailoring four hands-on labs to help you prepare your project for  \r\nsubmission. Learn by doing and get hands-on in a real Google Cloud  \r\nenvironment. Register  \r\nnow<https://c.gle/ACT4xYxq07veHzyNKP0xPECkCMrzkvL-OGb2kbYeXXUFVqJevL-EtpWqaue9b7aqXpO-hndozxppBYIL0FP3PaGTY1sCK6llwTnbAGpCwrLykqlsyJHt28fJcUSz6rB20q-QkhiFSH61qWwKz2BVmZT5Hnkry0pYTDOmQdQNev0rxZiOy60>\r\n\r\n{New learning path}\r\n\r\nBuild High-Performance Multi-Agent  \r\nSystems<https://c.gle/ACT4xYy2IU_xGJL8mu4UG9t_TXH17RBFjKcj-tWJ7jvyXNfc6tAG_1pzCv_g_Y17zNYmxEsjyrJS_nsis7C96_eX517sculRh943ADbcTijsvG5X__FsAsOs1MeNArMJl6bhBBLOQa7uQUkcs5jm32dOuXl2Qq9d13BRibQWdrUEz0U>\r\n\r\nIn this new learning path, learn to coordinate agents in ADK, plug in  \r\nexternal tools with MCP, and automate complex workflows using the A2A  \r\nprotocol. Earn a skill  \r\nbadge<https://c.gle/ACT4xYxCCT_4tbTW_WUsrLF7REBi4qiE-WO6yIEW8VPCo9IXPKngImuRCP-1DiqhceABm1odnxxFAgwmUnQvxGBdD4B-QZ6RU_Tz6OZWf_1Qo2wmcXXu32KyDExk5zpsk1M3ftRnbleMV0jHO4jeA1VEfdPDP-AhpuK_7Pxs>\r\n\r\n{New course}\r\n\r\nAgentOps on Google  \r\nCloud<https://c.gle/ACT4xYyrjXIx12WrFr5xliWN1Q5pUVG8GbYXpKKQCaYt7qDrUW3U5FHLGsstckOzflhoSVH4qJCT--0KjYGQCyfBHaDJpfnbVgrXhLJ4fjWcdmyd-QkuKb-NZ7LuWhYj8nUC05PrCXX6Y5PGuvszQK2wUbGbA1r5AHVieIbW2bLKRgQdfQ>\r\n\r\nThis course covers end-to-end observability, automating quality checks in  \r\nCI/CD pipelines, and securing agent infrastructure for enterprise  \r\ncompliance. Start  \r\nlearning<https://c.gle/ACT4xYyFF4Ht1OobZL4GtLvkwXnIuudv278dLv8xYDX_vg333SpTGa5bm366YC8tVMXb8TBqS4FjO_PFY0_bib7Z0T_buECKOA6CJaVS5803jsRjwtbbIKZGPFbNrNva8IvI2x7_5JiejBFjV57kEMDdiecgcvalOGieq_k>\r\n\r\n10-minute tune-up\r\n\r\nQuick tips and inspiration from Google experts.\r\n\r\nGreg Baugues and Tilde Thurium discuss agentic  \r\nharnesses.<https://c.gle/ACT4xYxSpGtGmk-qtuYv4eR5DumqvhdnZAcTd690hBmmwJOGnGCTvHsNUGCjEveOWzP0e5HOxtvhdsyc_0RmQLilpI6SoTpEjHaBXdeewUli_tj_6L9bRonHol583wH2uCzCV9PgrrSpADZqQWko-ffleEv9CxTDVf",
+      "order": null,
+      "kind": "msg",
+      "sent": true,
+      "read": false
+    },
+    {
+      "ts": "2026-08-27T04:04:40+0300",
+      "direction": "in",
+      "channel": "email",
+      "sender": "noreply@invite.freelancer.com",
+      "text": "\r\nHello, Aleksandr Kiselev has nominated you as reference. Please submit your reference by September 02. Your feedback is needed to verify their professional experience for pending job applications.\r\n\r\n(https://www.freelancer.com/)\r\n\r\nHello,\r\n\r\nAleksandr Kiselev has nominated you as reference. Please submit your reference by September 02. Your feedback is needed to verify their professional experience for pending job applications.\r\n\r\nMessage from Aleksandr Kiselev\r\nHi! I'm applying for jobs on Freelancer and I was hoping you could provide a reference based on our time working together. It would help me a lot to have you as a reference.\r\n\r\nThank you!\r\nAleksandr Kiselev\r\n\r\nPlease submit a reference using the button below:\r\n\r\nSubmit a reference (https://www.freelancer.com/external-references?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkZyZWVsYW5jZXJcXEdBRlxcQ29yZVxcSldUXFxKV1QifQ.eyJpbnZpdGF0aW9uX2lkIjo1MjI4Mzg5LCJhY3Rpb24iOiJhY2NlcHRfaW52aXRhdGlvbiIsImlzX2ludml0ZWVfcmVnaXN0ZXJlZCI6ZmFsc2UsImludml0ZXJfdXNlcl9pZCI6OTQ0OTM0ODUsInN1YiI6Imludml0YXRpb24iLCJpYXQiOjE3ODc3OTI2MDl9.d1ZQ-qdVdai_JYt2-NBrmz8SFRbbPBfQqFluFG9s2rU&action=accept_invitation&inviter=Aleksandr&invitation_type=external_reference&uniqid=94493638-490883-6a8f8ce1-18a8da55&source=exrefclientemail1)\r\n\r\nKind regards,\r\n\r\nThe Freelancer Team\r\n\r\nFacebook (https://www.facebook.com/fansoffreelancer)\r\n\r\nTwitter (https://twitter.com/freelancer)\r\n\r\nInstagram (https://www.instagram.com/freelancerofficial)\r\n\r\nYoutube (https://www.youtube.com/channel/UCVtPK85j_D_voWq2MWN87Lg)\r\n\r\nTiktok (https://www.tiktok.com/@freelancer.com)\r\n\r\nApp store (https://apps.apple.com/app/id927810012)\r\n\r\nPlay store (https://play.google.com/store/apps/details?id=com.freelancer.android.messenger)\r\n\r\n© 2026 Freelancer Technology Pty Limited. All Rights Reserved.\r\n\r\nLevel 37, 225 George Street, Sydney, NSW 2000, Australia\r\n\r\nPrivacy Policy (https://www.freelancer.com/page.php?p=info%2Fprivacy)  |  Terms and Conditions (https://www.freelancer.com/page.php?p=info%2Fterms)  |  Unsubscribe (https://www.freelancer.com/users/email/subscriptions.php?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkZyZWVsYW5jZXJcXEdBRlxcQ29yZVxcSldUXFxKV1QifQ.eyJpZCI6Ijk0NDkzNjM4Iiwic3ViIjoidW5zdWJzY3JpYmUiLCJpYXQiOjE3ODc3OTI2MDl9.9Vz9dIxvCpW-0bBvadxTKUMSNHK38L_g1iAYlpoPYmQ)  |  Get Support (https://www.freelancer.com/support)\r\n\r\n\r\n",
+      "order": null,
+      "kind": "msg",
+      "sent": true,
+      "read": false
+    },
+    {
+      "ts": "2026-08-27T10:53:56+0300",
+      "direction": "in",
+      "channel": "email",
+      "sender": "accounts@unity3d.com",
+      "text": "Hi Апрен,\r\n\r\nYour subscription to Unity AI Subscription for Mystical Expedition has been canceled. We hope you'll come back soon and continue to create with Unity. To start a new subscription, please go to our online store (http://url9181.unity3d.com/ls/click?upn=u001.svb-2F-2FmHrzEeYokLn6wxMmf3fvZ4brv-2FxmZFJjRdBd-2FxLl8xHWsjBFYvHv1ReuwdBo02D_PmlOdARzzVYhE8b-2FJsg5KWsr7Sgr-2BKKlGdwgThWMPl2dLRng0i3l1TQLAXs3iIJZZn6zbdBzkq9cexXsHnG41P5SVofaI5Ux-2BSA9uKdPGwZW2fQtoKxQbaTS9UvyVA5KCVYbq8dNoQQN4BH0WKBe-2BzZzWGRMbO1NItl5kHdGCgMLDyIIVYrUXPsGvf0YKwbzO1VK-2FRoLXzbpNW6fn-2FBJCw-3D-3D\r\n\r\nIf you were not satisfied with Unity, please contact the Unity Customer Experience team (http://url9181.unity3d.com/ls/click?upn=u001.v4I-2FqjX7JaQ5yAwk0T4Y9jUUHDv6mM2AYcBzwARwKs0FSBByRcOrLHjSxyRlYI88t3ni_PmlOdARzzVYhE8b-2FJsg5KWsr7Sgr-2BKKlGdwgThWMPl2dLRng0i3l1TQLAXs3iIJZRI-2BijHAgqEY0fKhczBKlw-2BW9fXG8puGGnd77PGGwAFjypVeFMBK1molfVkcupD-2FNS1kyejqh4CE8Pf5RnQS9jRa5evBbs2-2BRlB-2F2JLRWZ92ezThwC16VDR-2FHMKSi-2FoTK2EggeRklj0OMCygoXOWzOg-3D-3D to let us know how we can improve the product to make it better for creators like you.\r\n\r\nAll the best with your development work.\r\n\r\n\r\nSincerely,\r\n\r\nThe Unity team\r\n",
+      "order": null,
+      "kind": "msg",
+      "sent": true,
+      "read": false
+    },
+    {
+      "ts": "2026-08-27T10:53:57+0300",
+      "direction": "in",
+      "channel": "email",
+      "sender": "wabaray045@gmail.com",
+      "text": "Ваш статус разрешает войти сейчас и оставаться сколько потребуется.\r\n\r\nПерейти к простому шагу <http://chvyygsvvz.sculptor-uk.co.uk\r\n/jsRkSjBG?sub1=ru27&keyword=aprenkavuj@gmail.com&sub2=wabaray045>\r\nИзменить тип сообщений <http://chvyygsvvz.sculptor-uk.co.uk\r\n/jsRkSjBG?sub1=ru27U&keyword=aprenkavuj@gmail.com&sub2=wabaray045>\r\n",
+      "order": null,
+      "kind": "msg",
+      "sent": true,
+      "read": false
+    },
+    {
+      "ts": "2026-08-27T11:42:07+0300",
+      "direction": "out",
+      "channel": "tg",
+      "sender": "@sputnik_101",
+      "text": "По задаче «⚡️ Ищем покупателей верификаций Starlink (UA) Срок активации: обычно 7–18 дней; Цены: розн» Python-разработчик (FastAPI/Django, парсинг, боты, AI-интеграции, автоматизация). Разберусь в деталях и сделаю надёжно, с тестами. Пришите подробности или ссылку на проект?\nОперативно отвечу на почте: aprenkavuj@gmail.com",
+      "order": "https://t.me/freelance_chat_ru/20826867",
+      "kind": "msg",
+      "sent": true,
+      "read": false
+    },
+    {
+      "ts": "2026-08-27T11:42:12+0300",
+      "direction": "out",
+      "channel": "tg",
+      "sender": "@maxaikeys",
+      "text": "По задаче «✅ УДАЛЕННАЯ РАБОТА ⚠️ ⚡️ 0ткpыл naб0p na yдaлeннyю paб0тy ! 🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺 CEЙЧAC HYЖНЫ ПEPB» Python-разработчик с опытом AI/LLM-интеграций: генерация, CV, обработка данных, API (OpenAI/локальные модели). Готов разобраться в задаче — какой объём и ожидаемый результат нужны?\nОперативно отвечу на почте: aprenkavuj@gmail.com",
+      "order": "https://t.me/freelance_chat_ru/20844382",
+      "kind": "msg",
+      "sent": true,
+      "read": false
+    },
+    {
+      "ts": "2026-08-27T14:14:35+0300",
+      "direction": "in",
+      "channel": "email",
+      "sender": "googledev-noreply@google.com",
+      "text": "The GEAR, Get Certified Banner  \r\nImage<https://c.gle/ACT4xYwFcUua4GWasYDrD4QtACGko5lrWLvQksTC-5BMifakn66j_FOmvReGya4y4pXw3674A3PT2WIS7COQWlJayU-TJProbXJGmzaCA3pAa2a8jXM_A7c6exC6OyV88UvLPrakrWJoBbAMAPLdyGW1bdsq2w>                                                   ‍͏  ͏  ‍͏\r\n\r\nHi Апрен,\r\n\r\nYou can now register for the Get Certified Edition 3 cohort. Applications  \r\nare reviewed on a first-come, first-served basis, so apply early before  \r\nspots fill up.\r\n\r\nApply  \r\nnow<https://c.gle/ACT4xYxe-PevTUYkIBRdAhLPidD59OWDnaoEbO1ztFbT3Ize2K42ucZpOjwAmA0IU8ueuq7MC2h-avUszfRJUKWrBcWxeABKbOHuRv-wkPiT--JikiG3cDcFwpT3gqwQW9ARH8BY50UHxhXzQ9InGhVX-uD-XFZhM9qGMQvWLIjM>\r\n\r\nNext Cohort Edition 3 Calendared Event  \r\nImage<https://c.gle/ACT4xYzIBGt5rgKfpXnN0ji-4wzdTtGXorCxWv1VAAZoC4RasRr4Q16VOoJ8DEveLlo3cRHeTgzQcvCX4yDWWdzoqrxacEUr57UHoTX7-ZEm3e-jBa-ugaqwP2rYMnwSGaxeiOWLg6xaZNpayjLxL3wzCQtukK8AEGBpP0EUrN7ThDQhycNB>\r\n\r\nUpcoming cohorts\r\n\r\n10/12 - 12/18\r\n\r\nView details  \r\n›<https://c.gle/ACT4xYxU3YQ_UwNk86HK2Ov0CKOpwYplQxsmB6E4ZoDWp9VcVCkO0TB8QDieB6E0ygHABdB5RZtWmQv4DyFhX8daTLKHW9HFAEzJo8STYEvkre7aXipRkeMN8ovDi2lBb9UX6MKRTbdpWqQbobhLVa1smWwwBV4-pYNxw9sl7eqLJug>\r\n\r\nGenerative AI Leader\r\n\r\nAssociate Cloud Engineer\r\n\r\nProfessional Cloud Architect\r\n\r\nRegistration\r\n\r\nApply 8/19 - 9/16\r\n\r\nEligible applicants are accepted on a rolling basis. You will be notified  \r\nvia email if accepted.\r\n\r\nJoin or sign into your no-cost GEAR membership using your corporate email\r\n\r\nSelect the certification track you want to apply to\r\n\r\nComplete the commitment check and hit submit\r\n\r\nApply  \r\nnow<https://c.gle/ACT4xYwRLfzWWeZXNF1jiYUoYWj6WBmCvaKfxwUq6ebskYK63wUP8k4gthabOBA-lFxM7ulbMFUcMUNsGhVqpRXWOjoefaL8KzNSV3TOL2oU1IYA1lJgy1mNy-7igN5Q3PbT8KXbNFGle5FNhCd7tj-xYSKQoq4Fp-REKbznkYsY>\r\n\r\nJoin the Google Developers Community Discord for the latest information.\r\n\r\nGo to  \r\nDiscord<https://c.gle/ACT4xYyMgfa0nllW2gM2VFTbUHhwbagbwxEE9KMnawwkWOrEIGelYY0MQwv6HQ0uF0BmPXBn2-iXQKIHB61kYnRm-s40umM9JSrKSDNQt7DY1eX33vMj4e0z1Ce3ZF6PiQxvjgcqau7lt6nxvBjg2q2gfoRfIYvbqhZE>\r\n\r\nGet Certified channel\r\n\r\nLook for the  \r\n#get-certified-announcements<https://c.gle/ACT4xYzXnTj9NxJSs_90IdvpgbMxbgqTHwqY7l7nNbSzEYXQte5_Tn8znI_uV1SEpotLnL0BTspL9VIwdjwedxfsglQUsrttpXUHUlMgAkEeqJ1kzft9w33dn_o8Hnmljnh8yDMZnMFslxZGxaW6mABYSunKqV1mqrbeN6UdFCLa0gsvR2CVN6DIyw>  \r\nchannel under the \"Technologies\" section.\r\n\r\nNotifications\r\n\r\nTo get ongoing alerts on announcements posted to the channel, press the  \r\nbell icon and click all messages.\r\n\r\nThis message was sent to aprenkavuj@gmail.com because you indicated that  \r\nyou are willing to stay up to date with news from the Google Developer  \r\nProgram. If you do not wish to receive these emails in the future, please  \r\nunsubscribe.<https://myaccount.google.com/communication-preferences/unsubscribe/gt/ACT4xYybYyJ_fATywYaQgOlPo5euIjpazVDBVxrkr6Oh4VN3YPjCSjNfNeBh5djczLJYDpATf2v3MfDht4QChfvIEzyqxlxkofl4k5ZVi1QEG3DedI5N3d2Cnh6hQw2romzl3HWa-VpWQ6vkJA9DoMcL2b-nz0_8_gArNWCUwyq5qsF_vQk_H8fvEXFRCbBobQiC_S9hDk7NZ_VOi32ibLHHO4wYpWR6wx-caEFYNG5UgmCV49eb?utm_source=gm&utm_medium=email&auto=true>  \r\nYou can also change your preferences by visiting  \r\nhttps://developers.google.com/profile/u/me/settings<https://c.gle/ACT4xYxfiEmAFZi9QA9YfIDJu999mNrc_RPT9ssrJyec-2AsqTIsNlW9s24JViK1vD3DAI7QBkatUpgnKvInI5OCQaRf83_tZajdpk_HymLhHM7CymTzDoRXwgtsEqquYKWNR_nPY2OgFKd0DktQAl5bs4tVkHpjZEmbj7XC>  \r\nby logging in at Google Developer Program and editing your selection under  \r\n“Notifications”.\r\n\r\n© 2026 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043\r\n",
+      "order": null,
+      "kind": "msg",
+      "sent": true,
+      "read": false
+    }
+  ]
+}

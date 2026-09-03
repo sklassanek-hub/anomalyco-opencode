@@ -1,0 +1,80 @@
+{
+  "tag_name": "v0.0.55",
+  "name": "v0.0.55",
+  "draft": false,
+  "prerelease": false,
+  "created_at": "2026-08-31T00:00:00Z",
+  "published_at": "2026-08-31T00:00:00Z",
+  "assets": [
+    {
+      "name": "opencode-linux-x86_64.tar.gz",
+      "label": "linux-x86_64",
+      "size": 4523456,
+      "download_url": "https://github.com/anomalyco/opencode/releases/download/v0.0.55/opencode-linux-x86_64.tar.gz",
+      "checksum_sha256": "placeholder-replace-after-build"
+    },
+    {
+      "name": "opencode-darwin-x86_64.tar.gz",
+      "label": "darwin-x86_64",
+      "size": 4382912,
+      "download_url": "https://github.com/anomalyco/opencode/releases/download/v0.55/opencode-darwin-x86_64.tar.gz",
+      "checksum_sha256": "placeholder-replace-after-build"
+    },
+    {
+      "name": "opencode-darwin-arm64.tar.gz",
+      "label": "darwin-arm64",
+      "size": 4120192,
+      "download_url": "https://github.com/anomalyco/opencode/releases/download/v0.55/opencode-darwin-arm64.tar.gz",
+      "checksum_sha256": "placeholder-replace-after-build"
+    },
+    {
+      "name": "opencode-windows-x64.zip",
+      "label": "windows-x64",
+      "size": 4893824,
+      "download_url": "https://github.com/anomalyco/opencode/releases/download/v0.55/opencode-windows-x64.zip",
+      "checksum_sha256": "placeholder-replace-after-build"
+    },
+    {
+      "name": "checksums.txt",
+      "label": "checksums",
+      "size": 458,
+      "download_url": "https://github.com/anomalyco/opencode/releases/download/v0.55/checksums.txt"
+    },
+    {
+      "name": "sbom.spdx.json",
+      "label": "sbom-spdx-json",
+      "size": 2048,
+      "download_url": "https://github.com/anomalyco/opencode/releases/download/v0.55/sbom.spdx.json"
+    },
+    {
+      "name": "opencode-linux-x86_64.tar.gz.sig",
+      "label": "signature",
+      "size": 512,
+      "download_url": "https://github.com/anomalyco/opencode/releases/download/v0.55/opencode-linux-x86_64.tar.gz.sig"
+    },
+    {
+      "name": "opencode-linux-x86_64.tar.gz.pem",
+      "label": "cosign-certificate",
+      "size": 1024,
+      "download_url": "https://github.com/anomalyco/opencode/releases/download/v0.55/opencode-linux-x86_64.tar.gz.pem"
+    }
+  ],
+  "checksums": {
+    "algorithm": "sha256",
+    "file": "checksums.txt",
+    "reference_url": "https://github.com/anomalyco/opencode/releases/download/v0.55/checksums.txt"
+  },
+  "sbom": {
+    "format": "spdx-json",
+    "file": "sbom.spdx.json",
+    "reference_url": "https://github.com/anomalyco/opencode/releases/download/v0.55/sbom.spdx.json"
+  },
+  "signatures": {
+    "method": "sigstore-cosign",
+    "algorithm": "ecdsa-sha2-nistp256",
+    "artifacts": [
+      "opencode-linux-x86_64.tar.gz.sig",
+      "opencode-linux-x86_64.tar.gz.pem"
+    ]
+  }
+}

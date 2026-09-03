@@ -1,0 +1,16 @@
+{
+  "name": "https_example.com_o",
+  "version": "v1",
+  "files": [
+    {
+      "name": "manifest.json",
+      "sha256": "b0ccaf3fcfd7b110183cf85c81b6e4457d97764bb7221960e9034e28d1e65d69",
+      "size": 258
+    },
+    {
+      "name": "README.md",
+      "sha256": "5f6258173c2fb0539bf9b068d7f4f5a8810d6d81fa62f813f2f750b7bee337f5",
+      "size": 453
+    }
+  ]
+}

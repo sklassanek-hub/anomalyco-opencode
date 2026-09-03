@@ -1,0 +1,17 @@
+[
+ {
+  "ts": "2026-08-02T02:20:54.826+03:00",
+  "text": "🧪 Тест MTProto-нотификатора: платформа Zarabotok v2 собирается",
+  "sent": true
+ },
+ {
+  "ts": "2026-08-02T03:41:05.750+03:00",
+  "text": "🚀 Zarabotok v2 запущен! Dashboard: http://127.0.0.1:8765. Джоб: 5. Outbox: 5. Начинаю отправку откликов (45с интервал).",
+  "sent": true
+ },
+ {
+  "ts": "2026-08-02T04:41:09.512+03:00",
+  "text": "✅ Zarabotok v2 online! Platform v2 работает: сканеры (habr 25 jobs, score 0.8+), CommunicationManager (STUB platform send), orchestrator цикл запущен. Outbox=0 — всё через CommunicationManager. Готов к доработке: real platform APIs, email, QA gate, миграция старых данных.",
+  "sent": true
+ }
+]

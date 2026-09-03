@@ -1,0 +1,6 @@
+STDOUT:
+
+STDERR:
+ERROR: failed to build: failed to solve: write /var/lib/desktop-containerd/daemon/io.containerd.metadata.v1.bolt/meta.db: input/output error
+
+RETURNCODE: 1

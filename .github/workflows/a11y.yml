@@ -1,0 +1,28 @@
+name: Accessibility (axe-core)
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+jobs:
+  a11y:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install deps
+        working-directory: zarabotok/pipeline_v3/ui
+        run: npm ci
+      - name: Build
+        working-directory: zarabotok/pipeline_v3/ui
+        run: npm run build
+      - name: Serve & axe
+        run: |
+          npx http-server zarabotok/pipeline_v3/ui/dist -p 8080 &
+          sleep 5
+          npx @axe-core/cli http://127.0.0.1:8080 --exit
+      - name: Contrast verify
+        run: python verify_contrast.py
+      - name: Auto a11y check
+        run: python auto_a11y_check.py

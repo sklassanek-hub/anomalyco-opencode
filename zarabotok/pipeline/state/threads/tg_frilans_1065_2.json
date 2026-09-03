@@ -1,0 +1,48 @@
+{
+  "job_id": "tg_frilans_1065_2",
+  "events": [
+    {
+      "ts": "2026-07-31T16:05:12.201498",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (264 симв.): Сделаю монтаж сложных Reels с эффектами и качественным наложением текста за объектами. Имею опыт создания сценариев и работы с динамичным контентом для формата Short/Reels, включая обработку большого ",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T16:10:50.050883",
+      "actor": "sender",
+      "kind": "message_out",
+      "text": "proposal отправлен @ann_okolovich (аккаунт: aleksandr_kisilev_1999): Сделаю монтаж сложных Reels с эффектами и качественным наложением текста за объектами. Имею опыт создания сценариев и работы с динамичным контентом для формата Short/Reels, включая обработку большого ",
+      "meta": {
+        "contact": "@ann_okolovich",
+        "kind": "proposal"
+      }
+    },
+    {
+      "ts": "2026-07-31T16:21:50.167456",
+      "actor": "customer",
+      "kind": "message_in",
+      "text": "Клиент ann_okolovich: Здравствуйте! Нам нужны ролики такого плана \n\n[https://www.instagram.com/reel/DZwmceMiydh/?igsh=YzN3dm1oMWFkMHJr](https://www.instagram.com/reel/DZwmceMiydh/?igsh=YzN3dm1oMWFkMHJr)\n\n[https://www.instagram.com/reel/DZ9ZLvjC3oq/?igsh=MXA2Y2UydzZhcmRtdA](https://www.instagram.com/reel/DZ9ZLvjC3oq/?igsh=MXA2Y2UydzZhcmRtdA==)==\n\n[https://www.instagram.com/reel/DaDJUjeiTaK/?igsh=ejAydjcwbzlnc2N2](https:",
+      "meta": {
+        "sender": "ann_okolovich"
+      }
+    },
+    {
+      "ts": "2026-07-31T16:21:50.225467",
+      "actor": "payments",
+      "kind": "invoice_created",
+      "text": "Счёт 5000 ₽ создан: монтажер. Способы: yoomoney, card, usdt",
+      "meta": {
+        "invoice_id": "inv_1785504110_tg_frilans_1065_2",
+        "amount": 5000
+      }
+    },
+    {
+      "ts": "2026-08-01T00:01:53.415118",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (288 симв.): Сделаю монтажёра сложных Reels, включая эффекты и работу с текстом за объектами. Есть опыт не только качественного монтажа, но и создания сценариев для Shorts/Reels, что гарантирует вовлечённость конт",
+      "meta": {}
+    }
+  ]
+}

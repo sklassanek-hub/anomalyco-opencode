@@ -1,0 +1,9 @@
+{
+  "locked": false,
+  "lock_owner": "",
+  "lock_time": "",
+  "delivery_approved": false,
+  "approval_note": "Requires manual confirmation per WORKFLOW.md §3",
+  "related_specs": ["tz-001"],
+  "updated": "2026-08-31"
+}

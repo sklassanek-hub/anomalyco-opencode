@@ -1,0 +1,6 @@
+Хи-хи! Хи-хи! Ежедневная сводка готова! Проверь состояние конвейера.. Storytime: сегодня всё работает как нужно.
+[VOICE PROFILE] funny
+[SPEED] 1.35 | [PITCH] 1.25
+[NOTE] sag CLI не обнаружен в системе.
+[NOTE] Локальные TTS-библиотеки (pyttsx3 / gTTS) не установлены.
+[FILE] C:\Users\klass\OneDrive\Desktop\work\zarabotok\pipeline_v3\deliverables\voice\event_daily_digest_1788133543.mp3

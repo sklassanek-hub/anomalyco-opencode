@@ -1,0 +1,922 @@
+{
+  "log": {
+    "level": "error",
+    "timestamp": true,
+    "output": "C:\\Users\\klass\\OneDrive\\Desktop\\work\\zarabotok\\pipeline\\tools\\singbox\\mass.log"
+  },
+  "dns": {
+    "servers": [
+      {
+        "type": "local",
+        "tag": "local"
+      }
+    ],
+    "final": "local",
+    "strategy": "prefer_ipv4"
+  },
+  "inbounds": [
+    {
+      "type": "socks",
+      "tag": "in-🇧🇷 Brazil, Aparecida de Goiâni",
+      "listen": "127.0.0.1",
+      "listen_port": 4067
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇧🇷 Brazil, Aparecida de Goiâni",
+      "listen": "127.0.0.1",
+      "listen_port": 4068
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇨🇿 Czechia, Prague | [BL]",
+      "listen": "127.0.0.1",
+      "listen_port": 4069
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇫🇮 Finland, Helsinki | 🌐 | [BL",
+      "listen": "127.0.0.1",
+      "listen_port": 4070
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇫🇷 France, Paris | [BL]",
+      "listen": "127.0.0.1",
+      "listen_port": 4071
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇫🇷 France, Paris | 🌐 | [BL]",
+      "listen": "127.0.0.1",
+      "listen_port": 4072
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇩🇪 Germany, Düsseldorf | [BL]",
+      "listen": "127.0.0.1",
+      "listen_port": 4073
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇩🇪 Germany, Frankfurt am Main ",
+      "listen": "127.0.0.1",
+      "listen_port": 4074
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇬🇷 Greece, Thessaloniki | 🌐 | ",
+      "listen": "127.0.0.1",
+      "listen_port": 4075
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇱🇻 Latvia, Riga | 🌐 | [BL]",
+      "listen": "127.0.0.1",
+      "listen_port": 4076
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇱🇻 Latvia, Riga | 🌐 | [BL] #2",
+      "listen": "127.0.0.1",
+      "listen_port": 4077
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇱🇹 Lithuania, Vilnius | [BL]",
+      "listen": "127.0.0.1",
+      "listen_port": 4078
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇱🇹 Lithuania, Vilnius | [BL] #",
+      "listen": "127.0.0.1",
+      "listen_port": 4079
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇵🇱 Poland, Gdansk | [BL]",
+      "listen": "127.0.0.1",
+      "listen_port": 4080
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇵🇱 Poland, Warsaw (Mokotów) | ",
+      "listen": "127.0.0.1",
+      "listen_port": 4081
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇷🇴 Romania, Galati | [BL]",
+      "listen": "127.0.0.1",
+      "listen_port": 4082
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇪🇸 Spain, Barcelona | [BL]",
+      "listen": "127.0.0.1",
+      "listen_port": 4083
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇳🇱 The Netherlands, Amsterdam ",
+      "listen": "127.0.0.1",
+      "listen_port": 4084
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇳🇱 The Netherlands, Amsterdam ",
+      "listen": "127.0.0.1",
+      "listen_port": 4085
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇳🇱 The Netherlands, Eygelshove",
+      "listen": "127.0.0.1",
+      "listen_port": 4086
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇬🇧 United Kingdom | 🌐 | [BL]",
+      "listen": "127.0.0.1",
+      "listen_port": 4087
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇬🇧 United Kingdom, Fareham | [",
+      "listen": "127.0.0.1",
+      "listen_port": 4088
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇬🇧 United Kingdom, Leyton | [B",
+      "listen": "127.0.0.1",
+      "listen_port": 4089
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇬🇧 United Kingdom, Slough | [B",
+      "listen": "127.0.0.1",
+      "listen_port": 4090
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇺🇸 United States, Ashburn | 🌐 ",
+      "listen": "127.0.0.1",
+      "listen_port": 4091
+    },
+    {
+      "type": "socks",
+      "tag": "in-🇺🇸 United States, Washington D",
+      "listen": "127.0.0.1",
+      "listen_port": 4092
+    },
+    {
+      "type": "socks",
+      "tag": "in-🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]",
+      "listen": "127.0.0.1",
+      "listen_port": 4093
+    },
+    {
+      "type": "socks",
+      "tag": "in-🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] #2",
+      "listen": "127.0.0.1",
+      "listen_port": 4094
+    },
+    {
+      "type": "socks",
+      "tag": "in-🌐 Anycast-IP | 🇬🇧 🇺🇸 | [BL]",
+      "listen": "127.0.0.1",
+      "listen_port": 4095
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 Brazil, Aparecida de Goiânia | [BL]",
+      "server": "177.3.212.127",
+      "server_port": 8443,
+      "uuid": "14da77da-4fb3-4e49-ac4f-7881ea19b267",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "neth6.lckdwn.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 Brazil, Aparecida de Goiânia | [BL] #3",
+      "server": "neth6.lckdwn.ru",
+      "server_port": 8443,
+      "uuid": "14da77da-4fb3-4e49-ac4f-7881ea19b267",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "neth6.lckdwn.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 Czechia, Prague | [BL]",
+      "server": "103.119.19.208",
+      "server_port": 443,
+      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "eu-central.cendora.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+          "short_id": "00bca5982f82d083"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Finland, Helsinki | 🌐 | [BL]",
+      "server": "146.75.119.82",
+      "server_port": 80,
+      "uuid": "334cf81a-0979-4b57-a88c-41f25041689d",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048",
+        "headers": {
+          "Host": [
+            "rb24.ir"
+          ]
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 France, Paris | [BL]",
+      "server": "195.58.140.146",
+      "server_port": 443,
+      "uuid": "d7790b85-9659-4558-a405-e0ab57d32984",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "d1-fr.cloud-cdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "alpn": [
+          "http/1.1"
+        ],
+        "reality": {
+          "enabled": true,
+          "public_key": "lRuJPDrUb0b32-47hl4BgDoQutqmkuW31N4qVxbDgmI",
+          "short_id": "dc927a04e8572c61"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 France, Paris | 🌐 | [BL]",
+      "server": "fr4.sodahub.online",
+      "server_port": 8443,
+      "uuid": "3bdd9516-bacc-4f2c-88f3-17bf14c36d38",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fr4.sodahub.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "fr4grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Germany, Düsseldorf | [BL]",
+      "server": "api.ferrin.uk",
+      "server_port": 443,
+      "uuid": "fbd1bcab-3480-4344-b3da-ae42d728ef51",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fbd1bcab.ferrin.uk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "alpn": [
+          "h2"
+        ]
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Germany, Frankfurt am Main | [BL] #5",
+      "server": "82.38.4.126",
+      "server_port": 443,
+      "uuid": "53c76647-14d1-4df5-99cb-be99ad2e6bd9",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "de126.mechvpn.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "alpn": [
+          "h3",
+          "h2",
+          "http/1.1"
+        ]
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇷 Greece, Thessaloniki | 🌐 | [BL]",
+      "server": "grek.helper-internet.com",
+      "server_port": 443,
+      "uuid": "670decfe-68cc-499e-8cb1-22b39c20acbb",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "grek.helper-internet.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
+          "short_id": "ff776ff77be48b88"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 Latvia, Riga | 🌐 | [BL]",
+      "server": "195.123.210.168",
+      "server_port": 13443,
+      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "auto.cendora.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM",
+          "short_id": "a7f3c91b2e6d84c0"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 Latvia, Riga | 🌐 | [BL] #2",
+      "server": "195.123.210.168",
+      "server_port": 443,
+      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "eu-west.cendora.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0",
+          "short_id": "dd3ff38418d29d22"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 Lithuania, Vilnius | [BL]",
+      "server": "88.119.176.146",
+      "server_port": 443,
+      "uuid": "27dcb3a9-c82d-4628-a8c4-bae39e6cb4f4",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "unas.denegnet.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RP93KQEzBP7wvvhwYy5c87IiQbV6xnsx7XgJpajevTA",
+          "short_id": "bc599ecdd54c1b3f"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 Lithuania, Vilnius | [BL] #3",
+      "server": "88.119.176.20",
+      "server_port": 443,
+      "uuid": "27dcb3a9-c82d-4628-a8c4-bae39e6cb4f4",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "unas.denegnet.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RP93KQEzBP7wvvhwYy5c87IiQbV6xnsx7XgJpajevTA",
+          "short_id": "bc599ecdd54c1b3f"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Poland, Gdansk | [BL]",
+      "server": "tutdesignstudio.site",
+      "server_port": 8443,
+      "uuid": "1f113ca6-7b95-4abb-9348-adfb2187e399",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tutdesignstudio.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Poland, Warsaw (Mokotów) | [BL]",
+      "server": "pl.n.belka.network",
+      "server_port": 443,
+      "uuid": "d325f389-7bc9-4d6a-8a2b-7dd4f7ab6e9f",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KQASJC-erEvv8cgBbvJRMfHq0Z0TApsQUNtdSwl0YQY",
+          "short_id": "8f3e9c4b1a8d6e21"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-service"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 Romania, Galati | [BL]",
+      "server": "31.14.41.161",
+      "server_port": 443,
+      "uuid": "27dcb3a9-c82d-4628-a8c4-bae39e6cb4f4",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "buhalvrome.denegnet.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BZHYuWJM1Bm6Cqi806nq_cbTmdvANv5-8AlA2ex4NUA",
+          "short_id": "a88382ffbc59c48a"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 Spain, Barcelona | [BL]",
+      "server": "spain3.helper-internet.com",
+      "server_port": 443,
+      "uuid": "670decfe-68cc-499e-8cb1-22b39c20acbb",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "spain3.helper-internet.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
+          "short_id": "ff776ff77be48b88"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 The Netherlands, Amsterdam | [BL] #14",
+      "server": "nlnew1.sodahub.online",
+      "server_port": 443,
+      "uuid": "a5a612d6-d571-4400-9f9a-7cb21eb903c1",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl1.sodahub.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "kK2a0QSYg0XQIMQOvDI7lJJvJcMH0-52RB90FivhVmM",
+          "short_id": "c334408a1056aaf8"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL] #2",
+      "server": "nl8.helper-internet.com",
+      "server_port": 443,
+      "uuid": "670decfe-68cc-499e-8cb1-22b39c20acbb",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl8.helper-internet.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
+          "short_id": "ff776ff77be48b88"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 The Netherlands, Eygelshoven | [BL]",
+      "server": "85.155.226.75",
+      "server_port": 443,
+      "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "getsavesafe.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs",
+          "short_id": "82f5d3a1e9c0b661"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 United Kingdom | 🌐 | [BL]",
+      "server": "172.64.80.1",
+      "server_port": 443,
+      "uuid": "c0f16ee2-a909-4890-ab1c-96489230658a",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.jikebet.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": [
+            "admin.jikebet.com"
+          ]
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 United Kingdom, Fareham | [BL]",
+      "server": "uk.monkora.org",
+      "server_port": 443,
+      "uuid": "921db318-1694-4408-9cc7-c93df39f7f8e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "uk.monkora.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 United Kingdom, Leyton | [BL]",
+      "server": "45.8.211.57",
+      "server_port": 443,
+      "uuid": "b2f6aa3a-2550-4a1c-b2c0-1c94b1207217",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "terazhediii.info",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hdgrbws",
+        "headers": {
+          "Host": [
+            "terazhediii.info"
+          ]
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 United Kingdom, Slough | [BL]",
+      "server": "167.104.223.65",
+      "server_port": 443,
+      "uuid": "218fd696-e3a2-4c33-b397-a5f13a82969e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.canonical.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R0Iip6sJXLO1OKQ68Jfi01mj3kiN6FtGsY4vOkGV5ho",
+          "short_id": "403d24a2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 United States, Ashburn | 🌐 | [BL]",
+      "server": "8.6.112.6",
+      "server_port": 2053,
+      "uuid": "65c56e1f-5c41-40bc-b0b5-9346772476ca",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "usa.105794.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/download/v3/installer-x64.bin",
+        "headers": {
+          "Host": [
+            "usa.105794.xyz"
+          ]
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 United States, Washington D.C. | [BL]",
+      "server": "165.231.150.12",
+      "server_port": 443,
+      "uuid": "fbd1bcab-3480-4344-b3da-ae42d728ef51",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "obrienteamnissan.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XBBVeMURFu7jmYJ9MZwjEWgfQlGTnRs0B5So5Fy7jWs",
+          "short_id": "137531892b6dce83"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]",
+      "server": "141.193.213.10",
+      "server_port": 443,
+      "uuid": "1c0557fd-2e0f-4403-879a-f8e3c2e792fe",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "s.blibli.com.ex33r.eu.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/id-pusat",
+        "headers": {
+          "Host": [
+            "s.blibli.com.ex33r.eu.cc"
+          ]
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] #2",
+      "server": "31.43.179.0",
+      "server_port": 80,
+      "uuid": "fcd5a9bf-b5e2-44f2-8bc2-77ef222c7187",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/m10d8k6Ny5XLimc0?ed=2560",
+        "headers": {
+          "Host": [
+            "worker3.dawejoy4544.workers.dev"
+          ]
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [BL]",
+      "server": "162.35.231.7",
+      "server_port": 443,
+      "uuid": "218fd696-e3a2-4c33-b397-a5f13a82969e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "buzzfeed.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "O4of5fbG7Ns3fBdBF0bDU8Fa8q-mdk7YLgOgvAWPeF8",
+          "short_id": "f85aebea"
+        }
+      }
+    }
+  ],
+  "route": {
+    "final": "direct",
+    "rules": [
+      {
+        "outbound": "🇧🇷 Brazil, Aparecida de Goiânia | [BL]"
+      },
+      {
+        "outbound": "🇧🇷 Brazil, Aparecida de Goiânia | [BL] #3"
+      },
+      {
+        "outbound": "🇨🇿 Czechia, Prague | [BL]"
+      },
+      {
+        "outbound": "🇫🇮 Finland, Helsinki | 🌐 | [BL]"
+      },
+      {
+        "outbound": "🇫🇷 France, Paris | [BL]"
+      },
+      {
+        "outbound": "🇫🇷 France, Paris | 🌐 | [BL]"
+      },
+      {
+        "outbound": "🇩🇪 Germany, Düsseldorf | [BL]"
+      },
+      {
+        "outbound": "🇩🇪 Germany, Frankfurt am Main | [BL] #5"
+      },
+      {
+        "outbound": "🇬🇷 Greece, Thessaloniki | 🌐 | [BL]"
+      },
+      {
+        "outbound": "🇱🇻 Latvia, Riga | 🌐 | [BL]"
+      },
+      {
+        "outbound": "🇱🇻 Latvia, Riga | 🌐 | [BL] #2"
+      },
+      {
+        "outbound": "🇱🇹 Lithuania, Vilnius | [BL]"
+      },
+      {
+        "outbound": "🇱🇹 Lithuania, Vilnius | [BL] #3"
+      },
+      {
+        "outbound": "🇵🇱 Poland, Gdansk | [BL]"
+      },
+      {
+        "outbound": "🇵🇱 Poland, Warsaw (Mokotów) | [BL]"
+      },
+      {
+        "outbound": "🇷🇴 Romania, Galati | [BL]"
+      },
+      {
+        "outbound": "🇪🇸 Spain, Barcelona | [BL]"
+      },
+      {
+        "outbound": "🇳🇱 The Netherlands, Amsterdam | [BL] #14"
+      },
+      {
+        "outbound": "🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL] #2"
+      },
+      {
+        "outbound": "🇳🇱 The Netherlands, Eygelshoven | [BL]"
+      },
+      {
+        "outbound": "🇬🇧 United Kingdom | 🌐 | [BL]"
+      },
+      {
+        "outbound": "🇬🇧 United Kingdom, Fareham | [BL]"
+      },
+      {
+        "outbound": "🇬🇧 United Kingdom, Leyton | [BL]"
+      },
+      {
+        "outbound": "🇬🇧 United Kingdom, Slough | [BL]"
+      },
+      {
+        "outbound": "🇺🇸 United States, Ashburn | 🌐 | [BL]"
+      },
+      {
+        "outbound": "🇺🇸 United States, Washington D.C. | [BL]"
+      },
+      {
+        "outbound": "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]"
+      },
+      {
+        "outbound": "🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL] #2"
+      },
+      {
+        "outbound": "🌐 Anycast-IP | 🇬🇧 🇺🇸 | [BL]"
+      }
+    ]
+  }
+}

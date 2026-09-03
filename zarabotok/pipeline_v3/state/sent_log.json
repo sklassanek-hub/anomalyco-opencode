@@ -1,0 +1,106 @@
+{
+  "items": [
+    {
+      "ts": "2026-08-25T08:43:45+0300",
+      "channel": "tg",
+      "url": "https://t.me/freelance_chat_ru/20812344",
+      "dest": "tg:@Paradooxx_bot"
+    },
+    {
+      "ts": "2026-08-25T10:15:19+0300",
+      "channel": "tg",
+      "url": "https://t.me/freelance_chat_ru/20812873",
+      "dest": "tg:@Gen1STRA"
+    },
+    {
+      "ts": "2026-08-25T11:27:53+0300",
+      "channel": "fl",
+      "url": "https://www.fl.ru/projects/5519313/",
+      "dest": "https://www.fl.ru/projects/5519313/"
+    },
+    {
+      "ts": "2026-08-25T11:38:34+0300",
+      "channel": "fl",
+      "url": "https://www.fl.ru/projects/5517719/",
+      "dest": "https://www.fl.ru/projects/5517719/"
+    },
+    {
+      "ts": "2026-08-25T11:41:36+0300",
+      "channel": "fl",
+      "url": "https://www.fl.ru/projects/5519193/",
+      "dest": "https://www.fl.ru/projects/5519193/"
+    },
+    {
+      "ts": "2026-08-25T11:43:46+0300",
+      "channel": "fl",
+      "url": "https://www.fl.ru/projects/5518710/",
+      "dest": "https://www.fl.ru/projects/5518710/"
+    },
+    {
+      "ts": "2026-08-25T16:43:59+0300",
+      "channel": "fl",
+      "url": "https://www.fl.ru/projects/5519462/",
+      "dest": "https://www.fl.ru/projects/5519462/"
+    },
+    {
+      "ts": "2026-08-25T17:27:24+0300",
+      "channel": "fl",
+      "url": "https://www.fl.ru/projects/5519472/",
+      "dest": "https://www.fl.ru/projects/5519472/"
+    },
+    {
+      "ts": "2026-08-27T11:42:07+0300",
+      "channel": "tg",
+      "url": "https://t.me/freelance_chat_ru/20826867",
+      "dest": "tg:@SPUTNIK_101"
+    },
+    {
+      "ts": "2026-08-27T11:42:12+0300",
+      "channel": "tg",
+      "url": "https://t.me/freelance_chat_ru/20844382",
+      "dest": "tg:@MaxAiKeys"
+    },
+    {
+      "ts": "2026-08-27T11:43:32+0300",
+      "channel": "tg",
+      "url": "https://t.me/freelance_chat_ru/20844382",
+      "dest": "tg:@MaxAiKeys"
+    },
+    {
+      "ts": "2026-08-27T11:44:21+0300",
+      "channel": "tg",
+      "url": "https://t.me/freelance_chat_ru/20850606",
+      "dest": "tg:@MaxAiKeys"
+    },
+    {
+      "ts": "2026-08-28T03:44:27+0300",
+      "channel": "fl",
+      "url": "https://www.fl.ru/projects/5519770/",
+      "dest": "https://www.fl.ru/projects/5519770/"
+    },
+    {
+      "ts": "2026-08-28T08:50:52+0300",
+      "channel": "fl",
+      "url": "https://www.fl.ru/projects/5519796/",
+      "dest": "https://www.fl.ru/projects/5519796/"
+    },
+    {
+      "ts": "2026-08-28T10:28:10+0300",
+      "channel": "fl",
+      "url": "https://www.fl.ru/projects/5519809/",
+      "dest": "https://www.fl.ru/projects/5519809/"
+    },
+    {
+      "ts": "2026-08-28T11:40:04+0300",
+      "channel": "fl",
+      "url": "https://www.fl.ru/projects/5519702/",
+      "dest": "https://www.fl.ru/projects/5519702/"
+    },
+    {
+      "ts": "2026-09-02T08:34:19+0300",
+      "channel": "tg",
+      "url": "https://t.me/freelance_chat_ru/20945174",
+      "dest": "tg:@MaxAiKeys"
+    }
+  ]
+}

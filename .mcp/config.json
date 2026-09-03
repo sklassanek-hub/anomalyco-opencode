@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "workspace-audit-pipeline": {
+      "command": "python",
+      "args": ["-m", "mcp_server"],
+      "env": {
+        "MCP_AUTH_TOKEN": "${MCP_AUTH_TOKEN}",
+        "KILL_SWITCH_APPROVAL": "${KILL_SWITCH_APPROVAL}",
+        "PYTHONPATH": "."
+      },
+      "description": "Workspace audit + pipeline v3 access server (read-only audit files, sandbox checks, pipeline stage status, kill-switch approval writes). Design: mcp-builder / backend-architect / workflow-architect. Skeleton at mcp_server.py / mcp_server.ts.",
+      "transport": "stdio",
+      "status": "design-skeleton-not-deployed"
+    },
+    "workspace-audit-pipeline-ts": {
+      "command": "node",
+      "args": ["mcp_server.js"],
+      "env": {
+        "MCP_AUTH_TOKEN": "${MCP_AUTH_TOKEN}",
+        "KILL_SWITCH_APPROVAL": "${KILL_SWITCH_APPROVAL}"
+      },
+      "description": "TypeScript variant of workspace-audit-pipeline server. Compile mcp_server.ts to mcp_server.js first.",
+      "transport": "stdio",
+      "status": "design-skeleton-not-deployed"
+    }
+  }
+}

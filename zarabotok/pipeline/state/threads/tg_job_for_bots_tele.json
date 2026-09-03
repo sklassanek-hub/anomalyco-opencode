@@ -1,0 +1,19 @@
+{
+  "job_id": "tg_job_for_bots_tele",
+  "events": [
+    {
+      "ts": "2026-07-31T08:32:17.653462",
+      "actor": "bidder",
+      "kind": "proposal_fallback",
+      "text": "LLM не прошёл QA (LLM недоступен) — использован шаблонный отклик",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T08:32:17.695854",
+      "actor": "sender",
+      "kind": "send_error",
+      "text": "Ошибка отправки отклика: The asyncio event loop must not change after connection (see the FAQ for details)",
+      "meta": {}
+    }
+  ]
+}

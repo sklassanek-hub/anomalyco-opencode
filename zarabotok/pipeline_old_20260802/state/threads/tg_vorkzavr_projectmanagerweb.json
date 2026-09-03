@@ -1,0 +1,12 @@
+{
+  "job_id": "tg_vorkzavr_projectmanagerweb",
+  "events": [
+    {
+      "ts": "2026-07-31T23:55:46.554084",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (459 симв.): Возьму ответственность за end-to-end delivery roadmap для Swisstronik Money и RWA tokenization suite, координируя работу между смарт-контрактами, бэкендом и внешними партнерами. Мой опыт включает архи",
+      "meta": {}
+    }
+  ]
+}

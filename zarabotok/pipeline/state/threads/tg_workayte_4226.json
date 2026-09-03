@@ -1,0 +1,12 @@
+{
+  "job_id": "tg_workayte_4226",
+  "events": [
+    {
+      "ts": "2026-08-01T00:21:18.970948",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (304 симв.): Сформирую и реализую полную SMM-стратегию для нового продукта на этапе soft launch по всем каналам (YouTube, Instagram, Telegram). Имею коммерческий опыт ведения контента в iGaming/high-risk нишах с ф",
+      "meta": {}
+    }
+  ]
+}

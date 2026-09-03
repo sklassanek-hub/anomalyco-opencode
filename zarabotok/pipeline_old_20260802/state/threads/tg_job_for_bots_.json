@@ -1,0 +1,12 @@
+{
+  "job_id": "tg_job_for_bots_",
+  "events": [
+    {
+      "ts": "2026-07-31T08:30:54.928981",
+      "actor": "bidder",
+      "kind": "proposal_fallback",
+      "text": "LLM не прошёл QA (LLM недоступен) — использован шаблонный отклик",
+      "meta": {}
+    }
+  ]
+}

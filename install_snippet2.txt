@@ -1,0 +1,260 @@
+201:             echo -e "${MUTED}Available releases: https://github.com/anomalyco/opencode/releases${NC}"
+202:             exit 1
+203:         fi
+204:     fi
+205: fi
+206: 
+207: print_message() {
+208:     local level=$1
+209:     local message=$2
+210:     local color=""
+211: 
+212:     case $level in
+213:         info) color="${NC}" ;;
+214:         warning) color="${NC}" ;;
+215:         error) color="${RED}" ;;
+216:     esac
+217: 
+218:     echo -e "${color}${message}${NC}"
+219: }
+220: 
+221: check_version() {
+222:     if command -v opencode >/dev/null 2>&1; then
+223:         opencode_path=$(which opencode)
+224: 
+225:         ## Check the installed version
+226:         installed_version=$(opencode --version 2>/dev/null || echo "")
+227: 
+228:         if [[ "$installed_version" != "$specific_version" ]]; then
+229:             print_message info "${MUTED}Installed version: ${NC}$installed_version."
+230:         else
+231:             print_message info "${MUTED}Version ${NC}$specific_version${MUTED} already installed"
+232:             exit 0
+233:         fi
+234:     fi
+235: }
+236: 
+237: unbuffered_sed() {
+238:     if echo | sed -u -e "" >/dev/null 2>&1; then
+239:         sed -nu "$@"
+240:     elif echo | sed -l -e "" >/dev/null 2>&1; then
+241:         sed -nl "$@"
+242:     else
+243:         local pad="$(printf "\n%512s" "")"
+244:         sed -ne "s/$/\\${pad}/" "$@"
+245:     fi
+246: }
+247: 
+248: print_progress() {
+249:     local bytes="$1"
+250:     local length="$2"
+251:     [ "$length" -gt 0 ] || return 0
+252: 
+253:     local width=50
+254:     local percent=$(( bytes * 100 / length ))
+255:     [ "$percent" -gt 100 ] && percent=100
+256:     local on=$(( percent * width / 100 ))
+257:     local off=$(( width - on ))
+258: 
+259:     local filled=$(printf "%*s" "$on" "")
+260:     filled=${filled// /■}
+261:     local empty=$(printf "%*s" "$off" "")
+262:     empty=${empty// /･}
+263: 
+264:     printf "\r${ORANGE}%s%s %3d%%${NC}" "$filled" "$empty" "$percent" >&4
+265: }
+266: 
+267: download_with_progress() {
+268:     local url="$1"
+269:     local output="$2"
+270: 
+271:     if [ -t 2 ]; then
+272:         exec 4>&2
+273:     else
+274:         exec 4>/dev/null
+275:     fi
+276: 
+277:     local tmp_dir=${TMPDIR:-/tmp}
+278:     local basename="${tmp_dir}/opencode_install_$$"
+279:     local tracefile="${basename}.trace"
+280: 
+281:     rm -f "$tracefile"
+282:     mkfifo "$tracefile"
+283: 
+284:     # Hide cursor
+285:     printf "\033[?25l" >&4
+286: 
+287:     trap "trap - RETURN; rm -f \"$tracefile\"; printf '\033[?25h' >&4; exec 4>&-" RETURN
+288: 
+289:     (
+290:         curl --trace-ascii "$tracefile" -s -L -o "$output" "$url"
+291:     ) &
+292:     local curl_pid=$!
+293: 
+294:     unbuffered_sed \
+295:         -e 'y/ACDEGHLNORTV/acdeghlnortv/' \
+296:         -e '/^0000: content-length:/p' \
+297:         -e '/^<= recv data/p' \
+298:         "$tracefile" | \
+299:     {
+300:         local length=0
+301:         local bytes=0
+302: 
+303:         while IFS=" " read -r -a line; do
+304:             [ "${#line[@]}" -lt 2 ] && continue
+305:             local tag="${line[0]} ${line[1]}"
+306: 
+307:             if [ "$tag" = "0000: content-length:" ]; then
+308:                 length="${line[2]}"
+309:                 length=$(echo "$length" | tr -d '\r')
+310:                 bytes=0
+311:             elif [ "$tag" = "<= recv" ]; then
+312:                 local size="${line[3]}"
+313:                 bytes=$(( bytes + size ))
+314:                 if [ "$length" -gt 0 ]; then
+315:                     print_progress "$bytes" "$length"
+316:                 fi
+317:             fi
+318:         done
+319:     }
+320: 
+321:     wait $curl_pid
+322:     local ret=$?
+323:     echo "" >&4
+324:     return $ret
+325: }
+326: 
+327: download_and_install() {
+328:     print_message info "\n${MUTED}Installing ${NC}opencode ${MUTED}version: ${NC}$specific_version"
+329:     local tmp_dir="${TMPDIR:-/tmp}/opencode_install_$$"
+330:     mkdir -p "$tmp_dir"
+331: 
+332:     if [[ "$os" == "windows" ]] || ! [ -t 2 ] || ! download_with_progress "$url" "$tmp_dir/$filename"; then
+333:         # Fallback to standard curl on Windows, non-TTY environments, or if custom progress fails
+334:         curl -# -L -o "$tmp_dir/$filename" "$url"
+335:     fi
+336: 
+337:     if [ "$os" = "linux" ]; then
+338:         tar -xzf "$tmp_dir/$filename" -C "$tmp_dir"
+339:     else
+340:         unzip -q "$tmp_dir/$filename" -d "$tmp_dir"
+341:     fi
+342: 
+343:     mv "$tmp_dir/opencode" "$INSTALL_DIR"
+344:     chmod 755 "${INSTALL_DIR}/opencode"
+345:     rm -rf "$tmp_dir"
+346: }
+347: 
+348: install_from_binary() {
+349:     print_message info "\n${MUTED}Installing ${NC}opencode ${MUTED}from: ${NC}$binary_path"
+350:     cp "$binary_path" "${INSTALL_DIR}/opencode"
+351:     chmod 755 "${INSTALL_DIR}/opencode"
+352: }
+353: 
+354: if [ -n "$binary_path" ]; then
+355:     install_from_binary
+356: else
+357:     check_version
+358:     download_and_install
+359: fi
+360: 
+361: 
+362: add_to_path() {
+363:     local config_file=$1
+364:     local command=$2
+365: 
+366:     if grep -Fxq "$command" "$config_file"; then
+367:         print_message info "Command already exists in $config_file, skipping write."
+368:     elif [[ -w $config_file ]]; then
+369:         echo -e "\n# opencode" >> "$config_file"
+370:         echo "$command" >> "$config_file"
+371:         print_message info "${MUTED}Successfully added ${NC}opencode ${MUTED}to \$PATH in ${NC}$config_file"
+372:     else
+373:         print_message warning "Manually add the directory to $config_file (or similar):"
+374:         print_message info "  $command"
+375:     fi
+376: }
+377: 
+378: XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
+379: 
+380: current_shell=$(basename "$SHELL")
+381: case $current_shell in
+382:     fish)
+383:         config_files="$HOME/.config/fish/config.fish"
+384:     ;;
+385:     zsh)
+386:         config_files="${ZDOTDIR:-$HOME}/.zshrc ${ZDOTDIR:-$HOME}/.zshenv $XDG_CONFIG_HOME/zsh/.zshrc $XDG_CONFIG_HOME/zsh/.zshenv"
+387:     ;;
+388:     bash)
+389:         config_files="$HOME/.bashrc $HOME/.bash_profile $HOME/.profile $XDG_CONFIG_HOME/bash/.bashrc $XDG_CONFIG_HOME/bash/.bash_profile"
+390:     ;;
+391:     ash)
+392:         config_files="$HOME/.ashrc $HOME/.profile /etc/profile"
+393:     ;;
+394:     sh)
+395:         config_files="$HOME/.ashrc $HOME/.profile /etc/profile"
+396:     ;;
+397:     *)
+398:         # Default case if none of the above matches
+399:         config_files="$HOME/.bashrc $HOME/.bash_profile $XDG_CONFIG_HOME/bash/.bashrc $XDG_CONFIG_HOME/bash/.bash_profile"
+400:     ;;
+401: esac
+402: 
+403: if [[ "$no_modify_path" != "true" ]]; then
+404:     config_file=""
+405:     for file in $config_files; do
+406:         if [[ -f $file ]]; then
+407:             config_file=$file
+408:             break
+409:         fi
+410:     done
+411: 
+412:     if [[ -z $config_file ]]; then
+413:         print_message warning "No config file found for $current_shell. You may need to manually add to PATH:"
+414:         print_message info "  export PATH=$INSTALL_DIR:\$PATH"
+415:     elif [[ ":$PATH:" != *":$INSTALL_DIR:"* ]]; then
+416:         case $current_shell in
+417:             fish)
+418:                 add_to_path "$config_file" "fish_add_path $INSTALL_DIR"
+419:             ;;
+420:             zsh)
+421:                 add_to_path "$config_file" "export PATH=$INSTALL_DIR:\$PATH"
+422:             ;;
+423:             bash)
+424:                 add_to_path "$config_file" "export PATH=$INSTALL_DIR:\$PATH"
+425:             ;;
+426:             ash)
+427:                 add_to_path "$config_file" "export PATH=$INSTALL_DIR:\$PATH"
+428:             ;;
+429:             sh)
+430:                 add_to_path "$config_file" "export PATH=$INSTALL_DIR:\$PATH"
+431:             ;;
+432:             *)
+433:                 export PATH=$INSTALL_DIR:$PATH
+434:                 print_message warning "Manually add the directory to $config_file (or similar):"
+435:                 print_message info "  export PATH=$INSTALL_DIR:\$PATH"
+436:             ;;
+437:         esac
+438:     fi
+439: fi
+440: 
+441: if [ -n "${GITHUB_ACTIONS-}" ] && [ "${GITHUB_ACTIONS}" == "true" ]; then
+442:     echo "$INSTALL_DIR" >> $GITHUB_PATH
+443:     print_message info "Added $INSTALL_DIR to \$GITHUB_PATH"
+444: fi
+445: 
+446: echo -e ""
+447: echo -e "${MUTED}                    ${NC}             ▄     "
+448: echo -e "${MUTED}█▀▀█ █▀▀█ █▀▀█ █▀▀▄ ${NC}█▀▀▀ █▀▀█ █▀▀█ █▀▀█"
+449: echo -e "${MUTED}█░░█ █░░█ █▀▀▀ █░░█ ${NC}█░░░ █░░█ █░░█ █▀▀▀"
+450: echo -e "${MUTED}▀▀▀▀ █▀▀▀ ▀▀▀▀ ▀  ▀ ${NC}▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀"
+451: echo -e ""
+452: echo -e ""
+453: echo -e "${MUTED}OpenCode includes free models, to start:${NC}"
+454: echo -e ""
+455: echo -e "cd <project>  ${MUTED}# Open directory${NC}"
+456: echo -e "opencode      ${MUTED}# Run command${NC}"
+457: echo -e ""
+458: echo -e "${MUTED}For more information visit ${NC}https://opencode.ai/docs"
+459: echo -e ""
+460: echo -e ""

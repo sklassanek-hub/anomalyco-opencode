@@ -1,0 +1,164 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true,
+    "output": "C:\\Users\\klass\\OneDrive\\Desktop\\work\\zarabotok\\pipeline\\tools\\singbox\\singbox.log"
+  },
+  "dns": {
+    "servers": [
+      {
+        "type": "local",
+        "tag": "local"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "type": "socks",
+      "tag": "socks-in",
+      "listen": "127.0.0.1",
+      "listen_port": 4067,
+      "users": []
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": ["p2", "p3", "p7", "p8", "p9", "p5"],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "2m"
+    },
+    {
+      "type": "vless",
+      "tag": "p2",
+      "server": "208.103.161.206",
+      "server_port": 443,
+      "uuid": "c7e9c591-2764-423a-afca-efbd010fd396",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "forfreeuse.sub-flow.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "forfreeuse.sub-flow.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "p3",
+      "server": "93.85.88.60",
+      "server_port": 2053,
+      "uuid": "c7e9c591-2764-423a-afca-efbd010fd396",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "forfreeuse.sub-flow.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "forfreeuse.sub-flow.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "p7",
+      "server": "93.115.16.24",
+      "server_port": 2053,
+      "uuid": "c7e9c591-2764-423a-afca-efbd010fd396",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "forfreeuse.sub-flow.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "forfreeuse.sub-flow.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "p8",
+      "server": "31.133.0.49",
+      "server_port": 2053,
+      "uuid": "c7e9c591-2764-423a-afca-efbd010fd396",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "forfreeuse.sub-flow.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "forfreeuse.sub-flow.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "p9",
+      "server": "185.226.94.191",
+      "server_port": 80,
+      "uuid": "470c7664-3262-afbb-2bef-f6f0f5e83815",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "185.226.94.203"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "p5",
+      "server": "wopa5.api3-max.ru",
+      "server_port": 443,
+      "password": "67a1454f-5a95-4e30-9723-1ffcbe7e97f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "wopa5.api3-max.ru"
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "domain_suffix": ["getsavesafe.net"],
+        "outbound": "direct"
+      }
+    ],
+    "final": "auto"
+  }
+}

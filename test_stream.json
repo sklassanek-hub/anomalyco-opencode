@@ -1,0 +1,1 @@
+{"model":"mistralai/mistral-7b-instruct-v0.3","messages":[{"role":"user","content":"Say hello"}],"max_tokens":100,"stream":true}

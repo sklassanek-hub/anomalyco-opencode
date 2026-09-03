@@ -1,0 +1,60 @@
+191: 
+192: - `opencode-src/` (Go CLI) and `pipeline_v3/` (Python) have no auth middleware.
+193: - `opencode-src/internal/llm/provider/openai.go` has `WithOpenAIBaseURL()` (line 416–418) with no URL validation; `baseURL` passed directly to `option.WithBaseURL()`.
+194: - **Evidence:** `full_audit_master.md` section D: "нет auth middleware + rate limit"; `opencode-src/openai.go` line 50: `if openaiOpts.baseURL != "" { ... option.WithBaseURL(...) }` — no `net/url` parse, no allowed-hosts whitelist, no TLS cert validation override check.
+195: - **Impact:** Any endpoint / CLI can be called without identity; API keys / tokens exposed in config; LLM can be redirected to malicious endpoint.
+196: 
+197: **P0 fix:**
+198: - Add middleware (`auth.middleware`) to all API endpoints (FastAPI / Express / Go `middleware` package): JWT / OAuth 2.0 / API key validation.
+199: - Validate `baseURL` with `url.Parse()` + allowed-host whitelist (`openai.com`, `api.openai.com`, `azure.openai`, internal endpoints); reject unknown hosts; enforce TLS (`tls.Config` with `InsecureSkipVerify = false`).
+200: - Implement `permission.Service` (already exists in Go) for RBAC; enforce least privilege.
+201: 
+202: ### 7.2 No Rate Limiting
+203: 
+204: - No `express-rate-limit` or Go `rate.Limiter`; no `token bucket`; no per-IP / per-user quotas.
+205: - **Impact:** Webhook endpoint open to replay / DoS; LLM endpoint can be spammed; scanner can poll infinitely.
+206: 
+207: **P0 fix:**
+208: - Per-IP: 100 req / 15 min (standard).
+209: - Per-user/API-key: 1000 req / hour; webhook: 10 req / min per `operation_id`; scanner: max 1 poll / 30 sec per source.
+210: - Return `429 Too Many Requests` with `Retry-After` header.
+211: - Log rate-limit hits to `events.json` for security monitoring.
+212: 
+213: ### 7.3 Unverified LLM Endpoint (baseURL)
+214: 
+215: - `executor.py` hardcodes `http://127.0.0.1:1234/v1/chat/completions` (line 65); no verification that endpoint is legitimate LM Studio; no fallback.
+216: - `opencode-src` allows arbitrary `baseURL`; no certificate pinning.
+217: - **P0 fix:** Verify endpoint with health-check (`GET /v1/models`) + TLS cert verification; whitelist endpoints in `config.json`; use environment variable `LLM_ENDPOINT` with validation; implement circuit breaker (stop calling if 5 consecutive failures); fallback to secondary endpoint.
+218: 
+219: ---
+220: 
+221: ## 8. Containerization Assessment
+222: 
+223: ### 8.1 What Exists
+224: 
+225: | Artifact | Path | Content | Status |
+226: |---|---|---|---|
+227: | **Sandbox Dockerfile** | `Dockerfile.sandbox` | python:3.11-slim, `WORKSPACE=/workspace`, `DOCKER_ENABLED=1`, `SANDBOX_ISOLATED=1`, `nameserver 127.0.0.1`, no pipeline modules copied | **Not validated** — build not run; no `pip install`; no module COPY |
+228: | **Executor Compose** | `.docker/docker-compose.yml` | `executor` service, `network_mode: none`, `read_only: true`, `user: 1001:1001`, memory limits, bind `../workspace` | **Partial** — only executor; no DB / queue / dashboard / nginx |
+229: | **Pipeline Dockerfile** | `.docker/Dockerfile` (not fully read) | Likely base image for pipeline | Unknown — needs validation |
+230: | **Pipeline Compose** | `compose_simple.py` | Python script for compose | Unknown — needs validation |
+231: 
+232: ### 8.2 What Is Missing (P1 / P2)
+233: 
+234: - **Production compose** (`docker-compose.prod.yml`) with services: `scanner`, `store-db` (PostgreSQL), `redis` (queue + cache), `ranker`, `executor`, `dashboard`, `nginx` (auth gateway + rate limit), `billing-webhook`, `audit-log` (ELK / fluent-bit).
+235: - **Health checks** (`HEALTHCHECK` in Dockerfile) for each service.
+236: - **Secrets management** (`docker secrets` / Kubernetes secrets) — no `.env` committed; config uses `config.json`; secret rotation not handled.
+237: - **CI pipeline** (`.github/workflows/`) — `check_releases.py` broken; no test + vuln-scan + SBOM + sign gates.
+238: - **Image scanning** (`trivy`, `grype`, `snyk`) — no vulnerability scanning.
+239: - **SBOM / signing** — `.goreleaser.yml` missing `sbom`, `signs`, `windows` artifacts (audit: release); `opencode.exe` unsigned.
+240: 
+241: **P0 container action:** Build `Dockerfile.sandbox` and `.docker/Dockerfile`; run smoke test; validate isolation (`docker run --rm --network none --memory=1g -v $(pwd)/workspace:/workspace pipeline-v3-sandbox python -c 'import socket; socket.socket()'` should raise error); add health checks; create `docker-compose.prod.yml`.
+242: 
+243: ---
+244: 
+245: ## 9. Recommended Architecture Patterns
+246: 
+247: Based on audit gaps and best practices, implement these patterns in order:
+248: 
+249: ### 9.1 Message Queue for Pipeline (P1)
+250: 

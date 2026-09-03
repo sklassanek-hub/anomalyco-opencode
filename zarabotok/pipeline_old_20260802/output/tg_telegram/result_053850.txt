@@ -1,0 +1,86 @@
+Я предоставлю вам общий план и пример кода для Telegram-бота, который соответствует вашим требованиям.
+
+**План:**
+1. Инициализация бота с помощью BotFather
+2. Создание меню для пользователей
+3. Импорт данных из таблиц в базу данных Telegram (JSON)
+4. Реализация карточек материалов и тестов с банком вопросов
+5. Приём голосовых ответов
+6. Простая админ-панель для управления ботом
+
+**Код:**
+
+```python
+import telebot
+from telebot import types
+import json
+from pathlib import Path
+
+# Инициализация бота
+bot = telebot.TeleBot('TOKEN')
+
+# Функция для импорта данных из файла
+def load_data(file):
+    with open(file, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    return data
+
+# Функция для создания кнопок меню
+def create_menu():
+    markup = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+    buttons = [
+        ['Материалы', 'Тесты'],
+        ['Голосовой ответ']
+    ]
+    for row in buttons:
+        for button in row:
+            markup.add(button)
+    return markup
+
+# Функция для создания карточки материала
+def create_card(title, text):
+    card = types.InputMediaPhoto(media=types.InputMediaPhoto(media=open('path/to/image.jpg', 'rb')))
+    card.caption = f"{title}\n\n{text}"
+    return card
+
+# Функция для создания теста с банком вопросов
+def create_test(questions):
+    markup = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+    for i, question in enumerate(questions):
+        markup.add(str(i + 1))
+    msg = bot.send_message(chat_id, 'Выберите номер вопроса', reply_markup=markup)
+    return msg, questions
+
+# Функция для обработки голосовых ответов
+def process_voice_answer():
+    pass
+
+# Функция для админ-панели
+def admin_panel():
+    pass
+
+# Загрузка данных из файлов
+data = load_data('materials.json')
+questions = load_data('questions.json')
+
+# Главная функция бота
+@bot.message_handler(commands=['start'])
+def start(message):
+    bot.send_message(message.chat.id, 'Добро пожаловать в наш Telegram-бот для обучения клиники эстетической медицины!', reply_markup=create_menu())
+
+# Обработчик меню
+@bot.callback_query_handler(func=lambda call: True)
+def menu(call):
+    if call.data == 'Материалы':
+        for i, material in enumerate(data['materials']):
+            bot.send_message(call.message.chat.id, f"{i + 1}. {material['title']}", reply_markup=types.ForceReply())
+            bot.send_photo(call.message.chat.id, photo=create_card(material['title'], material['text']))
+    elif call.data == 'Тесты':
+        _, questions = create_test(questions)
+    elif call.data == 'Голосовой ответ':
+        process_voice_answer()
+
+# Запуск бота
+if __name__ == '__main__':
+    bot.polling()
+```

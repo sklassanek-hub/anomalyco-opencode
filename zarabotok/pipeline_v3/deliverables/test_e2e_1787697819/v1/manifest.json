@@ -1,0 +1,21 @@
+{
+  "name": "test_e2e_1787697819",
+  "version": "v1",
+  "files": [
+    {
+      "name": "main.py",
+      "sha256": "7310c6df257a4df238bfc524234749e644b38210c229ec34b701139417fb6296",
+      "size": 137
+    },
+    {
+      "name": "manifest.json",
+      "sha256": "dc9f38256542f678765e3031b5c040e45b724ea147698d62987f40452966d838",
+      "size": 206
+    },
+    {
+      "name": "README.md",
+      "sha256": "20bf6ad596dad1ab9d9d94e114209f035a8c902b06917b69e97ae27260e40768",
+      "size": 389
+    }
+  ]
+}

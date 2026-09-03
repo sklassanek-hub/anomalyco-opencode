@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  executor:
+    image: zarabotok-sandbox:latest
+    build:
+      context: zarabotok/pipeline_v3
+      dockerfile: Dockerfile.sandbox
+    network_mode: none
+    read_only: true
+    user: "1001:1001"
+    mem_limit: 1g
+    memswap_limit: 1g
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - ./zarabotok/pipeline_v3/workspace:/workspace:rw
+    working_dir: /workspace
+    command: sh -c "echo sandbox isolated; python -c 'print(\'executor smoke ok\')'"
+    healthcheck:
+      test: ["CMD", "python", "-c", "print('health ok')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped

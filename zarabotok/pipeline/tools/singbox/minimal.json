@@ -1,0 +1,25 @@
+{
+  "log": { "level": "info", "timestamp": true, "output": "C:\\Users\\klass\\OneDrive\\Desktop\\work\\zarabotok\\pipeline\\tools\\singbox\\minimal.log" },
+  "dns": { "servers": [ { "type": "local", "tag": "local" } ], "final": "local", "strategy": "prefer_ipv4" },
+  "inbounds": [ { "type": "socks", "tag": "socks-in", "listen": "127.0.0.1", "listen_port": 4067, "users": [] } ],
+  "outbounds": [
+    { "type": "direct", "tag": "direct" },
+    { "type": "urltest", "tag": "tg", "outbounds": ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8"] },
+    { "type": "vless", "tag": "c1", "server": "195.184.247.250", "server_port": 443, "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb", "flow": "xtls-rprx-vision", "tls": { "enabled": true, "server_name": "savesafe.co", "utls": { "enabled": true, "fingerprint": "firefox" }, "reality": { "enabled": true, "public_key": "6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI", "short_id": "f63805c3ecc7a483" } } },
+    { "type": "vless", "tag": "c2", "server": "81.31.210.77", "server_port": 443, "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb", "flow": "xtls-rprx-vision", "tls": { "enabled": true, "server_name": "savesafe.info", "utls": { "enabled": true, "fingerprint": "firefox" }, "reality": { "enabled": true, "public_key": "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8", "short_id": "812609fa663c57fb" } } },
+    { "type": "vless", "tag": "c3", "server": "193.124.45.154", "server_port": 443, "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f", "flow": "xtls-rprx-vision", "tls": { "enabled": true, "server_name": "eu-central.cendora.ru", "utls": { "enabled": true, "fingerprint": "chrome" }, "reality": { "enabled": true, "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI", "short_id": "00bca5982f82d083" } } },
+    { "type": "vless", "tag": "c4", "server": "bounded-crammed.video-streams.org", "server_port": 443, "uuid": "d51b3246-21fe-47fb-b600-a7b7b9b6182d", "tls": { "enabled": true, "server_name": "bounded-crammed.video-streams.org", "alpn": ["http/1.1"] }, "transport": { "type": "ws", "path": "/ws" } },
+    { "type": "vless", "tag": "c5", "server": "45.62.118.37", "server_port": 50159, "uuid": "cb6b8710-97a5-4bff-9658-f265b0ea34e5", "flow": "xtls-rprx-vision", "tls": { "enabled": true, "server_name": "www.cloudflare.com", "utls": { "enabled": true, "fingerprint": "chrome" }, "reality": { "enabled": true, "public_key": "HxDIQIyhKA6Ac57hT9ZNoFU2kT1_82y61gbIW7KvuFo", "short_id": "4b7d2b4d8f6d5cf2" } } },
+    { "type": "vless", "tag": "c6", "server": "rm-us-04.409648.xyz", "server_port": 37735, "uuid": "6dcb725e-947e-4bbe-bb35-903374d57179", "flow": "xtls-rprx-vision", "tls": { "enabled": true, "server_name": "d1--ov-gotcha07.bilivideo.com", "utls": { "enabled": true, "fingerprint": "qq" }, "reality": { "enabled": true, "public_key": "XPA6z8rF7u5PktPHScbl5rAXzxcZr3GGcWjQsAbgGCQ", "short_id": "42fe6ac8" } }, "packet_encoding": "xudp" },
+    { "type": "vless", "tag": "c7", "server": "82.21.92.48", "server_port": 8444, "uuid": "fd6011da-5c16-463d-8aaf-ff35c1b95a74", "tls": { "enabled": true, "server_name": "reels.frkn.org", "utls": { "enabled": true, "fingerprint": "firefox" }, "reality": { "enabled": true, "public_key": "Aon1COX85s5akwuMDx7CTiJCVpfSA5FZU6abpZedaF8", "short_id": "9861f2b5edd7" } } },
+    { "type": "vless", "tag": "c8", "server": "94.183.221.165", "server_port": 443, "uuid": "fd9a3805-5925-48c5-a3b8-2d6cacbba154", "flow": "xtls-rprx-vision", "tls": { "enabled": true, "server_name": "www.amd.com", "utls": { "enabled": true, "fingerprint": "chrome" }, "reality": { "enabled": true, "public_key": "jgf0wWpgkEJZzu9wu45Ms33SNZpibtx507rpvzfz3mQ", "short_id": "635a76c25a4b1820" } } }
+  ],
+  "route": {
+    "default_domain_resolver": { "server": "local", "strategy": "prefer_ipv4" },
+    "rules": [
+      { "ip_cidr": ["91.108.4.0/22", "91.108.8.0/21", "91.108.16.0/22", "91.108.56.0/22", "149.154.160.0/20"], "outbound": "tg" },
+      { "domain_suffix": ["t.me", "telegram.org", "telegram.me", "web.telegram.org"], "outbound": "tg" }
+    ],
+    "final": "direct"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "template": "deliver_lock.json",
+  "note": "Template for W9 delivery lock; must be approved before delivery",
+  "fields": [
+    "locked",
+    "lock_owner",
+    "delivery_approved",
+    "approval_note"
+  ],
+  "updated": "2026-08-31"
+}

@@ -1,0 +1,281 @@
+{
+  "generated_at": "2026-08-03T02:02:25",
+  "sites": [
+    {
+      "site": "euromebel",
+      "pages": {
+        "index.html": {
+          "status": 200,
+          "failed_assets": []
+        }
+      },
+      "checks": {
+        "pages_load": {
+          "label": "Все страницы загружаются (HTTP 200)",
+          "ok": true
+        },
+        "assets_ok": {
+          "label": "CSS/JS/изображения загружаются (нет 404)",
+          "ok": true
+        },
+        "forms_present": {
+          "label": "Есть форма заявки (input name + phone)",
+          "ok": true
+        },
+        "phone_mask": {
+          "label": "Маска телефона (pattern/placeholder)",
+          "ok": true
+        },
+        "whatsapp_link": {
+          "label": "WhatsApp-ссылка (wa.me) присутствует",
+          "ok": true
+        },
+        "utm_tracking": {
+          "label": "UTM-метки собираются (utm_source)",
+          "ok": true
+        },
+        "analytics_events": {
+          "label": "Аналитика (dataLayer/fbq/gtag) и события",
+          "ok": true
+        },
+        "fixed_mobile_cta": {
+          "label": "Фиксированная CTA-кнопка на мобильной",
+          "ok": true
+        },
+        "no_hscroll_mobile": {
+          "label": "Нет горизонтального скролла на мобильной (390px)",
+          "ok": true
+        },
+        "ref_site_link": {
+          "label": "Ссылка на euromebel.kg",
+          "ok": true
+        },
+        "delivery_modal": {
+          "label": "Условия доставки в модалке/блоке",
+          "ok": true
+        },
+        "map_route": {
+          "label": "Карта / построение маршрута",
+          "ok": true
+        },
+        "cart_events": {
+          "label": "События корзины/каталога (dataLayer)",
+          "ok": true
+        }
+      },
+      "screenshots": [
+        "euromebel_desktop.png",
+        "euromebel_mobile.png"
+      ],
+      "verdict": "READY"
+    },
+    {
+      "site": "nazgul",
+      "pages": {
+        "index.html": {
+          "status": 200,
+          "failed_assets": []
+        }
+      },
+      "checks": {
+        "pages_load": {
+          "label": "Все страницы загружаются (HTTP 200)",
+          "ok": true
+        },
+        "assets_ok": {
+          "label": "CSS/JS/изображения загружаются (нет 404)",
+          "ok": true
+        },
+        "forms_present": {
+          "label": "Есть форма заявки (input name + phone)",
+          "ok": true
+        },
+        "phone_mask": {
+          "label": "Маска телефона (pattern/placeholder)",
+          "ok": true
+        },
+        "whatsapp_link": {
+          "label": "WhatsApp-ссылка (wa.me) присутствует",
+          "ok": true
+        },
+        "utm_tracking": {
+          "label": "UTM-метки собираются (utm_source)",
+          "ok": true
+        },
+        "analytics_events": {
+          "label": "Аналитика (dataLayer/fbq/gtag) и события",
+          "ok": true
+        },
+        "fixed_mobile_cta": {
+          "label": "Фиксированная CTA-кнопка на мобильной",
+          "ok": true
+        },
+        "no_hscroll_mobile": {
+          "label": "Нет горизонтального скролла на мобильной (390px)",
+          "ok": true
+        },
+        "block14": {
+          "label": "14 блоков лендинга (hero…contacts)",
+          "ok": true
+        },
+        "faq12": {
+          "label": "FAQ с 12 вопросами",
+          "ok": true
+        },
+        "spam_protection": {
+          "label": "Защита от спама (тайминг/капча)",
+          "ok": true
+        },
+        "thankyou_page": {
+          "label": "Страница благодарности",
+          "ok": true
+        }
+      },
+      "screenshots": [
+        "nazgul_desktop.png",
+        "nazgul_mobile.png"
+      ],
+      "verdict": "READY"
+    },
+    {
+      "site": "saffran",
+      "pages": {
+        "index.html": {
+          "status": 200,
+          "failed_assets": []
+        },
+        "product1.html": {
+          "status": 200,
+          "failed_assets": []
+        },
+        "product2.html": {
+          "status": 200,
+          "failed_assets": []
+        },
+        "product3.html": {
+          "status": 200,
+          "failed_assets": []
+        }
+      },
+      "checks": {
+        "pages_load": {
+          "label": "Все страницы загружаются (HTTP 200)",
+          "ok": true
+        },
+        "assets_ok": {
+          "label": "CSS/JS/изображения загружаются (нет 404)",
+          "ok": true
+        },
+        "forms_present": {
+          "label": "Есть форма заявки (input name + phone)",
+          "ok": true
+        },
+        "phone_mask": {
+          "label": "Маска телефона (pattern/placeholder)",
+          "ok": true
+        },
+        "whatsapp_link": {
+          "label": "WhatsApp-ссылка (wa.me) присутствует",
+          "ok": true
+        },
+        "utm_tracking": {
+          "label": "UTM-метки собираются (utm_source)",
+          "ok": true
+        },
+        "analytics_events": {
+          "label": "Аналитика (dataLayer/fbq/gtag) и события",
+          "ok": true
+        },
+        "fixed_mobile_cta": {
+          "label": "Фиксированная CTA-кнопка на мобильной",
+          "ok": true
+        },
+        "no_hscroll_mobile": {
+          "label": "Нет горизонтального скролла на мобильной (390px)",
+          "ok": true
+        },
+        "gallery_zoom": {
+          "label": "Галерея с увеличением",
+          "ok": true
+        },
+        "multi_pages": {
+          "label": "Несколько страниц (product1-3) загружаются",
+          "ok": true
+        }
+      },
+      "screenshots": [
+        "saffran_desktop.png",
+        "saffran_mobile.png"
+      ],
+      "verdict": "READY"
+    },
+    {
+      "site": "novak",
+      "pages": {
+        "index.html": {
+          "status": 200,
+          "failed_assets": []
+        },
+        "object1.html": {
+          "status": 200,
+          "failed_assets": []
+        },
+        "object2.html": {
+          "status": 200,
+          "failed_assets": []
+        }
+      },
+      "checks": {
+        "pages_load": {
+          "label": "Все страницы загружаются (HTTP 200)",
+          "ok": true
+        },
+        "assets_ok": {
+          "label": "CSS/JS/изображения загружаются (нет 404)",
+          "ok": true
+        },
+        "forms_present": {
+          "label": "Есть форма заявки (input name + phone)",
+          "ok": true
+        },
+        "phone_mask": {
+          "label": "Маска телефона (pattern/placeholder)",
+          "ok": true
+        },
+        "whatsapp_link": {
+          "label": "WhatsApp-ссылка (wa.me) присутствует",
+          "ok": true
+        },
+        "utm_tracking": {
+          "label": "UTM-метки собираются (utm_source)",
+          "ok": true
+        },
+        "analytics_events": {
+          "label": "Аналитика (dataLayer/fbq/gtag) и события",
+          "ok": true
+        },
+        "fixed_mobile_cta": {
+          "label": "Фиксированная CTA-кнопка на мобильной",
+          "ok": true
+        },
+        "no_hscroll_mobile": {
+          "label": "Нет горизонтального скролла на мобильной (390px)",
+          "ok": true
+        },
+        "form_to_whatsapp": {
+          "label": "Форма отправляет заявку в WhatsApp (wa.me/996555010203)",
+          "ok": true
+        },
+        "gallery": {
+          "label": "Галерея присутствует",
+          "ok": true
+        }
+      },
+      "screenshots": [
+        "novak_desktop.png",
+        "novak_mobile.png"
+      ],
+      "verdict": "READY"
+    }
+  ]
+}

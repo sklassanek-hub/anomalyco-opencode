@@ -1,0 +1,2046 @@
+{
+ "total": 204,
+ "alive": 1,
+ "results": [
+  {
+   "i": 0,
+   "tag": "subscription.txt#0",
+   "server": "85.155.228.208",
+   "port": 443,
+   "t.me": "000 5.001755",
+   "api.telegram.org": "000 5.001329",
+   "gstatic": "000 5.001482",
+   "tg_ok": false
+  },
+  {
+   "i": 1,
+   "tag": "subscription.txt#1",
+   "server": "85.155.228.208",
+   "port": 443,
+   "t.me": "000 5.001259",
+   "api.telegram.org": "000 5.000984",
+   "gstatic": "000 5.000685",
+   "tg_ok": false
+  },
+  {
+   "i": 2,
+   "tag": "subscription.txt#2",
+   "server": "85.155.228.208",
+   "port": 443,
+   "t.me": "000 5.001380",
+   "api.telegram.org": "000 5.001089",
+   "gstatic": "000 5.001479",
+   "tg_ok": false
+  },
+  {
+   "i": 3,
+   "tag": "subscription.txt#3",
+   "server": "103.125.218.249",
+   "port": 443,
+   "t.me": "000 5.001284",
+   "api.telegram.org": "000 5.000913",
+   "gstatic": "000 5.001700",
+   "tg_ok": false
+  },
+  {
+   "i": 4,
+   "tag": "subscription.txt#4",
+   "server": "103.125.218.249",
+   "port": 13443,
+   "t.me": "000 5.001929",
+   "api.telegram.org": "000 5.001909",
+   "gstatic": "000 5.001583",
+   "tg_ok": false
+  },
+  {
+   "i": 5,
+   "tag": "subscription.txt#5",
+   "server": "149.33.10.41",
+   "port": 48902,
+   "t.me": "000 5.001730",
+   "api.telegram.org": "000 5.002078",
+   "gstatic": "000 5.011198",
+   "tg_ok": false
+  },
+  {
+   "i": 6,
+   "tag": "subscription.txt#6",
+   "server": "45.86.60.186",
+   "port": 48982,
+   "t.me": "000 5.005041",
+   "api.telegram.org": "000 5.010895",
+   "gstatic": "000 5.011934",
+   "tg_ok": false
+  },
+  {
+   "i": 7,
+   "tag": "subscription.txt#7",
+   "server": "45.86.60.186",
+   "port": 48982,
+   "t.me": "000 5.002720",
+   "api.telegram.org": "000 5.012219",
+   "gstatic": "000 5.011721",
+   "tg_ok": false
+  },
+  {
+   "i": 8,
+   "tag": "subscription.txt#8",
+   "server": "ee.mxm-vpn.com",
+   "port": 48982,
+   "t.me": "000 5.001347",
+   "api.telegram.org": "000 5.009820",
+   "gstatic": "000 5.015046",
+   "tg_ok": false
+  },
+  {
+   "i": 9,
+   "tag": "subscription.txt#9",
+   "server": "188.130.208.141",
+   "port": 13443,
+   "t.me": "000 5.001781",
+   "api.telegram.org": "000 5.001607",
+   "gstatic": "000 5.001522",
+   "tg_ok": false
+  },
+  {
+   "i": 10,
+   "tag": "subscription.txt#10",
+   "server": "188.130.208.141",
+   "port": 13443,
+   "t.me": "000 5.001391",
+   "api.telegram.org": "000 5.001401",
+   "gstatic": "000 5.001099",
+   "tg_ok": false
+  },
+  {
+   "i": 11,
+   "tag": "subscription.txt#11",
+   "server": "188.130.208.141",
+   "port": 13443,
+   "t.me": "000 5.001877",
+   "api.telegram.org": "000 5.001531",
+   "gstatic": "000 5.001834",
+   "tg_ok": false
+  },
+  {
+   "i": 12,
+   "tag": "subscription.txt#12",
+   "server": "185.114.116.133",
+   "port": 48982,
+   "t.me": "000 5.003095",
+   "api.telegram.org": "000 5.009339",
+   "gstatic": "000 5.011609",
+   "tg_ok": false
+  },
+  {
+   "i": 13,
+   "tag": "subscription.txt#13",
+   "server": "185.114.116.133",
+   "port": 48982,
+   "t.me": "000 5.012492",
+   "api.telegram.org": "000 5.015344",
+   "gstatic": "000 5.014647",
+   "tg_ok": false
+  },
+  {
+   "i": 14,
+   "tag": "subscription.txt#14",
+   "server": "157.180.119.87",
+   "port": 2087,
+   "t.me": "000 5.015764",
+   "api.telegram.org": "000 5.015183",
+   "gstatic": "000 5.014577",
+   "tg_ok": false
+  },
+  {
+   "i": 15,
+   "tag": "subscription.txt#15",
+   "server": "45.195.228.198",
+   "port": 443,
+   "t.me": "000 5.015536",
+   "api.telegram.org": "000 5.015225",
+   "gstatic": "000 5.014595",
+   "tg_ok": false
+  },
+  {
+   "i": 16,
+   "tag": "subscription.txt#16",
+   "server": "45.195.228.198",
+   "port": 443,
+   "t.me": "000 5.001431",
+   "api.telegram.org": "000 5.001583",
+   "gstatic": "000 5.014241",
+   "tg_ok": false
+  },
+  {
+   "i": 17,
+   "tag": "subscription.txt#17",
+   "server": "152.89.244.112",
+   "port": 443,
+   "t.me": "000 5.004559",
+   "api.telegram.org": "000 5.013636",
+   "gstatic": "000 5.014885",
+   "tg_ok": false
+  },
+  {
+   "i": 18,
+   "tag": "subscription.txt#18",
+   "server": "152.89.244.78",
+   "port": 443,
+   "t.me": "000 5.001199",
+   "api.telegram.org": "000 5.001966",
+   "gstatic": "000 5.001579",
+   "tg_ok": false
+  },
+  {
+   "i": 19,
+   "tag": "subscription.txt#19",
+   "server": "152.89.244.79",
+   "port": 443,
+   "t.me": "000 5.010693",
+   "api.telegram.org": "000 5.014365",
+   "gstatic": "000 5.013327",
+   "tg_ok": false
+  },
+  {
+   "i": 20,
+   "tag": "subscription.txt#20",
+   "server": "fl.miginfo.net",
+   "port": 443,
+   "t.me": "000 0.027869",
+   "api.telegram.org": "000 0.000638",
+   "gstatic": "000 0.000705",
+   "tg_ok": false
+  },
+  {
+   "i": 21,
+   "tag": "subscription.txt#21",
+   "server": "fl.miginfo.net",
+   "port": 443,
+   "t.me": "000 0.018904",
+   "api.telegram.org": "000 0.000733",
+   "gstatic": "000 0.000731",
+   "tg_ok": false
+  },
+  {
+   "i": 22,
+   "tag": "subscription.txt#22",
+   "server": "31.59.103.129",
+   "port": 2053,
+   "t.me": "000 5.014516",
+   "api.telegram.org": "000 5.014878",
+   "gstatic": "000 5.013537",
+   "tg_ok": false
+  },
+  {
+   "i": 23,
+   "tag": "subscription.txt#23",
+   "server": "fr.pollcenter.site",
+   "port": 34156,
+   "t.me": "000 5.004886",
+   "api.telegram.org": "000 5.013629",
+   "gstatic": "000 5.014029",
+   "tg_ok": false
+  },
+  {
+   "i": 24,
+   "tag": "subscription.txt#24",
+   "server": "185.167.60.174",
+   "port": 443,
+   "t.me": "000 5.000918",
+   "api.telegram.org": "000 5.010099",
+   "gstatic": "000 5.001400",
+   "tg_ok": false
+  },
+  {
+   "i": 25,
+   "tag": "subscription.txt#25",
+   "server": "frx.opngtr.nl",
+   "port": 443,
+   "t.me": "000 5.001794",
+   "api.telegram.org": "000 5.001252",
+   "gstatic": "000 5.001862",
+   "tg_ok": false
+  },
+  {
+   "i": 26,
+   "tag": "subscription.txt#26",
+   "server": "frx.opngtr.nl",
+   "port": 443,
+   "t.me": "000 5.003589",
+   "api.telegram.org": "000 5.001682",
+   "gstatic": "000 5.001178",
+   "tg_ok": false
+  },
+  {
+   "i": 27,
+   "tag": "subscription.txt#27",
+   "server": "8d3798d5e6f401bd.mbcloudy.ir",
+   "port": 17780,
+   "t.me": "000 0.283666",
+   "api.telegram.org": "000 0.244340",
+   "gstatic": "000 0.252154",
+   "tg_ok": false
+  },
+  {
+   "i": 28,
+   "tag": "subscription.txt#28",
+   "server": "s.zyro-lab.com",
+   "port": 80,
+   "t.me": "000 0.136677",
+   "api.telegram.org": "000 0.130290",
+   "gstatic": "000 0.132236",
+   "tg_ok": false
+  },
+  {
+   "i": 29,
+   "tag": "subscription.txt#29",
+   "server": "s.zyro-lab.com",
+   "port": 80,
+   "t.me": "000 0.174975",
+   "api.telegram.org": "000 0.155701",
+   "gstatic": "000 0.135145",
+   "tg_ok": false
+  },
+  {
+   "i": 30,
+   "tag": "subscription.txt#30",
+   "server": "46.225.156.169",
+   "port": 2087,
+   "t.me": "000 5.001847",
+   "api.telegram.org": "000 5.010604",
+   "gstatic": "000 5.009677",
+   "tg_ok": false
+  },
+  {
+   "i": 31,
+   "tag": "subscription.txt#31",
+   "server": "46.225.156.169",
+   "port": 2087,
+   "t.me": "000 5.012610",
+   "api.telegram.org": "000 5.002089",
+   "gstatic": "000 5.009684",
+   "tg_ok": false
+  },
+  {
+   "i": 32,
+   "tag": "subscription.txt#32",
+   "server": "94.183.219.243",
+   "port": 8443,
+   "t.me": "000 5.007346",
+   "api.telegram.org": "000 5.011696",
+   "gstatic": "000 5.014604",
+   "tg_ok": false
+  },
+  {
+   "i": 33,
+   "tag": "subscription.txt#33",
+   "server": "103.109.234.113",
+   "port": 443,
+   "t.me": "000 5.007346",
+   "api.telegram.org": "000 5.011738",
+   "gstatic": "000 5.013979",
+   "tg_ok": false
+  },
+  {
+   "i": 34,
+   "tag": "subscription.txt#34",
+   "server": "103.109.234.113",
+   "port": 443,
+   "t.me": "000 5.001310",
+   "api.telegram.org": "000 5.013724",
+   "gstatic": "000 5.014274",
+   "tg_ok": false
+  },
+  {
+   "i": 35,
+   "tag": "subscription.txt#35",
+   "server": "140.235.130.3",
+   "port": 2027,
+   "t.me": "000 5.009310",
+   "api.telegram.org": "000 5.001412",
+   "gstatic": "000 5.001082",
+   "tg_ok": false
+  },
+  {
+   "i": 36,
+   "tag": "subscription.txt#36",
+   "server": "debase.skysafe.online",
+   "port": 2027,
+   "t.me": "000 5.011561",
+   "api.telegram.org": "000 5.002559",
+   "gstatic": "000 5.001504",
+   "tg_ok": false
+  },
+  {
+   "i": 37,
+   "tag": "subscription.txt#37",
+   "server": "103.195.4.7",
+   "port": 443,
+   "t.me": "000 5.001943",
+   "api.telegram.org": "000 5.001249",
+   "gstatic": "000 5.001618",
+   "tg_ok": false
+  },
+  {
+   "i": 38,
+   "tag": "subscription.txt#38",
+   "server": "103.195.4.7",
+   "port": 443,
+   "t.me": "000 5.001445",
+   "api.telegram.org": "000 5.001703",
+   "gstatic": "000 5.001457",
+   "tg_ok": false
+  },
+  {
+   "i": 39,
+   "tag": "subscription.txt#39",
+   "server": "103.195.4.7",
+   "port": 13443,
+   "t.me": "000 5.002273",
+   "api.telegram.org": "000 5.001377",
+   "gstatic": "000 5.001348",
+   "tg_ok": false
+  },
+  {
+   "i": 40,
+   "tag": "subscription.txt#40",
+   "server": "103.195.4.7",
+   "port": 13443,
+   "t.me": "000 5.001930",
+   "api.telegram.org": "000 5.008005",
+   "gstatic": "000 5.000895",
+   "tg_ok": false
+  },
+  {
+   "i": 41,
+   "tag": "subscription.txt#41",
+   "server": "103.195.4.7",
+   "port": 13443,
+   "t.me": "000 5.001657",
+   "api.telegram.org": "000 5.016369",
+   "gstatic": "000 5.001460",
+   "tg_ok": false
+  },
+  {
+   "i": 42,
+   "tag": "subscription.txt#42",
+   "server": "194.164.148.140",
+   "port": 48982,
+   "t.me": "000 5.001356",
+   "api.telegram.org": "000 5.001902",
+   "gstatic": "000 5.001434",
+   "tg_ok": false
+  },
+  {
+   "i": 43,
+   "tag": "subscription.txt#43",
+   "server": "in.maximum-vpn.com",
+   "port": 48982,
+   "t.me": "000 5.010702",
+   "api.telegram.org": "000 5.002735",
+   "gstatic": "000 5.014479",
+   "tg_ok": false
+  },
+  {
+   "i": 44,
+   "tag": "subscription.txt#44",
+   "server": "94.183.255.212",
+   "port": 443,
+   "t.me": "000 5.003305",
+   "api.telegram.org": "000 5.013870",
+   "gstatic": "000 5.015300",
+   "tg_ok": false
+  },
+  {
+   "i": 45,
+   "tag": "subscription.txt#45",
+   "server": "94.183.157.249",
+   "port": 443,
+   "t.me": "000 5.002096",
+   "api.telegram.org": "000 5.011838",
+   "gstatic": "000 5.012073",
+   "tg_ok": false
+  },
+  {
+   "i": 46,
+   "tag": "subscription.txt#46",
+   "server": "94.183.157.249",
+   "port": 443,
+   "t.me": "000 5.008599",
+   "api.telegram.org": "000 5.002954",
+   "gstatic": "000 5.001134",
+   "tg_ok": false
+  },
+  {
+   "i": 47,
+   "tag": "subscription.txt#47",
+   "server": "il.maximum-vpn.com",
+   "port": 48982,
+   "t.me": "000 5.016655",
+   "api.telegram.org": "000 5.014249",
+   "gstatic": "000 5.014485",
+   "tg_ok": false
+  },
+  {
+   "i": 48,
+   "tag": "subscription.txt#48",
+   "server": "212.179.49.187",
+   "port": 13443,
+   "t.me": "000 2.636054",
+   "api.telegram.org": "000 2.595256",
+   "gstatic": "000 2.679553",
+   "tg_ok": false
+  },
+  {
+   "i": 49,
+   "tag": "subscription.txt#49",
+   "server": "212.179.49.187",
+   "port": 13443,
+   "t.me": "000 2.670722",
+   "api.telegram.org": "000 2.666653",
+   "gstatic": "000 2.650766",
+   "tg_ok": false
+  },
+  {
+   "i": 50,
+   "tag": "subscription.txt#50",
+   "server": "212.179.49.187",
+   "port": 443,
+   "t.me": "000 2.650957",
+   "api.telegram.org": "000 2.649867",
+   "gstatic": "000 2.650258",
+   "tg_ok": false
+  },
+  {
+   "i": 51,
+   "tag": "subscription.txt#51",
+   "server": "212.179.49.187",
+   "port": 443,
+   "t.me": "000 2.649364",
+   "api.telegram.org": "000 2.649198",
+   "gstatic": "000 2.647117",
+   "tg_ok": false
+  },
+  {
+   "i": 52,
+   "tag": "subscription.txt#52",
+   "server": "37.202.205.75",
+   "port": 443,
+   "t.me": "000 5.005842",
+   "api.telegram.org": "000 5.016624",
+   "gstatic": "000 5.014239",
+   "tg_ok": false
+  },
+  {
+   "i": 53,
+   "tag": "subscription.txt#53",
+   "server": "it.getsavesafe.com",
+   "port": 443,
+   "t.me": "000 5.008505",
+   "api.telegram.org": "000 5.014708",
+   "gstatic": "000 5.013977",
+   "tg_ok": false
+  },
+  {
+   "i": 54,
+   "tag": "subscription.txt#54",
+   "server": "it.getsavesafe.com",
+   "port": 443,
+   "t.me": "000 5.006953",
+   "api.telegram.org": "000 5.014238",
+   "gstatic": "000 5.013973",
+   "tg_ok": false
+  },
+  {
+   "i": 55,
+   "tag": "subscription.txt#55",
+   "server": "103.125.219.14",
+   "port": 13443,
+   "t.me": "000 5.002568",
+   "api.telegram.org": "000 5.002203",
+   "gstatic": "000 5.015974",
+   "tg_ok": false
+  },
+  {
+   "i": 56,
+   "tag": "subscription.txt#56",
+   "server": "103.125.219.14",
+   "port": 443,
+   "t.me": "000 5.012959",
+   "api.telegram.org": "000 5.013964",
+   "gstatic": "000 5.013431",
+   "tg_ok": false
+  },
+  {
+   "i": 57,
+   "tag": "subscription.txt#57",
+   "server": "103.125.219.14",
+   "port": 443,
+   "t.me": "000 5.012964",
+   "api.telegram.org": "000 5.014653",
+   "gstatic": "000 5.015930",
+   "tg_ok": false
+  },
+  {
+   "i": 58,
+   "tag": "subscription.txt#58",
+   "server": "199.189.253.213",
+   "port": 443,
+   "t.me": "000 5.001299",
+   "api.telegram.org": "000 5.001271",
+   "gstatic": "000 5.001511",
+   "tg_ok": false
+  },
+  {
+   "i": 59,
+   "tag": "subscription.txt#59",
+   "server": "199.189.253.213",
+   "port": 443,
+   "t.me": "000 5.001863",
+   "api.telegram.org": "000 5.001530",
+   "gstatic": "000 5.001894",
+   "tg_ok": false
+  },
+  {
+   "i": 60,
+   "tag": "subscription.txt#60",
+   "server": "199.189.253.213",
+   "port": 13443,
+   "t.me": "000 5.001333",
+   "api.telegram.org": "000 5.001066",
+   "gstatic": "000 5.001107",
+   "tg_ok": false
+  },
+  {
+   "i": 61,
+   "tag": "subscription.txt#61",
+   "server": "199.189.253.213",
+   "port": 13443,
+   "t.me": "000 5.001547",
+   "api.telegram.org": "000 5.001236",
+   "gstatic": "000 5.001471",
+   "tg_ok": false
+  },
+  {
+   "i": 62,
+   "tag": "subscription.txt#62",
+   "server": "199.189.253.213",
+   "port": 13443,
+   "t.me": "000 5.001587",
+   "api.telegram.org": "000 5.001248",
+   "gstatic": "000 5.001742",
+   "tg_ok": false
+  },
+  {
+   "i": 63,
+   "tag": "subscription.txt#63",
+   "server": "31.57.29.118",
+   "port": 8443,
+   "t.me": "000 5.008262",
+   "api.telegram.org": "000 5.014680",
+   "gstatic": "000 5.015769",
+   "tg_ok": false
+  },
+  {
+   "i": 64,
+   "tag": "subscription.txt#64",
+   "server": "lv.omvpn.info",
+   "port": 2053,
+   "t.me": "000 5.012324",
+   "api.telegram.org": "000 5.014492",
+   "gstatic": "000 5.014329",
+   "tg_ok": false
+  },
+  {
+   "i": 65,
+   "tag": "subscription.txt#65",
+   "server": "lv.omvpn.info",
+   "port": 2053,
+   "t.me": "000 5.014123",
+   "api.telegram.org": "000 5.011414",
+   "gstatic": "000 5.014180",
+   "tg_ok": false
+  },
+  {
+   "i": 66,
+   "tag": "subscription.txt#66",
+   "server": "lv.omvpn.info",
+   "port": 8443,
+   "t.me": "000 5.005740",
+   "api.telegram.org": "000 5.011177",
+   "gstatic": "000 5.013208",
+   "tg_ok": false
+  },
+  {
+   "i": 67,
+   "tag": "subscription.txt#67",
+   "server": "195.123.210.98",
+   "port": 48982,
+   "t.me": "000 5.001692",
+   "api.telegram.org": "000 5.002246",
+   "gstatic": "000 5.001585",
+   "tg_ok": false
+  },
+  {
+   "i": 68,
+   "tag": "subscription.txt#68",
+   "server": "187.77.108.107",
+   "port": 48982,
+   "t.me": "000 5.017160",
+   "api.telegram.org": "000 5.011278",
+   "gstatic": "000 5.014598",
+   "tg_ok": false
+  },
+  {
+   "i": 69,
+   "tag": "subscription.txt#69",
+   "server": "187.77.108.107",
+   "port": 48982,
+   "t.me": "000 5.004152",
+   "api.telegram.org": "000 5.001581",
+   "gstatic": "000 5.012967",
+   "tg_ok": false
+  },
+  {
+   "i": 70,
+   "tag": "subscription.txt#70",
+   "server": "187.77.110.82",
+   "port": 48982,
+   "t.me": "000 5.015001",
+   "api.telegram.org": "000 5.011278",
+   "gstatic": "000 5.015594",
+   "tg_ok": false
+  },
+  {
+   "i": 71,
+   "tag": "subscription.txt#71",
+   "server": "lt.mxm-vpn.com",
+   "port": 48982,
+   "t.me": "000 5.004260",
+   "api.telegram.org": "000 5.001879",
+   "gstatic": "000 5.013276",
+   "tg_ok": false
+  },
+  {
+   "i": 72,
+   "tag": "subscription.txt#72",
+   "server": "85.117.243.16",
+   "port": 443,
+   "t.me": "000 5.014228",
+   "api.telegram.org": "000 5.015568",
+   "gstatic": "000 5.009204",
+   "tg_ok": false
+  },
+  {
+   "i": 73,
+   "tag": "subscription.txt#73",
+   "server": "194.110.207.195",
+   "port": 443,
+   "t.me": "000 5.002520",
+   "api.telegram.org": "000 5.016967",
+   "gstatic": "000 5.013039",
+   "tg_ok": false
+  },
+  {
+   "i": 74,
+   "tag": "subscription.txt#74",
+   "server": "185.241.208.89",
+   "port": 2054,
+   "t.me": "000 5.013268",
+   "api.telegram.org": "000 5.014841",
+   "gstatic": "000 5.009489",
+   "tg_ok": false
+  },
+  {
+   "i": 75,
+   "tag": "subscription.txt#75",
+   "server": "185.241.208.89",
+   "port": 2054,
+   "t.me": "000 5.006676",
+   "api.telegram.org": "000 5.016882",
+   "gstatic": "000 5.012783",
+   "tg_ok": false
+  },
+  {
+   "i": 76,
+   "tag": "subscription.txt#76",
+   "server": "79.108.161.7",
+   "port": 443,
+   "t.me": "000 2.954537",
+   "api.telegram.org": "000 2.571382",
+   "gstatic": "000 4.340765",
+   "tg_ok": false
+  },
+  {
+   "i": 77,
+   "tag": "subscription.txt#77",
+   "server": "134.122.202.244",
+   "port": 44915,
+   "t.me": "000 5.007921",
+   "api.telegram.org": "000 5.015841",
+   "gstatic": "000 5.009101",
+   "tg_ok": false
+  },
+  {
+   "i": 78,
+   "tag": "subscription.txt#78",
+   "server": "cloudgp-sgp-a.outleft-hy.xyz",
+   "port": 443,
+   "t.me": "000 5.010002",
+   "api.telegram.org": "000 5.008267",
+   "gstatic": "000 5.002140",
+   "tg_ok": false
+  },
+  {
+   "i": 79,
+   "tag": "subscription.txt#79",
+   "server": "sp.skysafe.online",
+   "port": 2027,
+   "t.me": "000 5.009913",
+   "api.telegram.org": "000 5.010720",
+   "gstatic": "000 5.014373",
+   "tg_ok": false
+  },
+  {
+   "i": 80,
+   "tag": "subscription.txt#80",
+   "server": "sp2.skysafe.online",
+   "port": 2027,
+   "t.me": "000 5.004986",
+   "api.telegram.org": "000 5.014922",
+   "gstatic": "000 5.012831",
+   "tg_ok": false
+  },
+  {
+   "i": 81,
+   "tag": "subscription.txt#81",
+   "server": "113.30.149.18",
+   "port": 443,
+   "t.me": "000 5.001358",
+   "api.telegram.org": "000 5.001329",
+   "gstatic": "000 5.001453",
+   "tg_ok": false
+  },
+  {
+   "i": 82,
+   "tag": "subscription.txt#82",
+   "server": "113.30.149.18",
+   "port": 443,
+   "t.me": "000 5.001169",
+   "api.telegram.org": "000 5.001445",
+   "gstatic": "000 5.001709",
+   "tg_ok": false
+  },
+  {
+   "i": 83,
+   "tag": "subscription.txt#83",
+   "server": "113.30.149.18",
+   "port": 13443,
+   "t.me": "000 5.001819",
+   "api.telegram.org": "000 5.001699",
+   "gstatic": "000 5.008478",
+   "tg_ok": false
+  },
+  {
+   "i": 84,
+   "tag": "subscription.txt#84",
+   "server": "113.30.149.18",
+   "port": 13443,
+   "t.me": "000 5.001478",
+   "api.telegram.org": "000 5.001260",
+   "gstatic": "000 5.001154",
+   "tg_ok": false
+  },
+  {
+   "i": 85,
+   "tag": "subscription.txt#85",
+   "server": "2.26.124.49",
+   "port": 443,
+   "t.me": "000 5.005636",
+   "api.telegram.org": "000 5.014654",
+   "gstatic": "000 5.016185",
+   "tg_ok": false
+  },
+  {
+   "i": 86,
+   "tag": "subscription.txt#86",
+   "server": "18.239.134.69",
+   "port": 80,
+   "t.me": "000 6.282668",
+   "api.telegram.org": "302 3.039912",
+   "gstatic": "204 3.877452",
+   "tg_ok": true
+  },
+  {
+   "i": 87,
+   "tag": "subscription.txt#87",
+   "server": "176.120.17.6",
+   "port": 59167,
+   "t.me": "000 5.001430",
+   "api.telegram.org": "000 5.002414",
+   "gstatic": "000 5.001323",
+   "tg_ok": false
+  },
+  {
+   "i": 88,
+   "tag": "subscription.txt#88",
+   "server": "176.120.17.7",
+   "port": 48537,
+   "t.me": "000 5.001837",
+   "api.telegram.org": "000 5.001582",
+   "gstatic": "000 5.001249",
+   "tg_ok": false
+  },
+  {
+   "i": 89,
+   "tag": "subscription.txt#89",
+   "server": "31.222.205.34",
+   "port": 48982,
+   "t.me": "000 5.015638",
+   "api.telegram.org": "000 5.001741",
+   "gstatic": "000 5.009460",
+   "tg_ok": false
+  },
+  {
+   "i": 90,
+   "tag": "subscription.txt#90",
+   "server": "31.222.205.34",
+   "port": 48982,
+   "t.me": "000 5.002836",
+   "api.telegram.org": "000 5.012487",
+   "gstatic": "000 5.012912",
+   "tg_ok": false
+  },
+  {
+   "i": 91,
+   "tag": "subscription.txt#91",
+   "server": "31.222.205.35",
+   "port": 48982,
+   "t.me": "000 5.003165",
+   "api.telegram.org": "000 5.013825",
+   "gstatic": "000 5.012241",
+   "tg_ok": false
+  },
+  {
+   "i": 92,
+   "tag": "subscription.txt#92",
+   "server": "31.222.205.36",
+   "port": 48982,
+   "t.me": "000 5.012937",
+   "api.telegram.org": "000 5.014508",
+   "gstatic": "000 5.009402",
+   "tg_ok": false
+  },
+  {
+   "i": 93,
+   "tag": "subscription.txt#93",
+   "server": "31.222.205.38",
+   "port": 48982,
+   "t.me": "000 5.001528",
+   "api.telegram.org": "000 5.001595",
+   "gstatic": "000 5.010770",
+   "tg_ok": false
+  },
+  {
+   "i": 94,
+   "tag": "subscription.txt#94",
+   "server": "31.222.205.39",
+   "port": 48982,
+   "t.me": "000 5.012767",
+   "api.telegram.org": "000 5.013565",
+   "gstatic": "000 5.009764",
+   "tg_ok": false
+  },
+  {
+   "i": 95,
+   "tag": "subscription.txt#95",
+   "server": "31.222.205.40",
+   "port": 48982,
+   "t.me": "000 5.006189",
+   "api.telegram.org": "000 5.014059",
+   "gstatic": "000 5.010038",
+   "tg_ok": false
+  },
+  {
+   "i": 96,
+   "tag": "subscription.txt#96",
+   "server": "31.222.205.40",
+   "port": 48982,
+   "t.me": "000 5.007543",
+   "api.telegram.org": "000 5.011629",
+   "gstatic": "000 5.009254",
+   "tg_ok": false
+  },
+  {
+   "i": 97,
+   "tag": "subscription.txt#97",
+   "server": "31.222.205.41",
+   "port": 48982,
+   "t.me": "000 5.007099",
+   "api.telegram.org": "000 5.010842",
+   "gstatic": "000 5.009087",
+   "tg_ok": false
+  },
+  {
+   "i": 98,
+   "tag": "subscription.txt#98",
+   "server": "31.222.205.42",
+   "port": 48982,
+   "t.me": "000 5.003292",
+   "api.telegram.org": "000 5.010551",
+   "gstatic": "000 5.009644",
+   "tg_ok": false
+  },
+  {
+   "i": 99,
+   "tag": "subscription.txt#99",
+   "server": "31.222.205.44",
+   "port": 48982,
+   "t.me": "000 5.013011",
+   "api.telegram.org": "000 5.012768",
+   "gstatic": "000 5.013774",
+   "tg_ok": false
+  },
+  {
+   "i": 100,
+   "tag": "subscription.txt#100",
+   "server": "31.222.205.46",
+   "port": 48982,
+   "t.me": "000 5.014073",
+   "api.telegram.org": "000 5.001505",
+   "gstatic": "000 5.006770",
+   "tg_ok": false
+  },
+  {
+   "i": 101,
+   "tag": "subscription.txt#101",
+   "server": "31.222.205.46",
+   "port": 48982,
+   "t.me": "000 5.003814",
+   "api.telegram.org": "000 5.011910",
+   "gstatic": "000 5.001872",
+   "tg_ok": false
+  },
+  {
+   "i": 102,
+   "tag": "subscription.txt#102",
+   "server": "31.222.205.47",
+   "port": 48982,
+   "t.me": "000 5.012986",
+   "api.telegram.org": "000 5.013085",
+   "gstatic": "000 5.013736",
+   "tg_ok": false
+  },
+  {
+   "i": 103,
+   "tag": "subscription.txt#103",
+   "server": "31.222.205.48",
+   "port": 48982,
+   "t.me": "000 5.005425",
+   "api.telegram.org": "000 5.001542",
+   "gstatic": "000 5.008748",
+   "tg_ok": false
+  },
+  {
+   "i": 104,
+   "tag": "subscription.txt#104",
+   "server": "31.222.205.48",
+   "port": 48982,
+   "t.me": "000 5.013964",
+   "api.telegram.org": "000 5.002529",
+   "gstatic": "000 5.014445",
+   "tg_ok": false
+  },
+  {
+   "i": 105,
+   "tag": "subscription.txt#105",
+   "server": "31.222.205.49",
+   "port": 48982,
+   "t.me": "000 5.007511",
+   "api.telegram.org": "000 5.012349",
+   "gstatic": "000 5.012031",
+   "tg_ok": false
+  },
+  {
+   "i": 106,
+   "tag": "subscription.txt#106",
+   "server": "31.222.205.50",
+   "port": 48982,
+   "t.me": "000 5.001759",
+   "api.telegram.org": "000 5.001230",
+   "gstatic": "000 5.002449",
+   "tg_ok": false
+  },
+  {
+   "i": 107,
+   "tag": "subscription.txt#107",
+   "server": "31.222.205.51",
+   "port": 48982,
+   "t.me": "000 5.005917",
+   "api.telegram.org": "000 5.016209",
+   "gstatic": "000 5.012632",
+   "tg_ok": false
+  },
+  {
+   "i": 108,
+   "tag": "subscription.txt#108",
+   "server": "31.222.205.54",
+   "port": 48982,
+   "t.me": "000 5.002710",
+   "api.telegram.org": "000 5.016434",
+   "gstatic": "000 5.016488",
+   "tg_ok": false
+  },
+  {
+   "i": 109,
+   "tag": "subscription.txt#109",
+   "server": "31.222.205.54",
+   "port": 48982,
+   "t.me": "000 5.002002",
+   "api.telegram.org": "000 5.016252",
+   "gstatic": "000 5.015947",
+   "tg_ok": false
+  },
+  {
+   "i": 110,
+   "tag": "subscription.txt#110",
+   "server": "nl.mxm-vpn.com",
+   "port": 48982,
+   "t.me": "000 5.007422",
+   "api.telegram.org": "000 5.013216",
+   "gstatic": "000 5.011764",
+   "tg_ok": false
+  },
+  {
+   "i": 111,
+   "tag": "subscription.txt#111",
+   "server": "nl.mxm-vpn.com",
+   "port": 48982,
+   "t.me": "000 5.006791",
+   "api.telegram.org": "000 5.016536",
+   "gstatic": "000 5.011887",
+   "tg_ok": false
+  },
+  {
+   "i": 112,
+   "tag": "subscription.txt#112",
+   "server": "176.117.75.143",
+   "port": 2087,
+   "t.me": "000 5.003249",
+   "api.telegram.org": "000 5.007859",
+   "gstatic": "000 5.007379",
+   "tg_ok": false
+  },
+  {
+   "i": 113,
+   "tag": "subscription.txt#113",
+   "server": "176.117.75.143",
+   "port": 2087,
+   "t.me": "000 5.009103",
+   "api.telegram.org": "000 5.010105",
+   "gstatic": "000 5.010148",
+   "tg_ok": false
+  },
+  {
+   "i": 114,
+   "tag": "subscription.txt#114",
+   "server": "ne.omvpn.info",
+   "port": 8443,
+   "t.me": "000 5.017882",
+   "api.telegram.org": "000 5.009939",
+   "gstatic": "000 5.005587",
+   "tg_ok": false
+  },
+  {
+   "i": 115,
+   "tag": "subscription.txt#115",
+   "server": "217.60.23.154",
+   "port": 8443,
+   "t.me": "000 5.003163",
+   "api.telegram.org": "000 5.007087",
+   "gstatic": "000 5.010807",
+   "tg_ok": false
+  },
+  {
+   "i": 116,
+   "tag": "subscription.txt#116",
+   "server": "217.60.23.154",
+   "port": 8443,
+   "t.me": "000 5.011453",
+   "api.telegram.org": "000 5.014354",
+   "gstatic": "000 5.012582",
+   "tg_ok": false
+  },
+  {
+   "i": 117,
+   "tag": "subscription.txt#117",
+   "server": "217.60.24.57",
+   "port": 8443,
+   "t.me": "000 5.018251",
+   "api.telegram.org": "000 5.007888",
+   "gstatic": "000 5.007091",
+   "tg_ok": false
+  },
+  {
+   "i": 118,
+   "tag": "subscription.txt#118",
+   "server": "217.60.24.57",
+   "port": 8443,
+   "t.me": "000 5.003677",
+   "api.telegram.org": "000 5.011276",
+   "gstatic": "000 5.006650",
+   "tg_ok": false
+  },
+  {
+   "i": 119,
+   "tag": "subscription.txt#119",
+   "server": "217.60.24.61",
+   "port": 8443,
+   "t.me": "000 5.009204",
+   "api.telegram.org": "000 5.010574",
+   "gstatic": "000 5.010787",
+   "tg_ok": false
+  },
+  {
+   "i": 120,
+   "tag": "subscription.txt#120",
+   "server": "144.31.237.105",
+   "port": 443,
+   "t.me": "000 5.005332",
+   "api.telegram.org": "000 5.012005",
+   "gstatic": "000 5.012034",
+   "tg_ok": false
+  },
+  {
+   "i": 121,
+   "tag": "subscription.txt#121",
+   "server": "144.31.237.106",
+   "port": 443,
+   "t.me": "000 5.016443",
+   "api.telegram.org": "000 5.013036",
+   "gstatic": "000 5.011205",
+   "tg_ok": false
+  },
+  {
+   "i": 122,
+   "tag": "subscription.txt#122",
+   "server": "144.31.237.106",
+   "port": 443,
+   "t.me": "000 5.016826",
+   "api.telegram.org": "000 5.012811",
+   "gstatic": "000 5.011242",
+   "tg_ok": false
+  },
+  {
+   "i": 123,
+   "tag": "subscription.txt#123",
+   "server": "144.31.237.111",
+   "port": 443,
+   "t.me": "000 5.006236",
+   "api.telegram.org": "000 5.013338",
+   "gstatic": "000 5.012732",
+   "tg_ok": false
+  },
+  {
+   "i": 124,
+   "tag": "subscription.txt#124",
+   "server": "144.31.237.111",
+   "port": 443,
+   "t.me": "000 5.006144",
+   "api.telegram.org": "000 5.011967",
+   "gstatic": "000 5.001200",
+   "tg_ok": false
+  },
+  {
+   "i": 125,
+   "tag": "subscription.txt#125",
+   "server": "144.31.237.118",
+   "port": 443,
+   "t.me": "000 5.014168",
+   "api.telegram.org": "000 5.015080",
+   "gstatic": "000 5.011062",
+   "tg_ok": false
+  },
+  {
+   "i": 126,
+   "tag": "subscription.txt#126",
+   "server": "144.31.237.118",
+   "port": 443,
+   "t.me": "000 5.016729",
+   "api.telegram.org": "000 5.013794",
+   "gstatic": "000 5.010909",
+   "tg_ok": false
+  },
+  {
+   "i": 127,
+   "tag": "subscription.txt#127",
+   "server": "144.31.237.119",
+   "port": 443,
+   "t.me": "000 5.006053",
+   "api.telegram.org": "000 5.001122",
+   "gstatic": "000 5.008328",
+   "tg_ok": false
+  },
+  {
+   "i": 128,
+   "tag": "subscription.txt#128",
+   "server": "144.31.237.120",
+   "port": 443,
+   "t.me": "000 5.016919",
+   "api.telegram.org": "000 5.011430",
+   "gstatic": "000 5.011237",
+   "tg_ok": false
+  },
+  {
+   "i": 129,
+   "tag": "subscription.txt#129",
+   "server": "144.31.237.126",
+   "port": 443,
+   "t.me": "000 5.009213",
+   "api.telegram.org": "000 5.011487",
+   "gstatic": "000 5.001466",
+   "tg_ok": false
+  },
+  {
+   "i": 130,
+   "tag": "subscription.txt#130",
+   "server": "144.31.237.191",
+   "port": 443,
+   "t.me": "000 5.011534",
+   "api.telegram.org": "000 5.011930",
+   "gstatic": "000 5.013329",
+   "tg_ok": false
+  },
+  {
+   "i": 131,
+   "tag": "subscription.txt#131",
+   "server": "144.31.237.56",
+   "port": 443,
+   "t.me": "000 5.001860",
+   "api.telegram.org": "000 5.014732",
+   "gstatic": "000 5.009256",
+   "tg_ok": false
+  },
+  {
+   "i": 132,
+   "tag": "subscription.txt#132",
+   "server": "144.31.237.56",
+   "port": 443,
+   "t.me": "000 5.016873",
+   "api.telegram.org": "000 5.012187",
+   "gstatic": "000 5.013102",
+   "tg_ok": false
+  },
+  {
+   "i": 133,
+   "tag": "subscription.txt#133",
+   "server": "144.31.237.60",
+   "port": 443,
+   "t.me": "000 5.009472",
+   "api.telegram.org": "000 5.007383",
+   "gstatic": "000 5.008999",
+   "tg_ok": false
+  },
+  {
+   "i": 134,
+   "tag": "subscription.txt#134",
+   "server": "144.31.237.60",
+   "port": 443,
+   "t.me": "000 5.009704",
+   "api.telegram.org": "000 5.011471",
+   "gstatic": "000 5.011845",
+   "tg_ok": false
+  },
+  {
+   "i": 135,
+   "tag": "subscription.txt#135",
+   "server": "144.31.237.80",
+   "port": 443,
+   "t.me": "000 5.010738",
+   "api.telegram.org": "000 5.010908",
+   "gstatic": "000 5.012269",
+   "tg_ok": false
+  },
+  {
+   "i": 136,
+   "tag": "subscription.txt#136",
+   "server": "144.31.237.89",
+   "port": 443,
+   "t.me": "000 5.009843",
+   "api.telegram.org": "000 5.001196",
+   "gstatic": "000 5.007902",
+   "tg_ok": false
+  },
+  {
+   "i": 137,
+   "tag": "subscription.txt#137",
+   "server": "167.104.217.250",
+   "port": 443,
+   "t.me": "000 5.015835",
+   "api.telegram.org": "000 5.002406",
+   "gstatic": "000 5.013391",
+   "tg_ok": false
+  },
+  {
+   "i": 138,
+   "tag": "subscription.txt#138",
+   "server": "167.104.217.250",
+   "port": 443,
+   "t.me": "000 5.015865",
+   "api.telegram.org": "000 5.002329",
+   "gstatic": "000 5.013514",
+   "tg_ok": false
+  },
+  {
+   "i": 139,
+   "tag": "subscription.txt#139",
+   "server": "31.59.39.244",
+   "port": 443,
+   "t.me": "000 5.001168",
+   "api.telegram.org": "000 5.001550",
+   "gstatic": "000 5.004967",
+   "tg_ok": false
+  },
+  {
+   "i": 140,
+   "tag": "subscription.txt#140",
+   "server": "31.59.39.244",
+   "port": 443,
+   "t.me": "000 5.001246",
+   "api.telegram.org": "000 5.009213",
+   "gstatic": "000 5.010794",
+   "tg_ok": false
+  },
+  {
+   "i": 141,
+   "tag": "subscription.txt#141",
+   "server": "31.59.39.245",
+   "port": 443,
+   "t.me": "000 5.002822",
+   "api.telegram.org": "000 5.012121",
+   "gstatic": "000 5.009481",
+   "tg_ok": false
+  },
+  {
+   "i": 142,
+   "tag": "subscription.txt#142",
+   "server": "31.59.39.2",
+   "port": 443,
+   "t.me": "000 5.009148",
+   "api.telegram.org": "000 5.001222",
+   "gstatic": "000 5.010002",
+   "tg_ok": false
+  },
+  {
+   "i": 143,
+   "tag": "subscription.txt#143",
+   "server": "94.183.254.10",
+   "port": 443,
+   "t.me": "000 5.014265",
+   "api.telegram.org": "000 5.011980",
+   "gstatic": "000 5.010406",
+   "tg_ok": false
+  },
+  {
+   "i": 144,
+   "tag": "subscription.txt#144",
+   "server": "94.183.254.74",
+   "port": 443,
+   "t.me": "000 5.011604",
+   "api.telegram.org": "000 5.016015",
+   "gstatic": "000 5.016365",
+   "tg_ok": false
+  },
+  {
+   "i": 145,
+   "tag": "subscription.txt#145",
+   "server": "94.183.254.78",
+   "port": 443,
+   "t.me": "000 5.012905",
+   "api.telegram.org": "000 5.012734",
+   "gstatic": "000 5.015655",
+   "tg_ok": false
+  },
+  {
+   "i": 146,
+   "tag": "subscription.txt#146",
+   "server": "94.183.254.81",
+   "port": 443,
+   "t.me": "000 5.005640",
+   "api.telegram.org": "000 5.011342",
+   "gstatic": "000 5.013472",
+   "tg_ok": false
+  },
+  {
+   "i": 147,
+   "tag": "subscription.txt#147",
+   "server": "94.183.254.83",
+   "port": 443,
+   "t.me": "000 5.004879",
+   "api.telegram.org": "000 5.011412",
+   "gstatic": "000 5.010786",
+   "tg_ok": false
+  },
+  {
+   "i": 148,
+   "tag": "subscription.txt#148",
+   "server": "94.183.254.83",
+   "port": 443,
+   "t.me": "000 5.004004",
+   "api.telegram.org": "000 5.016033",
+   "gstatic": "000 5.016178",
+   "tg_ok": false
+  },
+  {
+   "i": 149,
+   "tag": "subscription.txt#149",
+   "server": "94.183.254.84",
+   "port": 443,
+   "t.me": "000 5.005184",
+   "api.telegram.org": "000 5.014984",
+   "gstatic": "000 5.010653",
+   "tg_ok": false
+  },
+  {
+   "i": 150,
+   "tag": "subscription.txt#150",
+   "server": "94.183.254.84",
+   "port": 443,
+   "t.me": "000 5.007390",
+   "api.telegram.org": "000 5.013173",
+   "gstatic": "000 5.012386",
+   "tg_ok": false
+  },
+  {
+   "i": 151,
+   "tag": "subscription.txt#151",
+   "server": "94.183.254.85",
+   "port": 443,
+   "t.me": "000 5.002703",
+   "api.telegram.org": "000 5.001746",
+   "gstatic": "000 5.010408",
+   "tg_ok": false
+  },
+  {
+   "i": 152,
+   "tag": "subscription.txt#152",
+   "server": "94.183.254.88",
+   "port": 443,
+   "t.me": "000 5.011937",
+   "api.telegram.org": "000 5.014877",
+   "gstatic": "000 5.013409",
+   "tg_ok": false
+  },
+  {
+   "i": 153,
+   "tag": "subscription.txt#153",
+   "server": "94.183.254.88",
+   "port": 443,
+   "t.me": "000 5.001846",
+   "api.telegram.org": "000 5.017266",
+   "gstatic": "000 5.015375",
+   "tg_ok": false
+  },
+  {
+   "i": 154,
+   "tag": "subscription.txt#154",
+   "server": "45.82.67.179",
+   "port": 443,
+   "t.me": "000 5.002616",
+   "api.telegram.org": "000 5.017158",
+   "gstatic": "000 5.011488",
+   "tg_ok": false
+  },
+  {
+   "i": 155,
+   "tag": "subscription.txt#155",
+   "server": "45.82.67.179",
+   "port": 443,
+   "t.me": "000 5.014114",
+   "api.telegram.org": "000 5.003341",
+   "gstatic": "000 5.013546",
+   "tg_ok": false
+  },
+  {
+   "i": 156,
+   "tag": "subscription.txt#156",
+   "server": "45.82.67.179",
+   "port": 443,
+   "t.me": "000 5.011337",
+   "api.telegram.org": "000 5.014415",
+   "gstatic": "000 5.012082",
+   "tg_ok": false
+  },
+  {
+   "i": 157,
+   "tag": "subscription.txt#157",
+   "server": "144.225.65.67",
+   "port": 80,
+   "t.me": "000 5.004533",
+   "api.telegram.org": "000 5.014350",
+   "gstatic": "000 5.012406",
+   "tg_ok": false
+  },
+  {
+   "i": 158,
+   "tag": "subscription.txt#158",
+   "server": "144.225.65.67",
+   "port": 80,
+   "t.me": "000 5.007755",
+   "api.telegram.org": "000 5.014988",
+   "gstatic": "000 5.013378",
+   "tg_ok": false
+  },
+  {
+   "i": 159,
+   "tag": "subscription.txt#159",
+   "server": "194.116.236.9",
+   "port": 443,
+   "t.me": "000 5.001687",
+   "api.telegram.org": "000 5.001455",
+   "gstatic": "000 5.002135",
+   "tg_ok": false
+  },
+  {
+   "i": 160,
+   "tag": "subscription.txt#160",
+   "server": "194.116.236.9",
+   "port": 443,
+   "t.me": "000 5.002028",
+   "api.telegram.org": "000 5.001324",
+   "gstatic": "000 5.001626",
+   "tg_ok": false
+  },
+  {
+   "i": 161,
+   "tag": "subscription.txt#161",
+   "server": "45.141.148.10",
+   "port": 443,
+   "t.me": "000 5.001498",
+   "api.telegram.org": "000 5.001276",
+   "gstatic": "000 5.001269",
+   "tg_ok": false
+  },
+  {
+   "i": 162,
+   "tag": "subscription.txt#162",
+   "server": "45.141.148.10",
+   "port": 443,
+   "t.me": "000 5.002063",
+   "api.telegram.org": "000 5.001465",
+   "gstatic": "000 5.001209",
+   "tg_ok": false
+  },
+  {
+   "i": 163,
+   "tag": "subscription.txt#163",
+   "server": "45.141.148.11",
+   "port": 443,
+   "t.me": "000 5.008709",
+   "api.telegram.org": "000 5.014591",
+   "gstatic": "000 5.005143",
+   "tg_ok": false
+  },
+  {
+   "i": 164,
+   "tag": "subscription.txt#164",
+   "server": "45.141.148.11",
+   "port": 443,
+   "t.me": "000 5.006811",
+   "api.telegram.org": "000 5.009724",
+   "gstatic": "000 5.005590",
+   "tg_ok": false
+  },
+  {
+   "i": 165,
+   "tag": "subscription.txt#165",
+   "server": "45.141.148.12",
+   "port": 443,
+   "t.me": "000 5.001930",
+   "api.telegram.org": "000 5.001330",
+   "gstatic": "000 5.001310",
+   "tg_ok": false
+  },
+  {
+   "i": 166,
+   "tag": "subscription.txt#166",
+   "server": "tr.savesafe.cc",
+   "port": 443,
+   "t.me": "000 5.004798",
+   "api.telegram.org": "000 5.011080",
+   "gstatic": "000 5.005755",
+   "tg_ok": false
+  },
+  {
+   "i": 167,
+   "tag": "subscription.txt#167",
+   "server": "103.83.86.96",
+   "port": 443,
+   "t.me": "000 5.001417",
+   "api.telegram.org": "000 5.001386",
+   "gstatic": "000 5.002364",
+   "tg_ok": false
+  },
+  {
+   "i": 168,
+   "tag": "subscription.txt#168",
+   "server": "151.242.160.49",
+   "port": 443,
+   "t.me": "000 5.015016",
+   "api.telegram.org": "000 5.001751",
+   "gstatic": "000 5.012654",
+   "tg_ok": false
+  },
+  {
+   "i": 169,
+   "tag": "subscription.txt#169",
+   "server": "151.242.160.49",
+   "port": 443,
+   "t.me": "000 5.005797",
+   "api.telegram.org": "000 5.011891",
+   "gstatic": "000 5.010747",
+   "tg_ok": false
+  },
+  {
+   "i": 170,
+   "tag": "subscription.txt#170",
+   "server": "151.242.160.49",
+   "port": 443,
+   "t.me": "000 5.013348",
+   "api.telegram.org": "000 5.008105",
+   "gstatic": "000 5.014273",
+   "tg_ok": false
+  },
+  {
+   "i": 171,
+   "tag": "subscription.txt#171",
+   "server": "95.154.195.11",
+   "port": 443,
+   "t.me": "000 5.007923",
+   "api.telegram.org": "000 5.011277",
+   "gstatic": "000 5.014061",
+   "tg_ok": false
+  },
+  {
+   "i": 172,
+   "tag": "subscription.txt#172",
+   "server": "78.129.184.116",
+   "port": 443,
+   "t.me": "000 5.003782",
+   "api.telegram.org": "000 5.005253",
+   "gstatic": "000 5.012892",
+   "tg_ok": false
+  },
+  {
+   "i": 173,
+   "tag": "subscription.txt#173",
+   "server": "78.129.190.5",
+   "port": 443,
+   "t.me": "000 5.013348",
+   "api.telegram.org": "000 5.009861",
+   "gstatic": "000 5.010929",
+   "tg_ok": false
+  },
+  {
+   "i": 174,
+   "tag": "subscription.txt#174",
+   "server": "78.129.190.5",
+   "port": 443,
+   "t.me": "000 5.001937",
+   "api.telegram.org": "000 5.008119",
+   "gstatic": "000 5.013363",
+   "tg_ok": false
+  },
+  {
+   "i": 175,
+   "tag": "subscription.txt#175",
+   "server": "2.24.131.230",
+   "port": 48982,
+   "t.me": "000 5.002447",
+   "api.telegram.org": "000 5.008038",
+   "gstatic": "000 5.012866",
+   "tg_ok": false
+  },
+  {
+   "i": 176,
+   "tag": "subscription.txt#176",
+   "server": "uk.maximum-vpn.com",
+   "port": 48982,
+   "t.me": "000 5.001953",
+   "api.telegram.org": "000 5.012117",
+   "gstatic": "000 5.010968",
+   "tg_ok": false
+  },
+  {
+   "i": 177,
+   "tag": "subscription.txt#177",
+   "server": "89.117.67.148",
+   "port": 443,
+   "t.me": "000 5.001351",
+   "api.telegram.org": "000 5.001174",
+   "gstatic": "000 5.001740",
+   "tg_ok": false
+  },
+  {
+   "i": 178,
+   "tag": "subscription.txt#178",
+   "server": "89.117.67.148",
+   "port": 443,
+   "t.me": "000 5.001584",
+   "api.telegram.org": "000 5.001440",
+   "gstatic": "000 5.001672",
+   "tg_ok": false
+  },
+  {
+   "i": 179,
+   "tag": "subscription.txt#179",
+   "server": "89.117.67.5",
+   "port": 443,
+   "t.me": "000 5.001313",
+   "api.telegram.org": "000 5.001325",
+   "gstatic": "000 5.001127",
+   "tg_ok": false
+  },
+  {
+   "i": 180,
+   "tag": "subscription.txt#180",
+   "server": "152.53.38.23",
+   "port": 2054,
+   "t.me": "000 5.008595",
+   "api.telegram.org": "000 5.012102",
+   "gstatic": "000 5.013439",
+   "tg_ok": false
+  },
+  {
+   "i": 181,
+   "tag": "subscription.txt#181",
+   "server": "152.53.38.23",
+   "port": 2054,
+   "t.me": "000 5.006311",
+   "api.telegram.org": "000 5.014700",
+   "gstatic": "000 5.013292",
+   "tg_ok": false
+  },
+  {
+   "i": 182,
+   "tag": "subscription.txt#182",
+   "server": "13.143.141.28",
+   "port": 2054,
+   "t.me": "000 5.012084",
+   "api.telegram.org": "000 5.013594",
+   "gstatic": "000 5.013303",
+   "tg_ok": false
+  },
+  {
+   "i": 183,
+   "tag": "subscription.txt#183",
+   "server": "usa11.skysafe.online",
+   "port": 2027,
+   "t.me": "000 5.015993",
+   "api.telegram.org": "000 5.014478",
+   "gstatic": "000 5.014638",
+   "tg_ok": false
+  },
+  {
+   "i": 184,
+   "tag": "subscription.txt#184",
+   "server": "usa11.skysafe.online",
+   "port": 2027,
+   "t.me": "000 5.001747",
+   "api.telegram.org": "000 5.002398",
+   "gstatic": "000 5.014842",
+   "tg_ok": false
+  },
+  {
+   "i": 185,
+   "tag": "subscription.txt#185",
+   "server": "95.182.114.94",
+   "port": 2053,
+   "t.me": "000 5.009079",
+   "api.telegram.org": "000 5.016076",
+   "gstatic": "000 5.011550",
+   "tg_ok": false
+  },
+  {
+   "i": 186,
+   "tag": "subscription.txt#186",
+   "server": "95.182.114.94",
+   "port": 2053,
+   "t.me": "000 5.011529",
+   "api.telegram.org": "000 5.015385",
+   "gstatic": "000 5.011740",
+   "tg_ok": false
+  },
+  {
+   "i": 187,
+   "tag": "subscription.txt#187",
+   "server": "95.182.114.94",
+   "port": 8443,
+   "t.me": "000 5.012163",
+   "api.telegram.org": "000 5.016290",
+   "gstatic": "000 5.015720",
+   "tg_ok": false
+  },
+  {
+   "i": 188,
+   "tag": "subscription.txt#188",
+   "server": "95.182.114.94",
+   "port": 8443,
+   "t.me": "000 5.005969",
+   "api.telegram.org": "000 5.001667",
+   "gstatic": "000 5.009937",
+   "tg_ok": false
+  },
+  {
+   "i": 189,
+   "tag": "subscription.txt#189",
+   "server": "94.183.209.90",
+   "port": 8444,
+   "t.me": "000 5.001803",
+   "api.telegram.org": "000 5.001689",
+   "gstatic": "000 5.001364",
+   "tg_ok": false
+  },
+  {
+   "i": 190,
+   "tag": "subscription.txt#190",
+   "server": "94.183.209.90",
+   "port": 8444,
+   "t.me": "000 5.001459",
+   "api.telegram.org": "000 5.001491",
+   "gstatic": "000 5.002170",
+   "tg_ok": false
+  },
+  {
+   "i": 191,
+   "tag": "subscription.txt#191",
+   "server": "94.183.209.90",
+   "port": 8444,
+   "t.me": "000 5.001192",
+   "api.telegram.org": "000 5.001615",
+   "gstatic": "000 5.001295",
+   "tg_ok": false
+  },
+  {
+   "i": 192,
+   "tag": "subscription.txt#192",
+   "server": "94.183.209.90",
+   "port": 8444,
+   "t.me": "000 5.001281",
+   "api.telegram.org": "000 5.002519",
+   "gstatic": "000 5.001729",
+   "tg_ok": false
+  },
+  {
+   "i": 193,
+   "tag": "subscription.txt#193",
+   "server": "94.183.209.90",
+   "port": 8444,
+   "t.me": "000 5.001668",
+   "api.telegram.org": "000 5.001303",
+   "gstatic": "000 5.001495",
+   "tg_ok": false
+  },
+  {
+   "i": 194,
+   "tag": "subscription.txt#194",
+   "server": "94.183.208.29",
+   "port": 443,
+   "t.me": "000 5.008528",
+   "api.telegram.org": "000 5.001905",
+   "gstatic": "000 5.010324",
+   "tg_ok": false
+  },
+  {
+   "i": 195,
+   "tag": "subscription.txt#195",
+   "server": "89.117.67.149",
+   "port": 443,
+   "t.me": "000 5.002048",
+   "api.telegram.org": "000 5.001099",
+   "gstatic": "000 5.001665",
+   "tg_ok": false
+  },
+  {
+   "i": 196,
+   "tag": "subscription.txt#196",
+   "server": "89.117.67.149",
+   "port": 443,
+   "t.me": "000 5.001805",
+   "api.telegram.org": "000 5.003023",
+   "gstatic": "000 5.001415",
+   "tg_ok": false
+  },
+  {
+   "i": 197,
+   "tag": "subscription.txt#197",
+   "server": "us.opngtr.nl",
+   "port": 443,
+   "t.me": "000 5.016533",
+   "api.telegram.org": "000 5.001713",
+   "gstatic": "000 5.010416",
+   "tg_ok": false
+  },
+  {
+   "i": 198,
+   "tag": "subscription.txt#198",
+   "server": "140.99.223.186",
+   "port": 443,
+   "t.me": "000 5.001389",
+   "api.telegram.org": "000 5.002846",
+   "gstatic": "000 5.001821",
+   "tg_ok": false
+  },
+  {
+   "i": 199,
+   "tag": "subscription.txt#199",
+   "server": "140.99.223.18",
+   "port": 443,
+   "t.me": "000 5.001742",
+   "api.telegram.org": "000 5.003117",
+   "gstatic": "000 5.001611",
+   "tg_ok": false
+  },
+  {
+   "i": 200,
+   "tag": "subscription.txt#200",
+   "server": "140.99.223.18",
+   "port": 443,
+   "t.me": "000 5.001713",
+   "api.telegram.org": "000 5.001672",
+   "gstatic": "000 5.001315",
+   "tg_ok": false
+  },
+  {
+   "i": 201,
+   "tag": "subscription.txt#201",
+   "server": "usa.opngtr.nl",
+   "port": 443,
+   "t.me": "000 5.003346",
+   "api.telegram.org": "000 5.013330",
+   "gstatic": "000 5.011986",
+   "tg_ok": false
+  },
+  {
+   "i": 202,
+   "tag": "subscription.txt#202",
+   "server": "usa.opngtr.nl",
+   "port": 443,
+   "t.me": "000 5.005118",
+   "api.telegram.org": "000 5.014949",
+   "gstatic": "000 5.012045",
+   "tg_ok": false
+  },
+  {
+   "i": 203,
+   "tag": "subscription.txt#203",
+   "server": "ruh.omvpn.info",
+   "port": 8443,
+   "t.me": "000 5.005046",
+   "api.telegram.org": "000 5.001023",
+   "gstatic": "000 5.001345",
+   "tg_ok": false
+  }
+ ]
+}

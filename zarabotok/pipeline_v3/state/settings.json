@@ -1,0 +1,17 @@
+{
+  "tg_poll": true,
+  "show_vacancies": false,
+  "auto_reply": true,
+  "tg_session_listener": "telegram_session_sender",
+  "email": {
+    "provider": "gmail",
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 465,
+    "imap_host": "imap.gmail.com",
+    "imap_port": 993,
+    "smtp_user": "aprenkavuj@gmail.com",
+    "smtp_pass": "krpvwjouwvruuhyh",
+    "imap_user": "aprenkavuj@gmail.com",
+    "imap_pass": "krpvwjouwvruuhyh"
+  }
+}

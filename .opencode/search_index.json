@@ -1,0 +1,1298 @@
+{
+  "version": "1.0",
+  "date": "2026-08-31",
+  "purpose": "Agent discovery by audit keywords — maps keywords to audit resources (files + agents + stages)",
+  "keyword_index": {
+    "audit": {
+      "files": [
+        "memory/accessibility_audit_summary.md",
+        "memory/accessibility_complete.md",
+        "memory/code_audit_summary.md",
+        "memory/complete_worklist.md",
+        "memory/full_audit_master.md",
+        "memory/memory_audit_summary.md",
+        "memory/p0_fixes_summary.md",
+        "memory/p0_memory_agent.md",
+        "memory/p0_workflow_agent.md",
+        "memory/release_audit_summary.md",
+        "memory/release_completion.md",
+        "memory/sd_review.md",
+        "memory/spm_review.md",
+        "memory/workflow_agents_index.md",
+        "memory/workflow_audit_summary.md",
+        "memory/workflow_completion.md"
+      ],
+      "agents": [
+        "accessibility-auditor",
+        "code-reviewer",
+        "compliance-auditor",
+        "security-engineer",
+        "agentic-search-optimizer",
+        "workflow-architect",
+        "pipeline-analyst",
+        "backend-architect"
+      ],
+      "tags": [
+        "review",
+        "p0",
+        "worklist",
+        "verification_debt",
+        "master"
+      ]
+    },
+    "pipeline": {
+      "files": [
+        "memory/accessibility_audit_summary.md",
+        "memory/code_audit_summary.md",
+        "memory/full_audit_master.md",
+        "memory/p0_workflow_agent.md",
+        "memory/release_completion.md",
+        "memory/sd_review.md",
+        "memory/spm_review.md",
+        "memory/workflow_audit_summary.md",
+        "memory/workflow_completion.md"
+      ],
+      "agents": [
+        "pipeline-analyst",
+        "workflow-architect",
+        "agentic-search-optimizer"
+      ],
+      "tags": [
+        "scanners",
+        "store",
+        "ranker",
+        "executor",
+        "spec_matrix",
+        "metrics_funnel"
+      ]
+    },
+    "accessibility": {
+      "files": [
+        "memory/accessibility_audit_summary.md",
+        "memory/accessibility_complete.md",
+        "memory/complete_worklist.md",
+        "memory/full_audit_master.md",
+        "memory/p0_fixes_summary.md",
+        "memory/sd_review.md",
+        "memory/spm_review.md"
+      ],
+      "agents": [
+        "accessibility-auditor"
+      ],
+      "tags": [
+        "a11y",
+        "wcag",
+        "modal",
+        "drawer",
+        "toast",
+        "table",
+        "pipeline",
+        "task",
+        "overview"
+      ]
+    },
+    "workflow": {
+      "files": [
+        "memory/complete_worklist.md",
+        "memory/full_audit_master.md",
+        "memory/p0_fixes_summary.md",
+        "memory/p0_workflow_agent.md",
+        "memory/spm_review.md",
+        "memory/workflow_agents_index.md",
+        "memory/workflow_audit_summary.md",
+        "memory/workflow_completion.md"
+      ],
+      "agents": [
+        "workflow-architect",
+        "workflow-optimizer",
+        "pipeline-analyst"
+      ],
+      "tags": [
+        "W1-W9",
+        "stage",
+        "execution",
+        "delivery",
+        "sandbox",
+        "kill_switch"
+      ]
+    },
+    "release": {
+      "files": [
+        "memory/complete_worklist.md",
+        "memory/full_audit_master.md",
+        "memory/release_audit_summary.md",
+        "memory/release_completion.md",
+        "memory/spm_review.md"
+      ],
+      "agents": [
+        "security-engineer",
+        "backend-architect",
+        "agentic-search-optimizer"
+      ],
+      "tags": [
+        "R2-R5",
+        "sign",
+        "sbom",
+        "checksum",
+        "verify",
+        "install.sh",
+        "opencode.exe"
+      ]
+    },
+    "code": {
+      "files": [
+        "memory/code_audit_summary.md",
+        "memory/full_audit_master.md",
+        "memory/sd_review.md",
+        "memory/spm_review.md"
+      ],
+      "agents": [],
+      "tags": [
+        "code"
+      ]
+    },
+    "memory": {
+      "files": [
+        "memory/complete_worklist.md",
+        "memory/full_audit_master.md",
+        "memory/memory_audit_summary.md",
+        "memory/p0_fixes_summary.md",
+        "memory/p0_memory_agent.md",
+        "memory/spm_review.md"
+      ],
+      "agents": [
+        "agentic-search-optimizer",
+        "workflow-optimizer"
+      ],
+      "tags": [
+        "decision",
+        "risk",
+        "experiment",
+        "feedback",
+        "state",
+        "deliverables"
+      ]
+    },
+    "sandbox": {
+      "files": [
+        "memory/code_audit_summary.md",
+        "memory/complete_worklist.md",
+        "memory/full_audit_master.md",
+        "memory/p0_fixes_summary.md",
+        "memory/workflow_audit_summary.md",
+        "memory/workflow_completion.md"
+      ],
+      "agents": [
+        "security-engineer",
+        "backend-architect",
+        "code-reviewer"
+      ],
+      "tags": [
+        "DOCKER_ENABLED",
+        "sandbox.py",
+        "executor",
+        "dialog"
+      ]
+    },
+    "kill_switch": {
+      "files": [
+        "memory/complete_worklist.md",
+        "memory/full_audit_master.md",
+        "memory/p0_fixes_summary.md",
+        "memory/sd_review.md",
+        "memory/workflow_audit_summary.md",
+        "memory/workflow_completion.md"
+      ],
+      "agents": [
+        "security-engineer",
+        "workflow-architect"
+      ],
+      "tags": [
+        "events.json",
+        "watchdog",
+        "listener"
+      ]
+    },
+    "billing": {
+      "files": [
+        "memory/complete_worklist.md",
+        "memory/full_audit_master.md",
+        "memory/p0_fixes_summary.md",
+        "memory/workflow_completion.md"
+      ],
+      "agents": [
+        "backend-architect",
+        "agentic-search-optimizer"
+      ],
+      "tags": [
+        "verify_hmac",
+        "Invoice",
+        "label",
+        "webhook",
+        "HMAC"
+      ]
+    },
+    "agent_index": {
+      "files": [
+        "memory/complete_worklist.md",
+        "memory/full_audit_master.md",
+        "memory/p0_fixes_summary.md",
+        "memory/workflow_agents_index.md",
+        "memory/workflow_completion.md"
+      ],
+      "agents": [
+        "agentic-search-optimizer",
+        "backend-architect",
+        "pipeline-analyst"
+      ],
+      "tags": [
+        "L0-L4",
+        "autonomy",
+        "validators",
+        "max_size",
+        "level"
+      ]
+    },
+    "a11y": {
+      "files": [
+        "memory/accessibility_audit_summary.md",
+        "memory/accessibility_complete.md"
+      ],
+      "agents": [],
+      "tags": [
+        "a11y"
+      ]
+    },
+    "wcag": {
+      "files": [
+        "memory/accessibility_audit_summary.md",
+        "memory/accessibility_complete.md"
+      ],
+      "agents": [],
+      "tags": [
+        "wcag"
+      ]
+    },
+    "modal": {
+      "files": [
+        "memory/accessibility_audit_summary.md",
+        "memory/sd_review.md"
+      ],
+      "agents": [],
+      "tags": [
+        "modal"
+      ]
+    },
+    "drawer": {
+      "files": [
+        "memory/accessibility_audit_summary.md",
+        "memory/sd_review.md"
+      ],
+      "agents": [],
+      "tags": [
+        "drawer"
+      ]
+    },
+    "toast": {
+      "files": [
+        "memory/accessibility_audit_summary.md",
+        "memory/sd_review.md"
+      ],
+      "agents": [],
+      "tags": [
+        "toast"
+      ]
+    },
+    "table": {
+      "files": [
+        "memory/accessibility_audit_summary.md",
+        "memory/sd_review.md"
+      ],
+      "agents": [],
+      "tags": [
+        "table"
+      ]
+    },
+    "task": {
+      "files": [
+        "memory/accessibility_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "task"
+      ]
+    },
+    "overview": {
+      "files": [
+        "memory/accessibility_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "overview"
+      ]
+    },
+    "badge": {
+      "files": [
+        "memory/accessibility_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "badge"
+      ]
+    },
+    "card": {
+      "files": [
+        "memory/accessibility_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "card"
+      ]
+    },
+    "complete": {
+      "files": [
+        "memory/accessibility_complete.md"
+      ],
+      "agents": [],
+      "tags": [
+        "complete"
+      ]
+    },
+    "execution": {
+      "files": [
+        "memory/p0_workflow_agent.md",
+        "memory/workflow_audit_summary.md",
+        "memory/workflow_completion.md"
+      ],
+      "agents": [],
+      "tags": [
+        "execution"
+      ]
+    },
+    "spec_matrix": {
+      "files": [
+        "memory/complete_worklist.md",
+        "memory/workflow_audit_summary.md",
+        "memory/workflow_completion.md"
+      ],
+      "agents": [],
+      "tags": [
+        "spec_matrix"
+      ]
+    },
+    "metrics_funnel": {
+      "files": [
+        "memory/workflow_audit_summary.md",
+        "memory/workflow_completion.md"
+      ],
+      "agents": [],
+      "tags": [
+        "metrics_funnel"
+      ]
+    },
+    "security": {
+      "files": [
+        "memory/code_audit_summary.md",
+        "memory/p0_workflow_agent.md",
+        "memory/workflow_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "security"
+      ]
+    },
+    "opencode-src": {
+      "files": [
+        "memory/code_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "opencode-src"
+      ]
+    },
+    "go": {
+      "files": [
+        "memory/code_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "go"
+      ]
+    },
+    "cli": {
+      "files": [
+        "memory/code_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "cli"
+      ]
+    },
+    "schema": {
+      "files": [
+        "memory/code_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "schema"
+      ]
+    },
+    "permission": {
+      "files": [
+        "memory/code_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "permission"
+      ]
+    },
+    "auth": {
+      "files": [
+        "memory/code_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "auth"
+      ]
+    },
+    "rate_limit": {
+      "files": [
+        "memory/code_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "rate_limit"
+      ]
+    },
+    "audit_log": {
+      "files": [
+        "memory/code_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "audit_log"
+      ]
+    },
+    "build": {
+      "files": [
+        "memory/release_audit_summary.md",
+        "memory/release_completion.md"
+      ],
+      "agents": [],
+      "tags": [
+        "build"
+      ]
+    },
+    "sign": {
+      "files": [
+        "memory/release_audit_summary.md",
+        "memory/release_completion.md"
+      ],
+      "agents": [],
+      "tags": [
+        "sign"
+      ]
+    },
+    "sbom": {
+      "files": [
+        "memory/release_audit_summary.md",
+        "memory/release_completion.md"
+      ],
+      "agents": [],
+      "tags": [
+        "sbom"
+      ]
+    },
+    "checksum": {
+      "files": [
+        "memory/release_audit_summary.md",
+        "memory/release_completion.md"
+      ],
+      "agents": [],
+      "tags": [
+        "checksum"
+      ]
+    },
+    "install": {
+      "files": [
+        "memory/release_audit_summary.md",
+        "memory/release_completion.md"
+      ],
+      "agents": [],
+      "tags": [
+        "install"
+      ]
+    },
+    "goreleaser": {
+      "files": [
+        "memory/release_audit_summary.md",
+        "memory/release_completion.md"
+      ],
+      "agents": [],
+      "tags": [
+        "goreleaser"
+      ]
+    },
+    "verify": {
+      "files": [
+        "memory/release_audit_summary.md",
+        "memory/release_completion.md"
+      ],
+      "agents": [],
+      "tags": [
+        "verify"
+      ]
+    },
+    "release.json": {
+      "files": [
+        "memory/release_audit_summary.md",
+        "memory/release_completion.md"
+      ],
+      "agents": [],
+      "tags": [
+        "release.json"
+      ]
+    },
+    "check_releases": {
+      "files": [
+        "memory/release_audit_summary.md",
+        "memory/release_completion.md"
+      ],
+      "agents": [],
+      "tags": [
+        "check_releases"
+      ]
+    },
+    "review": {
+      "files": [
+        "memory/sd_review.md",
+        "memory/spm_review.md"
+      ],
+      "agents": [],
+      "tags": [
+        "review"
+      ]
+    },
+    "senior-developer": {
+      "files": [
+        "memory/sd_review.md"
+      ],
+      "agents": [],
+      "tags": [
+        "senior-developer"
+      ]
+    },
+    "ui": {
+      "files": [
+        "memory/sd_review.md"
+      ],
+      "agents": [],
+      "tags": [
+        "ui"
+      ]
+    },
+    "docker": {
+      "files": [
+        "memory/sd_review.md"
+      ],
+      "agents": [],
+      "tags": [
+        "docker"
+      ]
+    },
+    "listener": {
+      "files": [
+        "memory/sd_review.md"
+      ],
+      "agents": [],
+      "tags": [
+        "listener"
+      ]
+    },
+    "spm": {
+      "files": [
+        "memory/spm_review.md"
+      ],
+      "agents": [],
+      "tags": [
+        "spm"
+      ]
+    },
+    "worklist": {
+      "files": [
+        "memory/complete_worklist.md",
+        "memory/spm_review.md"
+      ],
+      "agents": [],
+      "tags": [
+        "worklist"
+      ]
+    },
+    "p0": {
+      "files": [
+        "memory/complete_worklist.md",
+        "memory/p0_fixes_summary.md",
+        "memory/p0_memory_agent.md",
+        "memory/p0_workflow_agent.md",
+        "memory/spm_review.md"
+      ],
+      "agents": [],
+      "tags": [
+        "p0"
+      ]
+    },
+    "verification_debt": {
+      "files": [
+        "memory/spm_review.md"
+      ],
+      "agents": [],
+      "tags": [
+        "verification_debt"
+      ]
+    },
+    "p1": {
+      "files": [
+        "memory/complete_worklist.md"
+      ],
+      "agents": [],
+      "tags": [
+        "p1"
+      ]
+    },
+    "p2": {
+      "files": [
+        "memory/complete_worklist.md"
+      ],
+      "agents": [],
+      "tags": [
+        "p2"
+      ]
+    },
+    "fix": {
+      "files": [
+        "memory/p0_fixes_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "fix"
+      ]
+    },
+    "agent": {
+      "files": [
+        "memory/p0_memory_agent.md",
+        "memory/p0_workflow_agent.md"
+      ],
+      "agents": [],
+      "tags": [
+        "agent"
+      ]
+    },
+    "decision": {
+      "files": [
+        "memory/memory_audit_summary.md",
+        "memory/p0_memory_agent.md"
+      ],
+      "agents": [],
+      "tags": [
+        "decision"
+      ]
+    },
+    "risk": {
+      "files": [
+        "memory/memory_audit_summary.md",
+        "memory/p0_memory_agent.md"
+      ],
+      "agents": [],
+      "tags": [
+        "risk"
+      ]
+    },
+    "experiment": {
+      "files": [
+        "memory/memory_audit_summary.md",
+        "memory/p0_memory_agent.md"
+      ],
+      "agents": [],
+      "tags": [
+        "experiment"
+      ]
+    },
+    "feedback": {
+      "files": [
+        "memory/memory_audit_summary.md",
+        "memory/p0_memory_agent.md"
+      ],
+      "agents": [],
+      "tags": [
+        "feedback"
+      ]
+    },
+    "state": {
+      "files": [
+        "memory/memory_audit_summary.md",
+        "memory/p0_memory_agent.md"
+      ],
+      "agents": [],
+      "tags": [
+        "state"
+      ]
+    },
+    "deliverables": {
+      "files": [
+        "memory/memory_audit_summary.md",
+        "memory/p0_memory_agent.md"
+      ],
+      "agents": [],
+      "tags": [
+        "deliverables"
+      ]
+    },
+    "scanners": {
+      "files": [
+        "memory/p0_workflow_agent.md",
+        "memory/workflow_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "scanners"
+      ]
+    },
+    "store": {
+      "files": [
+        "memory/p0_workflow_agent.md",
+        "memory/workflow_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "store"
+      ]
+    },
+    "ranker": {
+      "files": [
+        "memory/p0_workflow_agent.md",
+        "memory/workflow_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "ranker"
+      ]
+    },
+    "executor": {
+      "files": [
+        "memory/p0_workflow_agent.md",
+        "memory/workflow_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "executor"
+      ]
+    },
+    "dialog": {
+      "files": [
+        "memory/p0_workflow_agent.md",
+        "memory/workflow_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "dialog"
+      ]
+    },
+    "packaging": {
+      "files": [
+        "memory/p0_workflow_agent.md",
+        "memory/workflow_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "packaging"
+      ]
+    },
+    "delivery": {
+      "files": [
+        "memory/p0_workflow_agent.md",
+        "memory/workflow_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "delivery"
+      ]
+    },
+    "finance": {
+      "files": [
+        "memory/p0_workflow_agent.md",
+        "memory/workflow_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "finance"
+      ]
+    },
+    "panel": {
+      "files": [
+        "memory/p0_workflow_agent.md",
+        "memory/workflow_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "panel"
+      ]
+    },
+    "audit.py": {
+      "files": [
+        "memory/workflow_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "audit.py"
+      ]
+    },
+    "conversation": {
+      "files": [
+        "memory/workflow_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "conversation"
+      ]
+    },
+    "opencode.exe": {
+      "files": [
+        "memory/release_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "opencode.exe"
+      ]
+    },
+    "install.sh": {
+      "files": [
+        "memory/release_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "install.sh"
+      ]
+    },
+    "strategy": {
+      "files": [
+        "memory/memory_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "strategy"
+      ]
+    },
+    "MEMORY.md": {
+      "files": [
+        "memory/memory_audit_summary.md"
+      ],
+      "agents": [],
+      "tags": [
+        "MEMORY.md"
+      ]
+    },
+    "agents_index.json": {
+      "files": [
+        "memory/workflow_agents_index.md"
+      ],
+      "agents": [],
+      "tags": [
+        "agents_index.json"
+      ]
+    },
+    "autonomy": {
+      "files": [
+        "memory/workflow_agents_index.md"
+      ],
+      "agents": [],
+      "tags": [
+        "autonomy"
+      ]
+    },
+    "validators": {
+      "files": [
+        "memory/workflow_agents_index.md"
+      ],
+      "agents": [],
+      "tags": [
+        "validators"
+      ]
+    },
+    "max_size": {
+      "files": [
+        "memory/workflow_agents_index.md"
+      ],
+      "agents": [],
+      "tags": [
+        "max_size"
+      ]
+    },
+    "level": {
+      "files": [
+        "memory/workflow_agents_index.md"
+      ],
+      "agents": [],
+      "tags": [
+        "level"
+      ]
+    },
+    "L0": {
+      "files": [
+        "memory/workflow_agents_index.md"
+      ],
+      "agents": [],
+      "tags": [
+        "L0"
+      ]
+    },
+    "L1": {
+      "files": [
+        "memory/workflow_agents_index.md"
+      ],
+      "agents": [],
+      "tags": [
+        "L1"
+      ]
+    },
+    "L2": {
+      "files": [
+        "memory/workflow_agents_index.md"
+      ],
+      "agents": [],
+      "tags": [
+        "L2"
+      ]
+    },
+    "L3": {
+      "files": [
+        "memory/workflow_agents_index.md"
+      ],
+      "agents": [],
+      "tags": [
+        "L3"
+      ]
+    },
+    "L4": {
+      "files": [
+        "memory/workflow_agents_index.md"
+      ],
+      "agents": [],
+      "tags": [
+        "L4"
+      ]
+    }
+  },
+  "entity_index": {
+    "files": [
+      {
+        "id": "full_audit_master",
+        "path": "memory/full_audit_master.md",
+        "keywords": [
+          "audit",
+          "pipeline",
+          "accessibility",
+          "workflow",
+          "release",
+          "code",
+          "memory"
+        ]
+      },
+      {
+        "id": "accessibility_audit_summary",
+        "path": "memory/accessibility_audit_summary.md",
+        "keywords": [
+          "accessibility",
+          "audit",
+          "a11y",
+          "wcag"
+        ]
+      },
+      {
+        "id": "worklist",
+        "path": "memory/complete_worklist.md",
+        "keywords": [
+          "audit",
+          "worklist",
+          "p0",
+          "p1",
+          "p2"
+        ]
+      },
+      {
+        "id": "p0_fixes_summary",
+        "path": "memory/p0_fixes_summary.md",
+        "keywords": [
+          "p0",
+          "fix",
+          "audit",
+          "accessibility",
+          "workflow"
+        ]
+      },
+      {
+        "id": "workflow_completion",
+        "path": "memory/workflow_completion.md",
+        "keywords": [
+          "workflow",
+          "audit",
+          "pipeline",
+          "execution",
+          "billing",
+          "agent_index"
+        ]
+      },
+      {
+        "id": "release_completion",
+        "path": "memory/release_completion.md",
+        "keywords": [
+          "release",
+          "audit",
+          "pipeline",
+          "build",
+          "sign",
+          "sbom"
+        ]
+      },
+      {
+        "id": "code_audit_summary",
+        "path": "memory/code_audit_summary.md",
+        "keywords": [
+          "code",
+          "audit",
+          "security",
+          "pipeline",
+          "opencode-src"
+        ]
+      }
+    ],
+    "agents": [
+      {
+        "id": "accessibility-auditor",
+        "name": "Accessibility Auditor",
+        "keywords": [
+          "accessibility",
+          "audit",
+          "a11y",
+          "wcag"
+        ],
+        "level": "L0"
+      },
+      {
+        "id": "agentic-search-optimizer",
+        "name": "Agentic Search Optimizer",
+        "keywords": [
+          "audit",
+          "search",
+          "optimizer",
+          "webmcp"
+        ],
+        "level": "L0"
+      },
+      {
+        "id": "backend-architect",
+        "name": "Backend Architect",
+        "keywords": [
+          "backend",
+          "security",
+          "pipeline",
+          "billing",
+          "agent_index"
+        ],
+        "level": "L0"
+      },
+      {
+        "id": "security-engineer",
+        "name": "Security Engineer",
+        "keywords": [
+          "security",
+          "sandbox",
+          "kill_switch",
+          "release",
+          "code"
+        ],
+        "level": "L3"
+      },
+      {
+        "id": "code-reviewer",
+        "name": "Code Reviewer",
+        "keywords": [
+          "code",
+          "audit",
+          "security",
+          "pipeline"
+        ],
+        "level": "L0"
+      },
+      {
+        "id": "workflow-architect",
+        "name": "Workflow Architect",
+        "keywords": [
+          "workflow",
+          "pipeline",
+          "audit"
+        ],
+        "level": "L4"
+      },
+      {
+        "id": "pipeline-analyst",
+        "name": "Pipeline Analyst",
+        "keywords": [
+          "pipeline",
+          "audit",
+          "workflow"
+        ],
+        "level": "L2"
+      }
+    ],
+    "stages": [
+      {
+        "name": "Search/Scan",
+        "ref": "WORKFLOW.md §3",
+        "keywords": [
+          "scanners",
+          "watchdog"
+        ]
+      },
+      {
+        "name": "Execution",
+        "ref": "WORKFLOW.md §13-15",
+        "keywords": [
+          "executor",
+          "spec_matrix",
+          "dialog"
+        ]
+      },
+      {
+        "name": "Delivery",
+        "ref": "WORKFLOW.md §22",
+        "keywords": [
+          "package_manifest",
+          "deliver_lock"
+        ]
+      },
+      {
+        "name": "Security/Release",
+        "ref": "WORKFLOW.md §25",
+        "keywords": [
+          "kill_switch",
+          "sandbox",
+          "release.json"
+        ]
+      },
+      {
+        "name": "Memory/Strategy",
+        "ref": "MEMORY.md",
+        "keywords": [
+          "MEMORY.md",
+          "decisions",
+          "risks",
+          "feedback"
+        ]
+      }
+    ]
+  },
+  "example_queries": [
+    {
+      "query": "audit accessibility",
+      "results": [
+        {
+          "type": "file",
+          "id": "accessibility_audit_summary",
+          "path": "memory/accessibility_audit_summary.md"
+        },
+        {
+          "type": "agent",
+          "id": "accessibility-auditor",
+          "name": "Accessibility Auditor"
+        }
+      ],
+      "match_score": "high"
+    },
+    {
+      "query": "sandbox workflow",
+      "results": [
+        {
+          "type": "file",
+          "id": "full_audit_master",
+          "path": "memory/full_audit_master.md"
+        },
+        {
+          "type": "file",
+          "id": "workflow_audit_summary",
+          "path": "memory/workflow_audit_summary.md"
+        },
+        {
+          "type": "agent",
+          "id": "security-engineer",
+          "name": "Security Engineer"
+        }
+      ],
+      "match_score": "high"
+    },
+    {
+      "query": "release sign",
+      "results": [
+        {
+          "type": "file",
+          "id": "release_completion",
+          "path": "memory/release_completion.md"
+        },
+        {
+          "type": "file",
+          "id": "release_audit_summary",
+          "path": "memory/release_audit_summary.md"
+        },
+        {
+          "type": "agent",
+          "id": "security-engineer",
+          "name": "Security Engineer"
+        }
+      ],
+      "match_score": "high"
+    },
+    {
+      "query": "kill_switch billing",
+      "results": [
+        {
+          "type": "file",
+          "id": "full_audit_master",
+          "path": "memory/full_audit_master.md"
+        },
+        {
+          "type": "file",
+          "id": "complete_worklist",
+          "path": "memory/complete_worklist.md"
+        },
+        {
+          "type": "agent",
+          "id": "backend-architect",
+          "name": "Backend Architect"
+        }
+      ],
+      "match_score": "medium"
+    },
+    {
+      "query": "memory agent_index",
+      "results": [
+        {
+          "type": "file",
+          "id": "worklist_agents_index",
+          "path": "memory/workflow_agents_index.md"
+        },
+        {
+          "type": "agent",
+          "id": "agentic-search-optimizer",
+          "name": "Agentic Search Optimizer"
+        },
+        {
+          "type": "agent",
+          "id": "pipeline-analyst",
+          "name": "Pipeline Analyst"
+        }
+      ],
+      "match_score": "high"
+    }
+  ],
+  "discovery_notes": "Declarative: keywords match file paths and agent descriptions. Imperative: pick_agents() should filter by keyword_index when audit context is detected.",
+  "optimization_target": "Reduce agent selection friction; align pick_agents with audit keywords (accessibility, audit, pipeline, workflow, release, sandbox, kill_switch, billing, memory, agent_index)"
+}

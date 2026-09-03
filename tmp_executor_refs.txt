@@ -1,0 +1,18 @@
+11: create_exec_task(url) создаёт новую задачу.
+13: import json
+14: import os
+15: import re
+16: import shutil
+17: import subprocess
+18: import sys
+19: import urllib.request as _urllib
+20: import zipfile
+22: from modules import chat, crm, quality, sec, store, sender
+98: def run_agent(file: str, tz: str, role: str | None = None) -> dict:
+211: def create_exec_task(url: str, tz: str = "", title: str = "", source: str = "manual") -> dict:
+212:     # Kill switch — W2: centralized via modules/kill_switch.py + audit events.json
+214:         from modules import kill_switch as ks
+220:             ks.audit_delivery(url, "stopped", "kill_switch_active at create_exec_task")
+409:     Повторный create_exec_task(url) создаёт новую задачу — старая остаётся failed."""
+731:     """Явная доставка после человеческого одобрения (review -> done). W2: audit via kill_switch."""
+733:         from modules import kill_switch as ks

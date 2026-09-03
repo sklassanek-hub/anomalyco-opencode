@@ -1,0 +1,16 @@
+{
+  "date": "2026-08-16",
+  "jobs": [
+    {"url": "https://www.fl.ru/projects/5518190/sozdanie-programmyi-dlya-avtomaticheskogo-sravneniya-tsen-na-tovaryi-na-raznyih-saytah-s-tsenami-na-amazon.html", "title": "Сравнение цен Walmart/Amazon (Keepa API)", "budget": "по договорённости", "competition": 13, "fit_score": 0.95, "status": "prototype_ready"},
+    {"url": "https://www.fl.ru/projects/5518194/sozdanie-sayta-na-tilda.html", "title": "Премиум-сайт на Tilda (агентство персонала)", "budget": "по договорённости", "competition": 0, "fit_score": 0.9, "status": "draft_ready"},
+    {"url": "https://www.fl.ru/projects/5518162/razrabotka-2-saytov-na-tilde-dlya-kompanii-lending--vizitka.html", "title": "2 сайта на Тильде (лендинг+визитка)", "budget": "по договорённости", "competition": 12, "fit_score": 0.85, "status": "draft_ready"},
+    {"url": "https://www.fl.ru/projects/5518193/nastroyka-2-serverov-na-ubuntu.html", "title": "Настройка 2 серверов Ubuntu (nquath)", "budget": "по договорённости", "competition": 1, "fit_score": 0.8, "status": "draft_ready"},
+    {"url": "https://freelance.ru/task/view/7795", "title": "Доработка сайта на WordPress", "budget": "по договорённости", "competition": 17, "fit_score": 0.75, "status": "draft_ready"},
+    {"url": "https://freelance.ru/task/view/7781", "title": "Word: структурировать товарные позиции", "budget": 3450, "competition": 0, "fit_score": 0.9, "status": "draft_ready"},
+    {"url": "https://freelance.ru/task/view/7761", "title": "Excel: обновлять каталог", "budget": 3500, "competition": 4, "fit_score": 0.9, "status": "draft_ready"},
+    {"url": "https://freelance.ru/task/view/7709", "title": "Описания для карточек товаров", "budget": 3000, "competition": 7, "fit_score": 0.85, "status": "draft_ready"},
+    {"url": "https://freelance.ru/task/view/7772", "title": "Копирайтер: тексты для карточек", "budget": 3200, "competition": 3, "fit_score": 0.85, "status": "draft_ready"}
+  ],
+  "rejected": ["fl_5518189_traffic_fraud", "fl_5518183_reviews_50rub", "fr_7797_find_clients", "fl_5518110_gif_spam"],
+  "warm_leads": ["@polinadedic (fr 6472, invoice 5000₽)", "@grigorev11 (fr 6499)"]
+}

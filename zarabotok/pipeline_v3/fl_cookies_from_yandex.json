@@ -1,0 +1,346 @@
+{
+  ".fl.ru": {
+    "__ddg1_": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13463008323436748,
+      "secure": false,
+      "httponly": true,
+      "persistent": true
+    },
+    "_ym_d": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13463008324000000,
+      "secure": true,
+      "httponly": false,
+      "persistent": true
+    },
+    "_ym_isad": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13432504438000000,
+      "secure": true,
+      "httponly": false,
+      "persistent": true
+    },
+    "_ym_uid": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13463008324000000,
+      "secure": true,
+      "httponly": false,
+      "persistent": true
+    }
+  },
+  ".freelancer.com": {
+    "GETAFREE_AUTH_HASH_V2": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13434921823650539,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "GETAFREE_LANGUAGE": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13432932009952348,
+      "secure": true,
+      "httponly": false,
+      "persistent": true
+    },
+    "GETAFREE_USER_ID": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13434921823650572,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "XSRF-TOKEN": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13435005620000000,
+      "secure": true,
+      "httponly": false,
+      "persistent": true
+    },
+    "_fbp": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13440185060000000,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "_ga": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466969060241899,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "_ga_31ZQKFK760": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466969060250147,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "_ga_KH35LXTBPN": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466887236225639,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "_gcl_au": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13440126798000000,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "_gid": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13432495460000000,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "_hjSessionUser_1223449": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13463887015000000,
+      "secure": true,
+      "httponly": false,
+      "persistent": true
+    },
+    "_rdt_uuid": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13440127015000000,
+      "secure": true,
+      "httponly": false,
+      "persistent": true
+    },
+    "_tracking_session": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13463853541000000,
+      "secure": true,
+      "httponly": false,
+      "persistent": true
+    },
+    "_tt_enable_cookie": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466047015000000,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "_ttp": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466047015000000,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "_uetsid": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13432495460000000,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "_uetvid": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466105060000000,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "session2": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13463853594000000,
+      "secure": true,
+      "httponly": false,
+      "persistent": true
+    },
+    "ttcsid": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466105060000000,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "ttcsid_CQ154HJC77U1C0R52830": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466105060000000,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "ttcsid_CT6G92RC77U1LMCPR03G": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466105060000000,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    }
+  },
+  ".www.fl.ru": {
+    "PHPSESSID": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13432880458407796,
+      "secure": true,
+      "httponly": true,
+      "persistent": true
+    },
+    "XSRF-TOKEN": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13432880458407758,
+      "secure": true,
+      "httponly": false,
+      "persistent": true
+    },
+    "hidetopprjlenta": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13434856098117320,
+      "secure": true,
+      "httponly": true,
+      "persistent": true
+    },
+    "id": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466992448559649,
+      "secure": true,
+      "httponly": true,
+      "persistent": true
+    },
+    "name": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466992448559685,
+      "secure": true,
+      "httponly": true,
+      "persistent": true
+    },
+    "new_pf0": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13434847511248552,
+      "secure": true,
+      "httponly": true,
+      "persistent": true
+    },
+    "new_pf10": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13434847511248578,
+      "secure": true,
+      "httponly": true,
+      "persistent": true
+    },
+    "pwd": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466992448559721,
+      "secure": true,
+      "httponly": true,
+      "persistent": true
+    },
+    "user_device_id": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466032378687934,
+      "secure": true,
+      "httponly": true,
+      "persistent": true
+    }
+  },
+  ".www.freelancer.com": {
+    "_ga_31ZQKFK760": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466923880263099,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    }
+  },
+  "notifications.freelancer.com": {
+    "AWSALB": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13433016741463871,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "AWSALBCORS": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13433016741463962,
+      "secure": true,
+      "httponly": false,
+      "persistent": true
+    }
+  },
+  "t.freelancer.com": {
+    "UNIFORM_ID": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466910798498025,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    }
+  },
+  "www.fl.ru": {
+    "cookies_accepted": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13466032541872403,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    }
+  },
+  "www.freelancer.com": {
+    "session2": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13463863203000000,
+      "secure": false,
+      "httponly": false,
+      "persistent": true
+    },
+    "uniform_id_linked": {
+      "value": "",
+      "path": "/",
+      "expires_utc": 13463886798000000,
+      "secure": true,
+      "httponly": false,
+      "persistent": true
+    }
+  }
+}

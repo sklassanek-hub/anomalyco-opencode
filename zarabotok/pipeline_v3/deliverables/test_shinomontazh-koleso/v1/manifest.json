@@ -1,0 +1,26 @@
+{
+  "name": "test_shinomontazh-koleso",
+  "version": "v1",
+  "files": [
+    {
+      "name": "index.html",
+      "sha256": "6ee5760b36391f1ac8ed2851b82706204e18c76f469186fa899696490b28be07",
+      "size": 60196
+    },
+    {
+      "name": "manifest.json",
+      "sha256": "585fd5ef1a3c9a853f7c61b04b8bef7d1a5b424381baa4915059685bae1b85ee",
+      "size": 284
+    },
+    {
+      "name": "README.md",
+      "sha256": "2a7f80cbab7136cdfbb85cb382c8ab2296b37c7337ed4cb89688af64d55bfbe6",
+      "size": 424
+    },
+    {
+      "name": "styles.css",
+      "sha256": "69e6a14367102ae8aedc68a7f948e3e044f414e7b2e893b8385631fd8dc11c47",
+      "size": 227
+    }
+  ]
+}

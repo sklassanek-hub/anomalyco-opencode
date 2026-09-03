@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "url": "https://www.freelancer.com/projects/penetration-testing/Procurement-Web-App-Penetration-Test",
+      "title": "E-Procurement Web App Penetration Test",
+      "description": "I run a custom-built e-procurement platform (PHP, Bootstrap front-end, MySQL) hosted on a private AlmaLinux VM and administered through DirectAdmin. Before pushing new features live, I need a thorough penetration test that zeroes in on web-application weaknesses.\n\nPlease quote separately for a Black-Box assessment (no internal knowledge) and a Grey-Box assessment (limited credentials or code snippets provided). The goal is to understand how each testing style changes the risk picture and the remediation roadmap.\n\nScope of the engagement  \n• Authentication & authorization  \n• Input validation & sanitization  \n• Session management  \n\nYou may explore any additional vectors necessary to fully cover those three areas, but infrastructure, network layers, and the database engine itself are outside today’s brief unless they directly impact the web layer.\n\nRequired deliverables  \n1. Concise executive summary suitable for non-technical stakeholders.  \n2. Detailed technical report with step-by-step findings, proof-of-concept evidence, CVSS scoring, and prioritized remediation guidance.  \n3. Retest verification list so we can confirm fixes in a follow-up sprint.\n\nI’m comfortable with widely accepted tools such as Burp Suite, OWASP ZAP, sqlmap, and custom scripts—use whatever produces reliable, repeatable results and note all tooling in the report.\n\nLet me know the estimated timeline, required prerequisites, and the two separate price quotes so we can lock in the engagement.\n\nApplication:\nhttps://eprocurement.wemasoft.net/\nAccess: sanele / $S4n3l3@2026!#\n\nSkills: PHP, Linux, Web Security, MySQL, HTML, Bootstrap, Penetration Testing, Technical Documentation, Risk Assessment, Security Auditing",
+      "budget": "30.0-250.0 USD",
+      "text": "По задаче «E-Procurement Web App Penetration Test» Python-разработчик с опытом AI/LLM-интеграций: генерация, CV, обработка данных, API (OpenAI/локальные модели). Готов разобраться в задаче — какой объём и ожидаемый результат нужны? Бюджет (30.0-250.0 USD) обсуждаем.\nОперативно отвечу на почте: aprenkavuj@gmail.com",
+      "channel": "tg",
+      "contact": "tg:@2026",
+      "to": null,
+      "score": 11.24,
+      "judge": 9.5,
+      "confidence": 0.7,
+      "source": "template",
+      "violations": [],
+      "audit": [
+        {
+          "step": "template",
+          "score": 9.5,
+          "pass": true
+        }
+      ],
+      "approved": true,
+      "sent": false,
+      "created_at": "2026-08-30T20:29:23+0300",
+      "platform": "Freelancer.com",
+      "attempts": 4,
+      "last_error": "Cannot find any entity corresponding to \"@2026\"",
+      "next_attempt_ts": 1788113942.4972618,
+      "skip_reason": "dead",
+      "note": "dead after 4 attempts: Cannot find any entity corresponding to \"@2026\"",
+      "dead_at": "2026-08-30T21:34:40+0300"
+    }
+  ]
+}

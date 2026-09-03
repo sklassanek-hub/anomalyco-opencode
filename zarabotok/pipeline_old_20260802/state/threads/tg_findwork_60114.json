@@ -1,0 +1,47 @@
+{
+  "job_id": "tg_findwork_60114",
+  "events": [
+    {
+      "ts": "2026-07-31T14:46:43.633890",
+      "actor": "qa",
+      "kind": "proposal_qa_reject",
+      "text": "Попытка 1 отклонена QA: отклик не связан с заданием (нет слов из ТЗ)",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T14:46:53.495713",
+      "actor": "qa",
+      "kind": "proposal_qa_reject",
+      "text": "Попытка 2 отклонена QA: отклик не связан с заданием (нет слов из ТЗ)",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T14:47:02.926029",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (348 симв.): \"Я буду создавать AI-модель на Python для Mad Devs. Моя модель будет автоматизировать различные процессы и улучшать эффективность работы. Я имею опыт в разработке LLM-интеграций, генерации текстов и с",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T14:47:10.613753",
+      "actor": "listener",
+      "kind": "send_error",
+      "text": "Отправка невозможна: нельзя написать @devkg: You can't write in this chat (caused by SendMessageRequest)",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T14:51:12.899969",
+      "actor": "listener",
+      "kind": "send_error",
+      "text": "Отправка невозможна: нельзя написать @devkg: You can't write in this chat (caused by SendMessageRequest)",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T17:17:07.037207",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (263 симв.): Реализую задачи Applied AI / LLM Engineer на Python для команды Mad Devs. Имею опыт интеграции OpenAI и построения ботов для обработки данных нейросетями. Какая основная задача стоит перед командой — ",
+      "meta": {}
+    }
+  ]
+}

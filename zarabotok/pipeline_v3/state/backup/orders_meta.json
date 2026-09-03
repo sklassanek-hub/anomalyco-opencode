@@ -1,0 +1,128 @@
+{
+ "items": {
+  "https://t.me/freelance_chat_ru/20812873": {
+   "url": "https://t.me/freelance_chat_ru/20812873",
+   "status": "reply",
+   "notes": "",
+   "payment": {
+    "status": "none",
+    "amount": "",
+    "currency": "руб",
+    "method": "",
+    "paid_at": "",
+    "receipt_file": ""
+   },
+   "created_at": "2026-08-25T10:19:33+0300",
+   "updated_at": "2026-08-25T10:19:33+0300",
+   "tz_received": "2026-08-25T10:19:33+0300",
+   "tz_text": "Есть есим?",
+   "tz_deadline": "",
+   "tz_budget": ""
+  },
+  "https://t.me/s/workayte": {
+   "url": "https://t.me/s/workayte",
+   "status": "draft",
+   "notes": "",
+   "payment": {
+    "status": "none",
+    "amount": "",
+    "currency": "руб",
+    "method": "",
+    "paid_at": "",
+    "receipt_file": ""
+   },
+   "created_at": "2026-08-27T18:56:32+0300",
+   "updated_at": "2026-08-27T18:56:32+0300"
+  },
+  "https://test.url": {
+   "url": "https://test.url",
+   "status": "won",
+   "notes": "",
+   "payment": {
+    "status": "none",
+    "amount": "",
+    "currency": "руб",
+    "method": "",
+    "paid_at": "",
+    "receipt_file": ""
+   },
+   "created_at": "2026-08-28T03:30:08+0300",
+   "updated_at": "2026-08-28T03:30:08+0300"
+  },
+  "https://test.example.com/won": {
+   "url": "https://test.example.com/won",
+   "status": "won",
+   "notes": "",
+   "payment": {
+    "status": "none",
+    "amount": "",
+    "currency": "руб",
+    "method": "",
+    "paid_at": "",
+    "receipt_file": ""
+   },
+   "created_at": "2026-08-28T03:30:08+0300",
+   "updated_at": "2026-08-28T03:30:08+0300"
+  },
+  "https://test.example.com/auto": {
+   "url": "https://test.example.com/auto",
+   "status": "won",
+   "notes": "",
+   "payment": {
+    "status": "none",
+    "amount": "",
+    "currency": "руб",
+    "method": "",
+    "paid_at": "",
+    "receipt_file": ""
+   },
+   "created_at": "2026-08-28T03:30:44+0300",
+   "updated_at": "2026-08-28T03:30:44+0300"
+  },
+  "https://test.example.com/test-won": {
+   "url": "https://test.example.com/test-won",
+   "status": "won",
+   "notes": "",
+   "payment": {
+    "status": "none",
+    "amount": "",
+    "currency": "руб",
+    "method": "",
+    "paid_at": "",
+    "receipt_file": ""
+   },
+   "created_at": "2026-08-28T03:30:56+0300",
+   "updated_at": "2026-08-28T03:30:57+0300"
+  },
+  "https://test.example.com/auto-delivery": {
+   "url": "https://test.example.com/auto-delivery",
+   "status": "won",
+   "notes": "",
+   "payment": {
+    "status": "none",
+    "amount": "",
+    "currency": "руб",
+    "method": "",
+    "paid_at": "",
+    "receipt_file": ""
+   },
+   "created_at": "2026-08-28T03:31:43+0300",
+   "updated_at": "2026-08-28T03:31:43+0300"
+  },
+  "https://test.example.com/final-integration": {
+   "url": "https://test.example.com/final-integration",
+   "status": "won",
+   "notes": "",
+   "payment": {
+    "status": "none",
+    "amount": "",
+    "currency": "руб",
+    "method": "",
+    "paid_at": "",
+    "receipt_file": ""
+   },
+   "created_at": "2026-08-28T03:33:37+0300",
+   "updated_at": "2026-08-28T03:33:37+0300"
+  }
+ }
+}

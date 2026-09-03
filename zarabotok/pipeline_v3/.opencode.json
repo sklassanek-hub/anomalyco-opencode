@@ -1,0 +1,32 @@
+{
+  "$schema": "https://opencode.ai/opencode-schema.json",
+  "agents": {
+    "coder": {
+      "model": "local.mistralai/mistral-7b-instruct-v0.3",
+      "maxTokens": 32000
+    },
+    "task": {
+      "model": "local.mistralai/mistral-7b-instruct-v0.3",
+      "maxTokens": 32000
+    },
+    "title": {
+      "model": "local.mistralai/mistral-7b-instruct-v0.3",
+      "maxTokens": 8000
+    }
+  },
+  "providers": {
+    "local": {
+      "provider": "local",
+      "apiKey": "dummy"
+    }
+  },
+  "lsp": {
+    "gopls": {
+      "command": "gopls"
+    },
+    "pyright": {
+      "command": "pyright-langserver",
+      "args": ["--stdio"]
+    }
+  }
+}

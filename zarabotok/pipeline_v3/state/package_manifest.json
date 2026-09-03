@@ -1,0 +1,12 @@
+{
+  "template": "package_manifest.json",
+  "note": "Template for W9 live matrix link to executor.finish",
+  "fields": [
+    "version",
+    "spec_id",
+    "delivery",
+    "artifacts",
+    "checksum"
+  ],
+  "updated": "2026-08-31"
+}

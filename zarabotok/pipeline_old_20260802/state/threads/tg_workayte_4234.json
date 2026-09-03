@@ -1,0 +1,86 @@
+{
+  "job_id": "tg_workayte_4234",
+  "events": [
+    {
+      "ts": "2026-07-31T12:09:43.482541",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (628 симв.): \"Я присоединяюсь к проекту реализации высоконагруженной платформы RedSMS на Go и микросервисной архитектуре. Я буду ответственен за проектирование архитектуры микросервисов, доведение платформы до pro",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T12:09:48.500841",
+      "actor": "sender",
+      "kind": "message_out",
+      "text": "proposal отправлен @foreverinlovewithsummer (аккаунт: aleksandr_kisilev_1999): \"Я присоединяюсь к проекту реализации высоконагруженной платформы RedSMS на Go и микросервисной архитектуре. Я буду ответственен за проектирование архитектуры микросервисов, доведение платформы до pro",
+      "meta": {
+        "contact": "@foreverinlovewithsummer",
+        "kind": "proposal"
+      }
+    },
+    {
+      "ts": "2026-07-31T12:10:46.790458",
+      "actor": "customer",
+      "kind": "message_in",
+      "text": "Клиент Foreverinlovewithsummer: добрый день! сотрудника ищем на долгий срок, есть возможность роста до СТО, точный состав команды не подскажу, это лучше уточнить на собеседовании",
+      "meta": {
+        "sender": "Foreverinlovewithsummer"
+      }
+    },
+    {
+      "ts": "2026-07-31T12:10:46.826588",
+      "actor": "payments",
+      "kind": "invoice_created",
+      "text": "Счёт 5000 ₽ создан: #вакансия #vacancy #go #golang #lead #telecom #телеком #моск. Способы: yoomoney, card, usdt",
+      "meta": {
+        "invoice_id": "inv_1785489046_tg_workayte_4234",
+        "amount": 5000
+      }
+    },
+    {
+      "ts": "2026-07-31T12:10:48.806033",
+      "actor": "customer",
+      "kind": "message_in",
+      "text": "Клиент Foreverinlovewithsummer: поделитесь резюме?",
+      "meta": {
+        "sender": "Foreverinlovewithsummer"
+      }
+    },
+    {
+      "ts": "2026-07-31T12:10:49.127162",
+      "actor": "sender",
+      "kind": "message_out",
+      "text": "invoice отправлен @foreverinlovewithsummer (аккаунт: aleksandr_kisilev_1999): Отлично! Оплата 5000 ₽. Способы:\n1. ЮMoney (карта/СБП) — по ссылке:\nhttps://yoomoney.ru/quickpay/confirm.xml?receiver=4100119458306656&quickpay-form=shop&paymentType=AC&sum=5000&targets=%23%D0%B2%D0%B",
+      "meta": {
+        "contact": "@foreverinlovewithsummer",
+        "kind": "invoice"
+      }
+    },
+    {
+      "ts": "2026-07-31T14:57:42.131441",
+      "actor": "sender",
+      "kind": "message_out",
+      "text": "client_reply отправлен @foreverinlovewithsummer (аккаунт: aleksandr_kisilev_1999): Добрый день! Прошу прощения за автоматическое сообщение о счёте — это ошибка, пожалуйста, игнорируйте его. Вы ищете сотрудника на долгий срок — понял. Пришлю резюме: Python, Go, TypeScript, Node.js, п",
+      "meta": {
+        "contact": "@foreverinlovewithsummer",
+        "kind": "client_reply"
+      }
+    },
+    {
+      "ts": "2026-07-31T15:00:12.368319",
+      "actor": "customer",
+      "kind": "message_in",
+      "text": "Клиент Foreverinlovewithsummer: Полное описание вакансии звучит так:\n \n** **\n**Team Lead Go (Golang)**\n** **\n\n**О компании**\nRedSMS — B2B-платформа для SMS-коммуникаций, работает на рынке с 2013 года. Мы обеспечиваем надёжную и мгновенную доставку сообщений для бизнеса: авторизации, подтверждения, маркетинговые рассылки.\nСейчас мы строим новую высоконагруженную платформу с нуля — и ищем технического лидера, который возьмёт на се",
+      "meta": {
+        "sender": "Foreverinlovewithsummer"
+      }
+    },
+    {
+      "ts": "2026-08-01T00:14:03.098574",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (367 симв.): Возьму на себя полную ответственность за проектирование архитектуры высоконагруженных микросервисов и вывод платформы до production, включая безопасную миграцию с PHP. Опыт включает построение CI/CD, ",
+      "meta": {}
+    }
+  ]
+}

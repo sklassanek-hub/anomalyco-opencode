@@ -1,0 +1,12 @@
+{
+  "job_id": "tg_backend",
+  "events": [
+    {
+      "ts": "2026-08-01T06:03:37.415173",
+      "actor": "orchestrator",
+      "kind": "followup",
+      "text": "Напоминание заказчику (прошло 24 ч)",
+      "meta": {}
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "items": [
+    {
+      "url": "https://test.example.com/auto-delivery",
+      "title": "https://test.example.com/auto-delivery",
+      "tz": "",
+      "source": "crm:won",
+      "agents": [
+        {
+          "file": "senior-developer",
+          "name": "Senior Developer"
+        },
+        {
+          "file": "backend-architect",
+          "name": "Backend Architect"
+        },
+        {
+          "file": "ai-engineer",
+          "name": "AI Engineer"
+        }
+      ],
+      "status": "review",
+      "attempts": 0,
+      "started_at": "2026-08-28T03:32:29+0300",
+      "finished_at": "",
+      "done_at": "",
+      "deadline": 0.0,
+      "cancel_requested": false,
+      "note": "файлов: 3, ок: 3",
+      "version": "v1"
+    },
+    {
+      "url": "https://test.example.com/final-integration",
+      "title": "https://test.example.com/final-integration",
+      "tz": "",
+      "source": "crm:won",
+      "agents": [
+        {
+          "file": "senior-developer",
+          "name": "Senior Developer"
+        },
+        {
+          "file": "backend-architect",
+          "name": "Backend Architect"
+        },
+        {
+          "file": "ai-engineer",
+          "name": "AI Engineer"
+        }
+      ],
+      "status": "review",
+      "attempts": 0,
+      "started_at": "2026-08-28T03:44:02+0300",
+      "finished_at": "",
+      "done_at": "",
+      "deadline": 0.0,
+      "cancel_requested": false,
+      "note": "файлов: 4, ок: 4",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/broken",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/blocked",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/exception",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/broken",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/blocked",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/exception",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/broken",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/blocked",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/exception",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/broken",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/blocked",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/exception",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/broken",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/blocked",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/exception",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/broken",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/blocked",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https://test/exception",
+      "status": "review",
+      "tz": "тест",
+      "version": "v1"
+    },
+    {
+      "url": "https%3A%2F%2Ftest%2Fexception",
+      "title": "https%3A%2F%2Ftest%2Fexception",
+      "tz": "",
+      "source": "manual",
+      "agents": [
+        {
+          "file": "senior-developer",
+          "name": "Senior Developer"
+        },
+        {
+          "file": "backend-architect",
+          "name": "Backend Architect"
+        },
+        {
+          "file": "ai-engineer",
+          "name": "AI Engineer"
+        }
+      ],
+      "status": "review",
+      "attempts": 0,
+      "started_at": "2026-08-30T20:47:32+0300",
+      "finished_at": "",
+      "done_at": "",
+      "deadline": 0.0,
+      "cancel_requested": false,
+      "note": "файлов: 6, ок: 2, с проблемами: config/settings.py, utils/logger.py, models/error_types.py, main.py",
+      "version": "v1"
+    },
+    {
+      "url": "https://example.com/o",
+      "title": "test",
+      "tz": "",
+      "source": "transfer",
+      "agents": [
+        {
+          "file": "senior-developer",
+          "name": "Senior Developer"
+        },
+        {
+          "file": "backend-architect",
+          "name": "Backend Architect"
+        },
+        {
+          "file": "ai-engineer",
+          "name": "AI Engineer"
+        }
+      ],
+      "status": "failed",
+      "attempts": 0,
+      "started_at": "2026-09-02T01:42:19+0300",
+      "finished_at": "2026-09-02T01:42:23+0300",
+      "done_at": "2026-09-02T01:42:23+0300",
+      "deadline": 0.0,
+      "cancel_requested": false,
+      "note": "валидация не пройдена: main.py",
+      "version": "v1"
+    }
+  ]
+}

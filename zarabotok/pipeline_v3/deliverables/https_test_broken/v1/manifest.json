@@ -1,0 +1,11 @@
+{
+  "name": "https_test_broken",
+  "version": "v1",
+  "files": [
+    {
+      "name": "manifest.json",
+      "sha256": "8c2384aece26ee2d876506862437dd1673deb1626fd1ecf28ff1b85faf18b05b",
+      "size": 110
+    }
+  ]
+}

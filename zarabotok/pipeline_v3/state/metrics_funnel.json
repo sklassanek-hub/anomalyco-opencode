@@ -1,0 +1,44 @@
+{
+  "funnel_version": "v1",
+  "updated": "2026-08-31",
+  "sources": [
+    "state/orders.json",
+    "state/payments.json",
+    "state/invoices.json"
+  ],
+  "metrics": {
+    "conversion": {
+      "label": "Конверсия воронки",
+      "value": 0,
+      "unit": "%",
+      "source": "funnel.counts"
+    },
+    "revenue": {
+      "label": "Выручка",
+      "value": 0,
+      "unit": "₽",
+      "source": "invoices.paid + payments.items"
+    },
+    "expenses": {
+      "label": "Расходы",
+      "value": 0,
+      "unit": "₽",
+      "source": "config.json / state/"
+    },
+    "avg_order": {
+      "label": "Средний чек",
+      "value": 0,
+      "unit": "₽",
+      "source": "orders.budget"
+    }
+  },
+  "links": {
+    "orders": "ui/src/pages/Orders.tsx",
+    "payments": "ui/src/pages/Billing.tsx",
+    "funnel": "ui/src/pages/FunnelMetrics.tsx"
+  },
+  "accessibility": {
+    "aria_label": "Метрики воронки — агрегированные KPI из Orders и Payment",
+    "aria_describedby": "kpi-conv-label kpi-rev-label kpi-exp-label kpi-avg-label"
+  }
+}

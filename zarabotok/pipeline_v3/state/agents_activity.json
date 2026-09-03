@@ -1,0 +1,444 @@
+{
+  "items": [
+    {
+      "ts": "2026-08-27T18:56:32+0300",
+      "order": "https://t.me/s/workayte",
+      "agent": "crm",
+      "action": "статус -> draft",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:30:08+0300",
+      "order": "https://test.url",
+      "agent": "crm",
+      "action": "статус -> won",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:30:08+0300",
+      "order": "https://test.example.com/won",
+      "agent": "crm",
+      "action": "статус -> won",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:30:44+0300",
+      "order": "https://test.example.com/auto",
+      "agent": "crm",
+      "action": "статус -> won",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:30:57+0300",
+      "order": "https://test.example.com/test-won",
+      "agent": "crm",
+      "action": "статус -> reply",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:30:57+0300",
+      "order": "https://test.example.com/test-won",
+      "agent": "crm",
+      "action": "статус -> won",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:31:43+0300",
+      "order": "https://test.example.com/auto-delivery",
+      "agent": "crm",
+      "action": "статус -> reply",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:31:43+0300",
+      "order": "https://test.example.com/auto-delivery",
+      "agent": "crm",
+      "action": "статус -> won",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:31:43+0300",
+      "order": "https://test.example.com/auto-delivery",
+      "agent": "executor",
+      "action": "задача на исполнение создана: ['senior-developer', 'backend-architect', 'ai-engineer']",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:32:29+0300",
+      "order": "https://test.example.com/auto-delivery",
+      "agent": "exec_worker",
+      "action": "пайплайн запущен: plan -> implement -> validate -> repair",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:33:06+0300",
+      "order": "https://test.example.com/auto-delivery",
+      "agent": "exec_worker",
+      "action": "план файлов: api/handlers/delivery.py, services/delivery_service.py, models/delivery_model.py",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:33:37+0300",
+      "order": "https://test.example.com/final-integration",
+      "agent": "crm",
+      "action": "статус -> reply",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:33:37+0300",
+      "order": "https://test.example.com/final-integration",
+      "agent": "crm",
+      "action": "статус -> won",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:33:37+0300",
+      "order": "https://test.example.com/final-integration",
+      "agent": "executor",
+      "action": "задача на исполнение создана: ['senior-developer', 'backend-architect', 'ai-engineer']",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:35:45+0300",
+      "order": "https://test.example.com/auto-delivery",
+      "agent": "exec_worker",
+      "action": "api/handlers/delivery.py: валидация не прошла (1/2), ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:39:31+0300",
+      "order": "https://test.example.com/auto-delivery",
+      "agent": "exec_worker",
+      "action": "api/handlers/delivery.py: ok",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:40:59+0300",
+      "order": "https://test.example.com/auto-delivery",
+      "agent": "exec_worker",
+      "action": "services/delivery_service.py: runtime smoke fail — в ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:40:59+0300",
+      "order": "https://test.example.com/auto-delivery",
+      "agent": "exec_worker",
+      "action": "services/delivery_service.py: валидация не прошла (1/2), ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:42:26+0300",
+      "order": "https://test.example.com/auto-delivery",
+      "agent": "exec_worker",
+      "action": "services/delivery_service.py: ok",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:43:00+0300",
+      "order": "https://test.example.com/auto-delivery",
+      "agent": "exec_worker",
+      "action": "models/delivery_model.py: ok",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:43:00+0300",
+      "order": "https://test.example.com/auto-delivery",
+      "agent": "executor",
+      "action": "пайплайн review (файлов: 3, ок: 3); ждёт одобрения человека",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:44:02+0300",
+      "order": "https://test.example.com/final-integration",
+      "agent": "exec_worker",
+      "action": "пайплайн запущен: plan -> implement -> validate -> repair",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:44:33+0300",
+      "order": "https://test.example.com/final-integration",
+      "agent": "exec_worker",
+      "action": "план файлов: main.py, handlers.py, api_client.py, config.py",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:47:16+0300",
+      "order": "https://test.example.com/final-integration",
+      "agent": "exec_worker",
+      "action": "main.py: валидация не прошла (1/2), ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:49:19+0300",
+      "order": "https://test.example.com/final-integration",
+      "agent": "exec_worker",
+      "action": "main.py: ok",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:51:17+0300",
+      "order": "https://test.example.com/final-integration",
+      "agent": "exec_worker",
+      "action": "handlers.py: ok",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:55:16+0300",
+      "order": "https://test.example.com/final-integration",
+      "agent": "exec_worker",
+      "action": "api_client.py: runtime smoke fail — в ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:55:16+0300",
+      "order": "https://test.example.com/final-integration",
+      "agent": "exec_worker",
+      "action": "api_client.py: валидация не прошла (1/2), ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:57:00+0300",
+      "order": "https://test.example.com/final-integration",
+      "agent": "exec_worker",
+      "action": "api_client.py: валидация не прошла (2/2), ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T03:59:01+0300",
+      "order": "https://test.example.com/final-integration",
+      "agent": "exec_worker",
+      "action": "api_client.py: ok",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T04:00:44+0300",
+      "order": "https://test.example.com/final-integration",
+      "agent": "exec_worker",
+      "action": "config.py: ok",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-28T04:00:44+0300",
+      "order": "https://test.example.com/final-integration",
+      "agent": "executor",
+      "action": "пайплайн review (файлов: 4, ок: 4); ждёт одобрения человека",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T20:46:54+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "executor",
+      "action": "задача на исполнение создана: ['senior-developer', 'backend-architect', 'ai-engineer']",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T20:47:32+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "пайплайн запущен: plan -> implement -> validate -> repair",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T20:47:59+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "план файлов: bot.py, handlers/exceptions.py, config/settings.py, utils/logger.py, models/error_types.py, main.py",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T20:50:43+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "bot.py: runtime smoke fail — в ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T20:50:43+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "bot.py: валидация не прошла (1/2), ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T20:53:19+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "bot.py: ok",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T20:55:50+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "handlers/exceptions.py: валидация не прошла (1/2), ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T20:57:54+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "handlers/exceptions.py: ok",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T20:58:46+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "config/settings.py: runtime smoke fail — в ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T20:58:46+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "config/settings.py: валидация не прошла (1/2), ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T21:00:11+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "config/settings.py: валидация не прошла (2/2), ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T21:06:09+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "config/settings.py: ошибки: 1",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T21:07:44+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "utils/logger.py: runtime smoke fail — в ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T21:07:44+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "utils/logger.py: валидация не прошла (1/2), ремонт",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T21:07:52+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "utils/logger.py: ошибки: 1",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T21:07:53+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "models/error_types.py: генерация не удалась",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T21:07:55+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "exec_worker",
+      "action": "main.py: генерация не удалась",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-08-30T21:07:55+0300",
+      "order": "https%3A%2F%2Ftest%2Fexception",
+      "agent": "executor",
+      "action": "пайплайн review (файлов: 6, ок: 2, с проблемами: config/settings.py, utils/logger.py, models/error_types.py, main.py); ждёт одобрения человека",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-09-02T01:41:27+0300",
+      "order": "https://example.com/o",
+      "agent": "executor",
+      "action": "задача на исполнение создана: ['senior-developer', 'backend-architect', 'ai-engineer']",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-09-02T01:42:19+0300",
+      "order": "https://example.com/o",
+      "agent": "exec_worker",
+      "action": "пайплайн запущен: plan -> implement -> validate -> repair",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-09-02T01:42:21+0300",
+      "order": "https://example.com/o",
+      "agent": "exec_worker",
+      "action": "план файлов: main.py",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-09-02T01:42:23+0300",
+      "order": "https://example.com/o",
+      "agent": "exec_worker",
+      "action": "main.py: генерация не удалась",
+      "result": "",
+      "ok": true
+    },
+    {
+      "ts": "2026-09-02T01:42:23+0300",
+      "order": "https://example.com/o",
+      "agent": "executor",
+      "action": "пайплайн failed: файлов: 1, ок: 0, с проблемами: main.py",
+      "result": "",
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "job_id": "fl_nujen-dizayner-dlya-razrabotki-kontsepts",
+  "events": [
+    {
+      "ts": "2026-07-31T12:23:57.211060",
+      "actor": "bidder",
+      "kind": "proposal_ready",
+      "text": "Отклик сгенерирован и прошёл QA (316 симв.): Спроектирую концепции оформления фасада семейного развлекательного центра, учитывая стиль и атмосферу предприятия. Я имею опыт в дизайне интерьеров и фасадов, поэтому знаком с требованиями к проекту. ",
+      "meta": {}
+    },
+    {
+      "ts": "2026-07-31T12:24:05.827634",
+      "actor": "listener",
+      "kind": "send_error",
+      "text": "Отправка невозможна: нельзя написать @context: You can't write in this chat (caused by SendMessageRequest)",
+      "meta": {}
+    }
+  ]
+}
